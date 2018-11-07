@@ -1,0 +1,11 @@
+package bupt.inc.wsmonitor.serviceserver.dao;
+
+import bupt.inc.wsmonitor.serviceserver.domain.Person;
+
+public interface PersonDao {
+	void creaet(Person p);
+	void delete(Person p);
+	void update(Person p);
+	List getAllPerson();
+	List getPersonById(String id);
+}

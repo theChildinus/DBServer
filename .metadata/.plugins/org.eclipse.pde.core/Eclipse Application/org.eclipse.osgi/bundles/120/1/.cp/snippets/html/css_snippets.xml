@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <category id="category_1091575480290" initial_state="0" filters="*" icon="" label="CSS" largeicon="">
+        <description/>
+        <item id="item_1091575491746" icon="" label="Add comments" largeicon="" category="category_1091575480290" class="" editorclass="">
+            <description><![CDATA[Multi-Line CSS Comment]]></description>
+            <content><![CDATA[/*
+*/]]></content>
+        </item>
+        <item id="item_1091581170642" icon="" label="Change Table Cell Background Colors" largeicon="" category="category_1091575480290" class="" editorclass="">
+            <description><![CDATA[Table Cell Background Colors Change on Mouseover]]></description>
+            <content><![CDATA[// add to your "external" style sheet that controls the "onload" table cell color, border width and color.
+
+.btnav { background-color: #84C1DF; border: 1px #000000 solid;} 
+
+//Use following in table cell
+<td class="btnav" onmouseover="style.backgroundColor='#84DFC1';"
+	onmouseout="style.backgroundColor='#84C1DF'"> 
+	<div align="center"><a href="http://www.mylink.com/" target="_blank">MyLink</a></div>
+</td> 
+
+]]></content>
+        </item>
+        <item id="item_1091586503910" icon="" label="Add Style Class" largeicon="" category="category_1091575480290" class="" editorclass="">
+            <description><![CDATA[Simple Class Style]]></description>
+            <content><![CDATA[.Style {
+		color: #000000;
+		font-size: 11px;
+		font-family: Arial, sans-serif;
+		letter-spacing: 3px;
+		background: none;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 3px;
+		text-decoration: none;
+		line-height: 14px;
+		display: compact;
+		padding: 0px;
+}]]></content>
+        </item>
+    </category>
+</snippets>

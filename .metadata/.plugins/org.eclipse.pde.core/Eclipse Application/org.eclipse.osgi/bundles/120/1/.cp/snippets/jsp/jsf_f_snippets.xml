@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <category id="category_1092665028614" initial_state="0" filters="*" label="JSF-F">
+        <description/>
+        <item id="item_1092665040511" label="&lt;f:actionListener ../&gt; tag" category="category_1092665028614">
+            <description/>
+            <content><![CDATA[<f:actionListener type="${type}" />]]></content>
+            <variable id="name_1" name="type" default="">
+                <description><![CDATA[Fully qualified Java class name of an ActionListener to be created and registered.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092665072617" label="&lt;f:convertDateTime ../&gt; tag" category="category_1092665028614">
+            <description/>
+            <content><![CDATA[<f:convertDateTime type="${type}" />]]></content>
+            <variable id="name_1" name="type" default="">
+                <description><![CDATA[Specifies what contents the string value will be formatted to include, or parsed expecting. Valid values are "date", "time", and "both". Default value is "date".]]></description>
+            </variable>
+        </item>
+        <item id="item_1092665105094" label="&lt;f:convertNumber ../&gt; tag" category="category_1092665028614">
+            <description/>
+            <content><![CDATA[<f:convertNumber type="${type}" />]]></content>
+            <variable id="name_1" name="type" default="">
+                <description><![CDATA[Specifies how the number string will be formatted and parsed. Valid values are "number", "currency", and "percentage". Default value is "number".]]></description>
+            </variable>
+        </item>
+        <item id="item_1092665144040" label="&lt;f:facet ..&gt; tag" category="category_1092665028614">
+            <description/>
+            <content><![CDATA[<f:facet name="${name}"></f:facet>]]></content>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[Name of the facet to be created.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092665209134" label="&lt;f:selectItems ../&gt; tag" category="category_1092665028614">
+            <description/>
+            <content><![CDATA[<f:selectItems value="${value}" />]]></content>
+            <variable id="name_1" name="value" default="">
+                <description><![CDATA[Value binding expression pointing at a List or array of SelectItem instances containing the information for these options.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092665249532" label="&lt;f:validateDoubleRange ../&gt; tag" category="category_1092665028614">
+            <description/>
+            <content><![CDATA[<f:validateDoubleRange minimum="${min}" maximum="${max}" />]]></content>
+            <variable id="name_2" name="max" default="">
+                <description><![CDATA[Maximum value allowed for this component.]]></description>
+            </variable>
+            <variable id="name_1" name="min" default="">
+                <description><![CDATA[Minimum value allowed for this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092665302167" label="&lt;f:validateLength ../&gt; tag" category="category_1092665028614">
+            <description/>
+            <content><![CDATA[<f:validateLength minimum="${min}" maximum="${max}" />]]></content>
+            <variable id="name_2" name="max" default="">
+                <description><![CDATA[Maximum value allowed for this component.]]></description>
+            </variable>
+            <variable id="name_1" name="min" default="">
+                <description><![CDATA[Minimum value allowed for this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092665357096" label="&lt;f:validateLongRange ../&gt; tag" category="category_1092665028614">
+            <description/>
+            <content><![CDATA[<f:validateLongRange minimum="${min}" maximum="${max}" />]]></content>
+            <variable id="name_2" name="min" default="">
+                <description><![CDATA[Minimum value allowed for this component.]]></description>
+            </variable>
+            <variable id="name_1" name="max" default="">
+                <description><![CDATA[Maximum value allowed for this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092665401270" label="&lt;f:valueChangeListener ../&gt; tag" category="category_1092665028614">
+            <description/>
+            <content><![CDATA[<f:valueChangeListener type="${type}" />]]></content>
+            <variable id="name_1" name="type" default="">
+                <description><![CDATA[Fully qualified Java class name of a ValueChangeListener to be created and registered.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092665434778" label="&lt;f:verbatim&gt; tag" category="category_1092665028614">
+            <description/>
+            <content><![CDATA[<f:verbatim></f:verbatim>]]></content>
+        </item>
+    </category>
+</snippets>

@@ -1,0 +1,76 @@
+package bupt.inc.wsmonitor.serviceserver.dao;
+
+import java.util.List;
+
+import bupt.inc.wsmonitor.serviceserver.domain.Person;
+import org.springframework.ldap.core.LdapTemplate;
+import org.springframework.ldap.core.AttributesMapper;
+import javax.naming.directory.Attributes;
+import javax.naming.NamingException;
+
+public class PersonDaoImpl implements PersonDao {
+    private LdapTemplate ladpTemplate;
+    
+    public void setLadpTemplate(LdapTemplate ladpTemplate) {
+		this.ladpTemplate = ladpTemplate;
+	}
+
+	public LdapTemplate getLadpTemplate() {
+		return ladpTemplate;
+	}
+	
+	@Override
+	public void creaet(Person p) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(Person p) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List getAllPerson() {
+		// TODO Auto-generated method stub
+		PersonAttributesMapper mapper = new PersonAttributesMapper();
+		return ladpTemplate.search("", "(objectclass=person)", mapper);
+	}
+
+	@Override
+	public List getPersonById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(Person p) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public List getAllPersonNames() {
+		return ladpTemplate.search("", "(objectclass=person)",
+		    new AttributesMapper(){
+			    public Object mapFromAttributes(Attributes attrs)
+			      throws NamingException {
+			    	return attrs.get("cn").get();
+			    }
+		    });
+		
+	}
+	
+    private class PersonAttributesMapper implements AttributesMapper{
+    	public Object mapFromAttributes(Attributes attrs)
+    	  throws NamingException {
+    		Person p = new Person();
+    		p.setFirstName((String)attrs.get("fn").get());
+    		p.setLastName((String)attrs.get("ln").get());
+    		p.setId((String)attrs.get("id").get());
+    		return p;
+    	}
+    }
+	
+
+}

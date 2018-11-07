@@ -1,0 +1,77 @@
+<resource path="/system/dashboards" isCollection="true">
+    <mediaType/>
+    <description/>
+    <childs>
+        <resource path="/system/dashboards/governance" isCollection="true">
+            <mediaType/>
+            <description/>
+            <childs>
+                <resource path="/system/dashboards/governance/gadgets" isCollection="true">
+
+                    <mediaType/>
+                    <description/>
+                    <childs>
+                        <resource path="/system/dashboards/governance/gadgets/23" isCollection="true">
+                            <mediaType/>
+                            <description/>
+                            <properties>
+                                <property key="gadgetUrl">/registry/resource/system/gadgets/life-cycle-info.xml
+                                </property>
+
+                            </properties>
+                            <childs>
+                                <resource path="/system/dashboards/governance/gadgets/23/gadgetprefs"
+                                          isCollection="true">
+                                    <mediaType/>
+                                    <description/>
+                                    <properties>
+                                        <property key="gadgetUserPrefs-23"/>
+                                    </properties>
+                                    <childs/>
+
+                                </resource>
+                            </childs>
+                        </resource>
+                    </childs>
+                </resource>
+                <resource path="/system/dashboards/governance/nextGadgetId" isCollection="true">
+                    <mediaType/>
+                    <description/>
+                    <properties>
+
+                        <property key="nextGadgetId">37</property>
+                    </properties>
+                    <childs/>
+                </resource>
+                <resource path="/system/dashboards/governance/tabs" isCollection="true">
+                    <mediaType/>
+                    <description/>
+                    <properties>
+
+                        <property key="nextTabId">9</property>
+                        <property key="currentTabLayout">0</property>
+                    </properties>
+                    <childs>
+                        <resource path="/system/dashboards/governance/tabs/0" isCollection="true">
+                            <mediaType/>
+                            <description/>
+                            <childs>
+
+                                <resource path="/system/dashboards/governance/tabs/0/currentGadgetLayout"
+                                          isCollection="true">
+                                    <mediaType/>
+                                    <description/>
+                                    <properties>
+                                        <property key="currentGadgetLayout">G1#23</property>
+                                    </properties>
+                                    <childs/>
+                                </resource>
+
+                            </childs>
+                        </resource>
+                    </childs>
+                </resource>
+            </childs>
+        </resource>
+    </childs>
+</resource>

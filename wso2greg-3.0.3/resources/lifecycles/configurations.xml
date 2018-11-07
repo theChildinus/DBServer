@@ -1,0 +1,29 @@
+<aspect name="ServiceLifeCycle" class="org.wso2.carbon.governance.registry.extensions.aspects.ChecklistLifeCycle">
+		<configuration type="literal">
+            <lifecycle>
+                <state name="Initialize" location="/environment/init">
+                    <checkitem>Requirements Gathered</checkitem>
+                    <checkitem>Architecture Finalized</checkitem>
+                    <checkitem>High Level Design Completed</checkitem>
+                </state>
+                <state name="Designed" location="/environment/design">
+                    <checkitem>Code Completed</checkitem>
+                    <checkitem>WSDL, Schema Created</checkitem>
+                    <checkitem>QoS Created</checkitem>                   
+                </state>
+                <state name="Created" location="/environment/development">
+                    <checkitem>Effective Inspection Completed</checkitem>
+                    <checkitem>Test Cases Passed</checkitem>
+                    <checkitem>Smoke Test Passed</checkitem>
+                </state>
+                <state name="Tested" location="/environment/qa">
+                    <checkitem>Service Configuration</checkitem>
+                </state>    
+                <state name="Deployed" location="/environment/prod">
+                    <checkitem>Service Configuration</checkitem>
+                </state>
+                <state name="Deprecated" location="/environment/support">
+                </state>
+            </lifecycle>				
+		</configuration>
+	</aspect>

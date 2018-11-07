@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?> <!-- i18n: added to work around 2.1 bug -->
+<plugin>
+
+     <extension
+         point="org.eclipse.ui.preferencePages">
+<!--            category="org.jboss.ide.eclipse.core.ui.IDEPreferencePage" -->
+      <page
+            name="%org.jboss.ide.eclipse.xdoclet.core.ui.MainPreferencePage"
+            category="com.genuitec.eclipse.viper.preferencepage"
+            class="org.jboss.ide.eclipse.xdoclet.core.ui.MainPreferencePage"
+            id="com.genuitec.jboss.ide.eclipse.xdoclet.core.ui.MainPreferencePage">
+      </page>
+   </extension>
+
+</plugin>

@@ -1,0 +1,10 @@
+<amoebaList>
+	<amoeba>
+		<ip>10.109.254.118</ip>
+		<port>8066</port>
+	</amoeba>
+	<amoeba>
+		<ip>10.109.254.119</ip>
+		<port>8066</port>
+	</amoeba>
+</amoebaList>

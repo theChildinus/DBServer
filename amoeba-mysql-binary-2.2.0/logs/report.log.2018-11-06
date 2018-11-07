@@ -1,0 +1,2619 @@
+2018-11-06 17:53:39,211 INFO  report -  State of server report:
+- Uptime: 1m 1s 625ms
+- Report period: 1m 1s 625ms
+- Memory: 33042k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-1, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 17:54:39,212 INFO  report -  State of server report:
+- Uptime: 2m 1s 626ms
+- Report period: 2m 1s 626ms
+- Memory: 33042k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-1, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 17:55:39,213 INFO  report -  State of server report:
+- Uptime: 3m 1s 627ms
+- Report period: 3m 1s 627ms
+- Memory: 33042k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-1, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 17:56:39,226 INFO  report -  State of server report:
+- Uptime: 4m 1s 640ms
+- Report period: 4m 1s 640ms
+- Memory: 35684k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-1, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-2, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 17:57:39,239 INFO  report -  State of server report:
+- Uptime: 5m 1s 653ms
+- Report period: 5m 1s 653ms
+- Memory: 35684k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-1, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-2, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 17:58:39,242 INFO  report -  State of server report:
+- Uptime: 6m 1s 656ms
+- Report period: 6m 1s 656ms
+- Memory: 37009k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-2, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-3, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 17:59:39,243 INFO  report -  State of server report:
+- Uptime: 7m 1s 657ms
+- Report period: 7m 1s 657ms
+- Memory: 38330k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:00:39,258 INFO  report -  State of server report:
+- Uptime: 8m 1s 672ms
+- Report period: 8m 1s 672ms
+- Memory: 38330k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:01:39,264 INFO  report -  State of server report:
+- Uptime: 9m 1s 678ms
+- Report period: 9m 1s 678ms
+- Memory: 38330k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:02:39,273 INFO  report -  State of server report:
+- Uptime: 10m 1s 687ms
+- Report period: 10m 1s 687ms
+- Memory: 40972k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:03:39,286 INFO  report -  State of server report:
+- Uptime: 11m 1s 700ms
+- Report period: 11m 1s 700ms
+- Memory: 42293k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:04:39,296 INFO  report -  State of server report:
+- Uptime: 12m 1s 710ms
+- Report period: 12m 1s 710ms
+- Memory: 42293k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:05:39,306 INFO  report -  State of server report:
+- Uptime: 13m 1s 720ms
+- Report period: 13m 1s 720ms
+- Memory: 42293k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:06:39,327 INFO  report -  State of server report:
+- Uptime: 14m 1s 741ms
+- Report period: 14m 1s 741ms
+- Memory: 43614k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:07:39,336 INFO  report -  State of server report:
+- Uptime: 15m 1s 750ms
+- Report period: 15m 1s 750ms
+- Memory: 44939k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:08:39,344 INFO  report -  State of server report:
+- Uptime: 16m 1s 758ms
+- Report period: 16m 1s 758ms
+- Memory: 46260k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:09:39,349 INFO  report -  State of server report:
+- Uptime: 17m 1s 763ms
+- Report period: 17m 1s 763ms
+- Memory: 46260k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:10:39,365 INFO  report -  State of server report:
+- Uptime: 18m 1s 779ms
+- Report period: 18m 1s 779ms
+- Memory: 46260k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-3, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-4, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:11:39,367 INFO  report -  State of server report:
+- Uptime: 19m 1s 781ms
+- Report period: 19m 1s 781ms
+- Memory: 46260k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-4, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-5, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:12:39,372 INFO  report -  State of server report:
+- Uptime: 20m 1s 786ms
+- Report period: 20m 1s 786ms
+- Memory: 47585k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-4, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-5, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:13:39,383 INFO  report -  State of server report:
+- Uptime: 21m 1s 797ms
+- Report period: 21m 1s 797ms
+- Memory: 50228k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-4, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-5, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:14:39,414 INFO  report -  State of server report:
+- Uptime: 22m 1s 828ms
+- Report period: 22m 1s 828ms
+- Memory: 50228k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:15:39,414 INFO  report -  State of server report:
+- Uptime: 23m 1s 828ms
+- Report period: 23m 1s 828ms
+- Memory: 50228k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:16:39,441 INFO  report -  State of server report:
+- Uptime: 24m 1s 855ms
+- Report period: 24m 1s 855ms
+- Memory: 50228k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:17:39,448 INFO  report -  State of server report:
+- Uptime: 25m 1s 862ms
+- Report period: 25m 1s 862ms
+- Memory: 51549k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:18:39,458 INFO  report -  State of server report:
+- Uptime: 26m 1s 872ms
+- Report period: 26m 1s 872ms
+- Memory: 51549k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:19:39,467 INFO  report -  State of server report:
+- Uptime: 27m 1s 881ms
+- Report period: 27m 1s 881ms
+- Memory: 52874k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:20:39,477 INFO  report -  State of server report:
+- Uptime: 28m 1s 891ms
+- Report period: 28m 1s 891ms
+- Memory: 54195k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:21:39,486 INFO  report -  State of server report:
+- Uptime: 29m 1s 900ms
+- Report period: 29m 1s 900ms
+- Memory: 54195k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:22:39,501 INFO  report -  State of server report:
+- Uptime: 30m 1s 914ms
+- Report period: 30m 1s 914ms
+- Memory: 55516k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:23:39,508 INFO  report -  State of server report:
+- Uptime: 31m 1s 922ms
+- Report period: 31m 1s 922ms
+- Memory: 55516k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:24:39,524 INFO  report -  State of server report:
+- Uptime: 32m 1s 938ms
+- Report period: 32m 1s 938ms
+- Memory: 56841k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:25:39,542 INFO  report -  State of server report:
+- Uptime: 33m 1s 956ms
+- Report period: 33m 1s 956ms
+- Memory: 56841k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:26:39,546 INFO  report -  State of server report:
+- Uptime: 34m 1s 960ms
+- Report period: 34m 1s 960ms
+- Memory: 58162k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:27:39,554 INFO  report -  State of server report:
+- Uptime: 35m 1s 968ms
+- Report period: 35m 1s 968ms
+- Memory: 59483k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:28:39,556 INFO  report -  State of server report:
+- Uptime: 36m 1s 970ms
+- Report period: 36m 1s 970ms
+- Memory: 59483k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:29:39,587 INFO  report -  State of server report:
+- Uptime: 37m 2s 1ms
+- Report period: 37m 2s 1ms
+- Memory: 60804k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:30:39,602 INFO  report -  State of server report:
+- Uptime: 38m 2s 16ms
+- Report period: 38m 2s 16ms
+- Memory: 60804k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:31:39,604 INFO  report -  State of server report:
+- Uptime: 39m 2s 18ms
+- Report period: 39m 2s 18ms
+- Memory: 60804k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-5, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-7, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:32:39,615 INFO  report -  State of server report:
+- Uptime: 40m 2s 29ms
+- Report period: 40m 2s 29ms
+- Memory: 60804k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:33:39,624 INFO  report -  State of server report:
+- Uptime: 41m 2s 38ms
+- Report period: 41m 2s 38ms
+- Memory: 63450k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:34:39,633 INFO  report -  State of server report:
+- Uptime: 42m 2s 47ms
+- Report period: 42m 2s 47ms
+- Memory: 64771k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:35:39,645 INFO  report -  State of server report:
+- Uptime: 43m 2s 59ms
+- Report period: 43m 2s 59ms
+- Memory: 64771k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:36:39,648 INFO  report -  State of server report:
+- Uptime: 44m 2s 62ms
+- Report period: 44m 2s 62ms
+- Memory: 64771k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:37:39,649 INFO  report -  State of server report:
+- Uptime: 45m 2s 63ms
+- Report period: 45m 2s 63ms
+- Memory: 64771k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:38:39,649 INFO  report -  State of server report:
+- Uptime: 46m 2s 63ms
+- Report period: 46m 2s 63ms
+- Memory: 66048k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:39:39,664 INFO  report -  State of server report:
+- Uptime: 47m 2s 78ms
+- Report period: 47m 2s 78ms
+- Memory: 66048k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:40:39,673 INFO  report -  State of server report:
+- Uptime: 48m 2s 87ms
+- Report period: 48m 2s 87ms
+- Memory: 10229k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:41:39,681 INFO  report -  State of server report:
+- Uptime: 49m 2s 95ms
+- Report period: 49m 2s 95ms
+- Memory: 10229k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:42:39,695 INFO  report -  State of server report:
+- Uptime: 50m 2s 109ms
+- Report period: 50m 2s 109ms
+- Memory: 10903k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:43:39,700 INFO  report -  State of server report:
+- Uptime: 51m 2s 114ms
+- Report period: 51m 2s 114ms
+- Memory: 12475k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:44:39,711 INFO  report -  State of server report:
+- Uptime: 52m 2s 125ms
+- Report period: 52m 2s 125ms
+- Memory: 13228k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:45:39,716 INFO  report -  State of server report:
+- Uptime: 53m 2s 130ms
+- Report period: 53m 2s 130ms
+- Memory: 13228k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:46:39,731 INFO  report -  State of server report:
+- Uptime: 54m 2s 145ms
+- Report period: 54m 2s 145ms
+- Memory: 14800k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:47:39,736 INFO  report -  State of server report:
+- Uptime: 55m 2s 150ms
+- Report period: 55m 2s 150ms
+- Memory: 14800k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:48:39,738 INFO  report -  State of server report:
+- Uptime: 56m 2s 152ms
+- Report period: 56m 2s 152ms
+- Memory: 15553k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:49:39,744 INFO  report -  State of server report:
+- Uptime: 57m 2s 158ms
+- Report period: 57m 2s 158ms
+- Memory: 17126k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:50:39,753 INFO  report -  State of server report:
+- Uptime: 58m 2s 167ms
+- Report period: 58m 2s 167ms
+- Memory: 17126k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:51:39,755 INFO  report -  State of server report:
+- Uptime: 59m 2s 169ms
+- Report period: 59m 2s 169ms
+- Memory: 17879k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-6, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-8, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:52:39,761 INFO  report -  State of server report:
+- Uptime: 1h 2s 175ms
+- Report period: 1h 2s 175ms
+- Memory: 19455k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-9, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:53:39,773 INFO  report -  State of server report:
+- Uptime: 1h 1m 2s 187ms
+- Report period: 1h 1m 2s 187ms
+- Memory: 19455k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-9, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:54:39,774 INFO  report -  State of server report:
+- Uptime: 1h 2m 2s 188ms
+- Report period: 1h 2m 2s 188ms
+- Memory: 19455k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-2, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-9, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:55:39,789 INFO  report -  State of server report:
+- Uptime: 1h 3m 2s 203ms
+- Report period: 1h 3m 2s 203ms
+- Memory: 21780k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-3, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-10, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:56:39,796 INFO  report -  State of server report:
+- Uptime: 1h 4m 2s 210ms
+- Report period: 1h 4m 2s 210ms
+- Memory: 21780k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-3, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-10, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:57:39,827 INFO  report -  State of server report:
+- Uptime: 1h 5m 2s 241ms
+- Report period: 1h 5m 2s 241ms
+- Memory: 21780k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-3, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-10, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:58:39,839 INFO  report -  State of server report:
+- Uptime: 1h 6m 2s 253ms
+- Report period: 1h 6m 2s 253ms
+- Memory: 22560k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-3, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-10, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 18:59:39,849 INFO  report -  State of server report:
+- Uptime: 1h 7m 2s 263ms
+- Report period: 1h 7m 2s 263ms
+- Memory: 24106k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-3, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-10, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:00:39,864 INFO  report -  State of server report:
+- Uptime: 1h 8m 2s 278ms
+- Report period: 1h 8m 2s 278ms
+- Memory: 24106k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-3, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-10, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:01:39,867 INFO  report -  State of server report:
+- Uptime: 1h 9m 2s 281ms
+- Report period: 1h 9m 2s 281ms
+- Memory: 24889k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-3, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-10, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:02:39,870 INFO  report -  State of server report:
+- Uptime: 1h 10m 2s 284ms
+- Report period: 1h 10m 2s 284ms
+- Memory: 25686k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-3, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-10, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:03:39,882 INFO  report -  State of server report:
+- Uptime: 1h 11m 2s 296ms
+- Report period: 1h 11m 2s 296ms
+- Memory: 26439k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-3, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-10, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:04:39,883 INFO  report -  State of server report:
+- Uptime: 1h 12m 2s 297ms
+- Report period: 1h 12m 2s 297ms
+- Memory: 27218k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-3, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-10, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:05:39,883 INFO  report -  State of server report:
+- Uptime: 1h 13m 2s 297ms
+- Report period: 1h 13m 2s 297ms
+- Memory: 28015k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-3, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-10, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:06:39,892 INFO  report -  State of server report:
+- Uptime: 1h 14m 2s 306ms
+- Report period: 1h 14m 2s 306ms
+- Memory: 28015k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-4, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-11, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:07:39,899 INFO  report -  State of server report:
+- Uptime: 1h 15m 2s 313ms
+- Report period: 1h 15m 2s 313ms
+- Memory: 30225k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-12, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:08:39,914 INFO  report -  State of server report:
+- Uptime: 1h 16m 2s 328ms
+- Report period: 1h 16m 2s 328ms
+- Memory: 31021k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-12, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:09:39,919 INFO  report -  State of server report:
+- Uptime: 1h 17m 2s 333ms
+- Report period: 1h 17m 2s 333ms
+- Memory: 31021k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-12, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:10:39,929 INFO  report -  State of server report:
+- Uptime: 1h 18m 2s 343ms
+- Report period: 1h 18m 2s 343ms
+- Memory: 31021k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-12, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:11:39,942 INFO  report -  State of server report:
+- Uptime: 1h 19m 2s 356ms
+- Report period: 1h 19m 2s 356ms
+- Memory: 33350k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-12, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:12:39,945 INFO  report -  State of server report:
+- Uptime: 1h 20m 2s 359ms
+- Report period: 1h 20m 2s 359ms
+- Memory: 33350k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-12, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:13:39,948 INFO  report -  State of server report:
+- Uptime: 1h 21m 2s 362ms
+- Report period: 1h 21m 2s 362ms
+- Memory: 34130k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-7, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-12, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:14:39,963 INFO  report -  State of server report:
+- Uptime: 1h 22m 2s 377ms
+- Report period: 1h 22m 2s 377ms
+- Memory: 34922k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:15:39,977 INFO  report -  State of server report:
+- Uptime: 1h 23m 2s 391ms
+- Report period: 1h 23m 2s 391ms
+- Memory: 35675k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:16:39,977 INFO  report -  State of server report:
+- Uptime: 1h 24m 2s 391ms
+- Report period: 1h 24m 2s 391ms
+- Memory: 36455k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:17:39,993 INFO  report -  State of server report:
+- Uptime: 1h 25m 2s 407ms
+- Report period: 1h 25m 2s 407ms
+- Memory: 37248k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:18:40,005 INFO  report -  State of server report:
+- Uptime: 1h 26m 2s 419ms
+- Report period: 1h 26m 2s 419ms
+- Memory: 37248k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:19:40,008 INFO  report -  State of server report:
+- Uptime: 1h 27m 2s 422ms
+- Report period: 1h 27m 2s 422ms
+- Memory: 38001k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:20:40,015 INFO  report -  State of server report:
+- Uptime: 1h 28m 2s 429ms
+- Report period: 1h 28m 2s 429ms
+- Memory: 39573k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:21:40,039 INFO  report -  State of server report:
+- Uptime: 1h 29m 2s 453ms
+- Report period: 1h 29m 2s 453ms
+- Memory: 39573k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:22:40,055 INFO  report -  State of server report:
+- Uptime: 1h 30m 2s 469ms
+- Report period: 1h 30m 2s 469ms
+- Memory: 41106k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:23:40,056 INFO  report -  State of server report:
+- Uptime: 1h 31m 2s 470ms
+- Report period: 1h 31m 2s 470ms
+- Memory: 41902k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:24:40,056 INFO  report -  State of server report:
+- Uptime: 1h 32m 2s 470ms
+- Report period: 1h 32m 2s 470ms
+- Memory: 41902k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:25:40,058 INFO  report -  State of server report:
+- Uptime: 1h 33m 2s 472ms
+- Report period: 1h 33m 2s 472ms
+- Memory: 41902k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:26:40,071 INFO  report -  State of server report:
+- Uptime: 1h 34m 2s 485ms
+- Report period: 1h 34m 2s 485ms
+- Memory: 44235k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-5, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-8, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-13, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:27:40,086 INFO  report -  State of server report:
+- Uptime: 1h 35m 2s 500ms
+- Report period: 1h 35m 2s 500ms
+- Memory: 44235k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-6, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-9, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-15, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:28:40,101 INFO  report -  State of server report:
+- Uptime: 1h 36m 2s 515ms
+- Report period: 1h 36m 2s 515ms
+- Memory: 44235k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-7, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-9, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-16, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-06 19:29:40,134 INFO  report -  State of server report:
+- Uptime: 1h 37m 2s 548ms
+- Report period: 1h 37m 2s 548ms
+- Memory: 45019k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-7, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-9, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-16, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="89" key="DIALOG_Y_ORIGIN"/>
+		<item value="364" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="com.bull.cimero.pluginEditor.wizards.CimeroNewWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="CimeroEditor"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+	</section>
+</section>

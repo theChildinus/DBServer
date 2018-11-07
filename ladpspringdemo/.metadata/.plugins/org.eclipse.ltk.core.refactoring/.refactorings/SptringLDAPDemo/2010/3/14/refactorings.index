@@ -1,0 +1,18 @@
+1269760332609	Encapsulate field 'firstName'
+1269760453625	Encapsulate field 'LastName'
+1269760464062	Encapsulate field 'School'
+1269760514015	Encapsulate field 'Caption'
+1269760520687	Encapsulate field 'Id'
+1269761533328	Encapsulate field 'ladpTemplate'
+1269832511484	Encapsulate field 'cn'
+1269832549343	Encapsulate field 'sn'
+1269832555562	Encapsulate field 'description'
+1269832561312	Encapsulate field 'givenname'
+1269832568109	Encapsulate field 'mail'
+1269832572390	Encapsulate field 'manager'
+1269832578546	Encapsulate field 'uid'
+1269832586656	Encapsulate field 'userpassword'
+1269832888062	Encapsulate field 'ldapTemplate'
+1269844031781	Encapsulate field 'personDaoImpl'
+1270039396359	Delete element
+1270039398609	Delete element

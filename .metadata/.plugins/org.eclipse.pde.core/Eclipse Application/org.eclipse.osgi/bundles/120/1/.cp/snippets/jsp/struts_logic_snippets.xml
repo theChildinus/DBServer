@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <category id="category_1092662767793" initial_state="0" filters="*" label="Struts-Logic">
+        <description/>
+        <item id="item_1092662785098" label="&lt;logic:iterate ../&gt; tag" category="category_1092662767793">
+            <description/>
+            <content><![CDATA[<logic:iterate id="${id}" name="${name}" type="${type}" />]]></content>
+            <variable id="name_2" name="type" default="">
+                <description><![CDATA[Fully qualified Java class name of the element to be exposed through the JSP bean named from the id attribute. If not present, no type conversions will be performed. NOTE: The actual elements of the collection must be assignment-compatible with this class, or a request time ClassCastException will occur.]]></description>
+            </variable>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The name of a page scope JSP bean that will contain the current element of the collection on each iteration, if it is not null.]]></description>
+            </variable>
+            <variable id="name_3" name="name" default="">
+                <description><![CDATA[The name of the JSP bean containing the collection to be iterated (if property is not specified), or the JSP bean whose property getter returns the collection to be iterated (if property is specified).]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662845535" label="&lt;logic:redirect ../&gt; tag" category="category_1092662767793">
+            <description><![CDATA[Unnamed Template]]></description>
+            <content><![CDATA[<logic:redirect forward="${forward}" />]]></content>
+            <variable id="name_1" name="forward" default="">
+                <description><![CDATA[Logical name of a global ActionForward that contains the actual content-relative URI of the destination of this redirect. This URI may be dynamically modified by the inclusion of query parameters, as described in the tag description. You must specify exactly one of the forward attribute, the href attribute, the linkName  attribute, or the page attribute.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662885823" label="&lt;logic:empty ../&gt; tag" category="category_1092662767793">
+            <description/>
+            <content><![CDATA[<logic:empty name="${name}" />]]></content>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The variable to be compared is the JSP bean specified by this attribute, if property is not specified, or the value of the specified property of this bean, if property  is specified.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662934913" label="&lt;logic:notEmpty ../&gt; tag" category="category_1092662767793">
+            <description/>
+            <content><![CDATA[<logic:notEmpty name="${name}" />]]></content>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The variable to be compared is the JSP bean specified by this attribute, if property is not specified, or the value of the specified property of this bean, if property  is specified.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662967150" label="&lt;logic:present /&gt; tag" category="category_1092662767793">
+            <description/>
+            <content><![CDATA[<logic:present />]]></content>
+        </item>
+        <item id="item_1092662995350" label="&lt;logic:notPresent /&gt; tag" category="category_1092662767793">
+            <description/>
+            <content><![CDATA[<logic:notPresent />]]></content>
+        </item>
+        <item id="item_1092663012826" label="&lt;logic:equal ../&gt; tag" category="category_1092662767793">
+            <description/>
+            <content><![CDATA[<logic:equal name="${name}" value="${value}" />]]></content>
+            <variable id="name_2" name="name" default="">
+                <description><![CDATA[The variable to be compared is the JSP bean specified by this attribute, if property is not specified, or the value of the specified property of this bean, if property  is specified.]]></description>
+            </variable>
+            <variable id="name_1" name="value" default="">
+                <description><![CDATA[The constant value to which the variable, specified by other attribute(s) of this tag, will be compared.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092663117476" label="&lt;logic:notEqual ../&gt; tag" category="category_1092662767793">
+            <description/>
+            <content><![CDATA[<logic:notEqual name="${name}" value="${value}" />]]></content>
+            <variable id="name_2" name="value" default="">
+                <description><![CDATA[The constant value to which the variable, specified by other attribute(s) of this tag, will be compared.]]></description>
+            </variable>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The variable to be compared is the JSP bean specified by this attribute, if property is not specified, or the value of the specified property of this bean, if property  is specified.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092663161179" label="&lt;logic:lessEqual ../&gt; tag" category="category_1092662767793">
+            <description/>
+            <content><![CDATA[<logic:lessEqual name="${name}" value="${value}" />]]></content>
+            <variable id="name_2" name="value" default="">
+                <description><![CDATA[The constant value to which the variable, specified by other attribute(s) of this tag, will be compared.]]></description>
+            </variable>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The variable to be compared is the JSP bean specified by this attribute, if property is not specified, or the value of the specified property of this bean, if property  is specified.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092663212202" label="&lt;logic:lessThan ../&gt; tag" category="category_1092662767793">
+            <description/>
+            <content><![CDATA[<logic:lessThan name="${name}" value="${value}" />]]></content>
+            <variable id="name_2" name="value" default="">
+                <description><![CDATA[The constant value to which the variable, specified by other attribute(s) of this tag, will be compared.]]></description>
+            </variable>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The variable to be compared is the JSP bean specified by this attribute, if property is not specified, or the value of the specified property of this bean, if property  is specified.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092663270947" label="&lt;logic:greaterEqual ../&gt; tag" category="category_1092662767793">
+            <description/>
+            <content><![CDATA[<logic:greaterEqual name="${name}" value="${value}" />]]></content>
+            <variable id="name_2" name="value" default="">
+                <description><![CDATA[The constant value to which the variable, specified by other attribute(s) of this tag, will be compared.]]></description>
+            </variable>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The variable to be compared is the JSP bean specified by this attribute, if property is not specified, or the value of the specified property of this bean, if property  is specified.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092663325555" label="&lt;logic:greaterThan ../&gt; tag" category="category_1092662767793">
+            <description/>
+            <content><![CDATA[<logic:greaterThan name="${name}" value="${value}" />]]></content>
+            <variable id="name_2" name="value" default="">
+                <description><![CDATA[The constant value to which the variable, specified by other attribute(s) of this tag, will be compared.]]></description>
+            </variable>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The variable to be compared is the JSP bean specified by this attribute, if property is not specified, or the value of the specified property of this bean, if property  is specified.]]></description>
+            </variable>
+        </item>
+    </category>
+</snippets>

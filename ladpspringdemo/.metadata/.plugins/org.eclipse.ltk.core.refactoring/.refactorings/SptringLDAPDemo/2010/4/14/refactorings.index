@@ -1,0 +1,8 @@
+1270082660718	Encapsulate field 'serviceName'
+1270082669953	Encapsulate field 'serviceUrl'
+1270082679093	Encapsulate field 'returnType'
+1270082684031	Encapsulate field 'serviceParameters'
+1270084390031	Encapsulate field 'ldapTemplate'
+1270084942875	Infer generic type arguments
+1270084958390	Infer generic type arguments
+1270086240390	Delete element

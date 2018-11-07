@@ -1,0 +1,124 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;6.&nbsp;Transaction Support</title><link rel="stylesheet" href="css/html.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.72.0"><link rel="start" href="index.html" title="Spring LDAP - Reference Documentation"><link rel="up" href="index.html" title="Spring LDAP - Reference Documentation"><link rel="prev" href="processor.html" title="Chapter&nbsp;5.&nbsp;Processing the DirContext"><link rel="next" href="simple.html" title="Chapter&nbsp;7.&nbsp;Java 5 Support"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div xmlns:fo="http://www.w3.org/1999/XSL/Format" style="background-color:white;border:none;height:73px;border:1px solid black;"><a style="border:none;" href="http://static.springframework.org/spring-ldap/site/" title="The Spring Framework - Spring LDAP"><img style="border:none;" src="images/xdev-spring_logo.jpg"></a><a style="border:none;" href="http://www.springsource.com/" title="SpringSource"><img style="border:none;position:absolute;padding-top:5px;right:42px;" src="images/s2_box_logo.png"></a></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="transactions"></a>Chapter&nbsp;6.&nbsp;Transaction Support</h2></div></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="transactions-intro"></a>6.1.&nbsp;Introduction</h2></div></div></div><p>Programmers used to working with relational databases coming to the LDAP
+    world often express surprise to the fact that there is no notion of transactions.
+    It is not specified in the protocol, and thus no servers support it. 
+    Recognizing that this may be a major problem, Spring LDAP provides support for client-side, 
+    compensating transactions on LDAP resources.</p><p>LDAP transaction support is provided by <code class="literal">ContextSourceTransactionManager</code>, a
+	<code class="literal">PlatformTransactionManager</code> implementation that manages Spring transaction
+	support for LDAP operations. Along with its collaborators it keeps track of the LDAP operations
+	performed in a transaction, making record of the state before each operation and taking steps to 
+	restore the initial state should the transaction need to be rolled back.</p><p>In addition to the actual transaction management, Spring LDAP transaction support also
+    makes sure that the same <code class="literal">DirContext</code> instance will be used throughout the same transaction,
+    i.e. the <code class="literal">DirContext</code> will not actually be closed until the transaction is finished,
+    allowing for more efficient resources usage.</p><p>
+	</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3>It is important to note that while the approach used by Spring LDAP to provide transaction support
+	is sufficient for many cases it is by no means "real" transactions in the traditional sense.
+	The server is completely unaware of the transactions, so e.g. if the connection is broken there will 
+	be no hope to rollback the transaction. While this should be carefully considered it should also be noted
+	that the alternative will be to operate without any transaction support whatsoever; this is pretty much
+	as good as it gets.</div><p>
+	</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3>The client side transaction support will add some overhead in addition to the work required
+	by the original operations. While this overhead should not be something to worry about in most cases,
+	if your application will not perform several LDAP operations within the same
+	transaction (e.g. a <code class="literal">modifyAttributes</code> followed by a <code class="literal">rebind</code>), or
+	if transaction synchronization with a JDBC data source is not required (see below) there will be nothing to gain
+	by using the LDAP transaction support.</div><p>
+    </p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="transactions-configuration"></a>6.2.&nbsp;Configuration</h2></div></div></div><p>
+    Configuring Spring LDAP transactions should look very familiar if you're used to configuring Spring transactions.
+    You will create a <code class="literal">TransactionManager</code> instance and wrap your target object using a
+    <code class="literal">TransactionProxyFactoryBean</code>. In addition to this, you will also need to wrap your
+    <code class="literal">ContextSource</code> in a <code class="literal">TransactionAwareContextSourceProxy</code>.
+    </p><div class="informalexample"><pre class="programlisting">&lt;beans&gt;
+   ...
+   &lt;bean id="contextSourceTarget" class="org.springframework.ldap.core.support.LdapContextSource"&gt;
+      &lt;property name="url" value="ldap://localhost:389" /&gt;
+      &lt;property name="base" value="dc=example,dc=com" /&gt;
+      &lt;property name="userDn" value="cn=Manager" /&gt;
+      &lt;property name="password" value="secret" /&gt;
+   &lt;/bean&gt;
+
+   &lt;bean id="contextSource" 
+            class="org.springframework.ldap.transaction.compensating.manager.TransactionAwareContextSourceProxy"&gt;
+      &lt;constructor-arg ref="contextSourceTarget" /&gt;
+   &lt;/bean&gt;
+   
+   &lt;bean id="ldapTemplate" class="org.springframework.ldap.core.LdapTemplate"&gt;
+      &lt;constructor-arg ref="contextSource" /&gt;
+   &lt;/bean&gt;
+   
+   &lt;bean id="transactionManager" 
+            class="org.springframework.ldap.transaction.compensating.manager.ContextSourceTransactionManager"&gt;
+      &lt;constructor-arg ref="contextSource" /&gt;
+   &lt;/bean&gt;
+
+   &lt;bean id="myDataAccessObjectTarget" class="com.example.MyDataAccessObject"&gt;
+      &lt;property name="ldapTemplate" ref="ldapTemplate" /&gt;
+   &lt;/bean&gt;
+   
+   &lt;bean id="myDataAccessObject" 
+            class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"&gt;
+      &lt;property name="transactionManager" ref="transactionManager" /&gt;
+      &lt;property name="target" ref="myDataAccessObjectTarget" /&gt;
+      &lt;property name="transactionAttributes"&gt;
+         &lt;props&gt;
+            &lt;prop key="*"&gt;PROPAGATION_REQUIRES_NEW&lt;/prop&gt;
+         &lt;/props&gt;
+      &lt;/property&gt;
+   &lt;/bean&gt;
+   ...</pre></div><p>
+    In a real world example you would probably apply the transactions on the service object level
+    rather than the DAO level; the above serves as an example to demonstrate the general idea.
+    </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3>You'll notice that the actual <code class="literal">ContextSource</code> and DAO instances get ids with a 
+    "Target" suffix. The beans you will actually refer to are the Proxies that are created 
+    around the targets; <code class="literal">contextSource</code> and <code class="literal">myDataAccessObject</code></div><p>
+    </p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="jdbc-transaction-integration"></a>6.3.&nbsp;JDBC Transaction Integration</h2></div></div></div><p>A common use case when working against LDAP is that some of the data is stored in the LDAP tree, but
+    other data is stored in a relational database. In this case, transaction support becomes even more important,
+    since the update of the different resources should be synchronized.</p><p>While actual XA transactions is not supported, support is provided to conceptually wrap JDBC and LDAP
+    access within the same transaction using the <code class="literal">ContextSourceAndDataSourceTransactionManager</code>.
+    A <code class="literal">DataSource</code> and a <code class="literal">ContextSource</code> is supplied to the 
+    <code class="literal">ContextSourceAndDataSourceTransactionManager</code>, which will then manage the two transactions,
+    virtually as if they were one. When performing a commit, the LDAP part of the operation will always
+    be performed first, allowing both transactions to be rolled back should the LDAP commit fail. The JDBC
+    part of the transaction is managed exactly as in <code class="literal">DataSourceTransactionManager</code>, except that
+    nested transactions is not supported.
+    </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3>Once again it should be noted that the provided support is all client side. The wrapped transaction is not 
+    an XA transaction. No two-phase as such commit is performed, as the LDAP server will be unable to vote on its outcome.
+    Once again, however, for the majority of cases the supplied support will be sufficient.</div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="compensating-transactions-explained"></a>6.4.&nbsp;LDAP Compensating Transactions Explained</h2></div></div></div><p>Spring LDAP manages compensating transactions by making record of the state in the LDAP tree
+  	before each modifying operation (<code class="literal">bind</code>, <code class="literal">unbind</code>, <code class="literal">rebind</code>, 
+  	<code class="literal">modifyAttributes</code>, and <code class="literal">rename</code>).</p><p>This enables the system
+  	to perform compensating operations should the transaction need to be rolled back. In many cases the
+  	compensating operation is pretty straightforward. E.g. the compensating rollback operation for a 
+  	<code class="literal">bind</code> operation will quite obviously be to unbind the entry. Other operations however require
+  	a different, more complicated approach because of some particular characteristics of LDAP databases. Specifically,
+  	it is not always possible to get the values of all <code class="literal">Attributes</code> of an entry, making the above
+  	strategy insufficient for e.g. an <code class="literal">unbind</code> operation.</p><p>This is why each modifying operation performed within a Spring LDAP managed transaction is internally
+  	split up in four distinct operations - a recording operation, a preparation operation, a commit operation, 
+  	and a rollback operation. The specifics for each LDAP operation is described in the table below:</p><div class="table"><a name="d0e1486"></a><p class="title"><b>Table&nbsp;6.1.&nbsp;</b></p><div class="table-contents"><table border="1"><colgroup><col align="left"><col align="left"><col align="left"><col align="left"><col align="left"></colgroup><thead><tr><th align="left">LDAP Operation</th><th align="left">Recording</th><th align="left">Preparation</th><th align="left">Commit</th><th align="left">Rollback</th></tr></thead><tbody><tr><td align="left"><code class="literal">bind</code></td><td align="left">Make record of the DN of the entry to bind.</td><td align="left">Bind the entry.</td><td align="left">No operation.</td><td align="left">Unbind the entry using the recorded DN.</td></tr><tr><td align="left"><code class="literal">rename</code></td><td align="left">Make record of the original and target DN.</td><td align="left">Rename the entry.</td><td align="left">No operation.</td><td align="left">Rename the entry back to its original DN.</td></tr><tr><td align="left"><code class="literal">unbind</code></td><td align="left">Make record of the original DN and calculate a temporary DN.</td><td align="left">Rename the entry to the temporary location.</td><td align="left">Unbind the temporary entry.</td><td align="left">Rename the entry from the temporary location back to its original DN.</td></tr><tr><td align="left"><code class="literal">rebind</code></td><td align="left">Make record of the original DN and the new <code class="literal">Attributes</code>, and calculate a temporary DN.</td><td align="left">Rename the entry to a temporary location.</td><td align="left">Bind the new <code class="literal">Attributes</code> at the original DN, and unbind the original entry
+	      from its temporary location.</td><td align="left">Rename the entry from the temporary location back to its original DN.</td></tr><tr><td align="left"><code class="literal">modifyAttributes</code></td><td align="left">Make record of the DN of the entry to modify and calculate compensating <code class="literal">ModificationItem</code>s
+	      for the modifications to be done.</td><td align="left">Perform the <code class="literal">modifyAttributes</code> operation.</td><td align="left">No operation.</td><td align="left">Perform a <code class="literal">modifyAttributes</code> operation using the calculated compensating
+	      <code class="literal">ModificationItem</code>s.</td></tr></tbody></table></div></div><br class="table-break"><p>A more detailed description of the internal workings of the Spring LDAP transaction support is available in the
+	javadocs.</p><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="renaming-strategies"></a>6.4.1.&nbsp;Renaming Strategies</h3></div></div></div>
+	As described in the table above, the transaction management of some operations require the original entry affected
+	by the operation to be temporarily renamed before the actual modification can be made in the commit.
+	The manner in which the temporary DN of the entry is calculated is managed by a <code class="literal">TempEntryRenamingStrategy</code>
+	supplied to the <code class="literal">ContextSourceTransactionManager</code>. Two implementations are supplied with Spring LDAP,
+	but if specific behaviour is required a custom implementation can easily be implemented by the user. The
+	provided <code class="literal">TempEntryRenamingStrategy</code> implementations are:
+	<div class="itemizedlist"><ul type="disc"><li><p><code class="literal">DefaultTempEntryRenamingStrategy</code> (the default). Adds a suffix to the least significant
+	  part of the entry DN. E.g. for the DN <code class="literal">cn=john doe, ou=users</code>, this strategy would return the
+	  temporary DN <code class="literal">cn=john doe_temp, ou=users</code>. The suffix is configurable using the <code class="literal">tempSuffix</code>
+	  property</p></li><li><p><code class="literal">DifferentSubtreeTempEntryRenamingStrategy</code>. Takes the least significant part of the DN
+	  and appends a subtree DN to this. This makes all temporary entries be placed at a specific location in the LDAP tree.
+	  The temporary subtree DN is configured using the <code class="literal">subtreeNode</code> property. E.g., if
+	  <code class="literal">subtreeNode</code> is <code class="literal">ou=tempEntries</code> and the original DN of the entry is
+	  <code class="literal">cn=john doe, ou=users</code>, the temporary DN will be <code class="literal">cn=john doe, ou=tempEntries</code>.
+	  Note that the configured subtree node needs to be present in the LDAP tree.</p></li></ul></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3>
+	  There are some situations where the <code class="literal">DefaultTempEntryRenamingStrategy</code> will not work. E.g. if your are planning
+	  to do recursive deletes you'll need to use <code class="literal">DifferentSubtreeTempEntryRenamingStrategy</code>. This is because
+	  the recursive delete operation actually consists of a depth-first delete of each node in the sub tree individually.
+	  Since it is not allowed to rename an entry that has any children, and <code class="literal">DefaultTempEntryRenamingStrategy</code> would
+	  leave each node in the same subtree (with a different name) in stead of actually removing it, this operation would fail.
+	  When in doubt, use <code class="literal">DifferentSubtreeTempEntryRenamingStrategy</code>. 
+	</div></div></div></div><div xmlns:fo="http://www.w3.org/1999/XSL/Format" class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="processor.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="simple.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;5.&nbsp;Processing the DirContext&nbsp;</td><td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.jayway.com/" title="Jayway">Sponsored by Jayway
+                                        </a></span></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;7.&nbsp;Java 5 Support</td></tr></table></div></body></html>

@@ -1,0 +1,297 @@
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Nov 05 16:53:25.414 [initandlisten] MongoDB starting : pid=11692 port=27017 dbpath=E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data 32-bit host=DESKTOP-0O88Q0H
+Mon Nov 05 16:53:25.417 [initandlisten] 
+Mon Nov 05 16:53:25.417 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+Mon Nov 05 16:53:25.417 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+Mon Nov 05 16:53:25.417 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+Mon Nov 05 16:53:25.417 [initandlisten] 
+Mon Nov 05 16:53:25.417 [initandlisten] db version v2.4.9
+Mon Nov 05 16:53:25.417 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Mon Nov 05 16:53:25.417 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=0, build=6002, platform=2, service_pack='Service Pack 2') BOOST_LIB_VERSION=1_49
+Mon Nov 05 16:53:25.417 [initandlisten] allocator: system
+Mon Nov 05 16:53:25.417 [initandlisten] options: { config: ".\mongodb.conf", dbpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data", journal: "true", logappend: "true", logpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\logs\mongodb.log", port: 27017, quiet: "true" }
+Mon Nov 05 16:53:25.496 [initandlisten] journal dir=E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data\journal
+Mon Nov 05 16:53:25.518 [initandlisten] recover : no journal files present, no recovery needed
+Mon Nov 05 16:53:25.624 [FileAllocator] allocating new datafile E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data\local.ns, filling with zeroes...
+Mon Nov 05 16:53:25.624 [FileAllocator] creating directory E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data\_tmp
+Mon Nov 05 16:53:25.670 [FileAllocator] done allocating datafile E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data\local.ns, size: 16MB,  took 0.044 secs
+Mon Nov 05 16:53:25.671 [FileAllocator] allocating new datafile E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data\local.0, filling with zeroes...
+Mon Nov 05 16:53:25.721 [FileAllocator] done allocating datafile E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data\local.0, size: 16MB,  took 0.047 secs
+Mon Nov 05 16:53:25.723 [initandlisten] waiting for connections on port 27017
+Mon Nov 05 16:53:25.723 [websvr] admin web console waiting for connections on port 28017
+Mon Nov 05 16:53:47.283 Ctrl-C signal
+Mon Nov 05 16:53:47.283 [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+Mon Nov 05 16:53:47.283 [consoleTerminate] now exiting
+Mon Nov 05 16:53:47.283 dbexit: 
+Mon Nov 05 16:53:47.284 [consoleTerminate] shutdown: going to close listening sockets...
+Mon Nov 05 16:53:47.284 [consoleTerminate] closing listening socket: 708
+Mon Nov 05 16:53:47.284 [consoleTerminate] closing listening socket: 712
+Mon Nov 05 16:53:47.284 [consoleTerminate] shutdown: going to flush diaglog...
+Mon Nov 05 16:53:47.284 [consoleTerminate] shutdown: going to close sockets...
+Mon Nov 05 16:53:47.284 [consoleTerminate] shutdown: waiting for fs preallocator...
+Mon Nov 05 16:53:47.284 [consoleTerminate] shutdown: lock for final commit...
+Mon Nov 05 16:53:47.284 [consoleTerminate] shutdown: final commit...
+Mon Nov 05 16:53:47.515 [consoleTerminate] shutdown: closing all files...
+Mon Nov 05 16:53:47.515 [consoleTerminate] closeAllFiles() finished
+Mon Nov 05 16:53:47.515 [consoleTerminate] journalCleanup...
+Mon Nov 05 16:53:47.516 [consoleTerminate] removeJournalFiles
+Mon Nov 05 16:53:47.519 [consoleTerminate] shutdown: removing fs lock...
+Mon Nov 05 16:53:47.521 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Nov 05 16:56:24.586 [initandlisten] MongoDB starting : pid=20212 port=27017 dbpath=E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data 32-bit host=DESKTOP-0O88Q0H
+Mon Nov 05 16:56:24.588 [initandlisten] 
+Mon Nov 05 16:56:24.588 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+Mon Nov 05 16:56:24.588 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+Mon Nov 05 16:56:24.588 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+Mon Nov 05 16:56:24.588 [initandlisten] 
+Mon Nov 05 16:56:24.588 [initandlisten] db version v2.4.9
+Mon Nov 05 16:56:24.588 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Mon Nov 05 16:56:24.588 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=0, build=6002, platform=2, service_pack='Service Pack 2') BOOST_LIB_VERSION=1_49
+Mon Nov 05 16:56:24.588 [initandlisten] allocator: system
+Mon Nov 05 16:56:24.588 [initandlisten] options: { config: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\etc\mongodb.conf", dbpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data", journal: "true", logappend: "true", logpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\logs\mongodb.log", port: 27017, quiet: "true" }
+Mon Nov 05 16:56:24.620 [initandlisten] journal dir=E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data\journal
+Mon Nov 05 16:56:24.621 [initandlisten] recover : no journal files present, no recovery needed
+Mon Nov 05 16:56:24.761 [initandlisten] waiting for connections on port 27017
+Mon Nov 05 16:56:24.763 [websvr] admin web console waiting for connections on port 28017
+Mon Nov 05 16:56:26.149 Ctrl-C signal
+Mon Nov 05 16:56:26.149 [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+Mon Nov 05 16:56:26.149 [consoleTerminate] now exiting
+Mon Nov 05 16:56:26.149 dbexit: 
+Mon Nov 05 16:56:26.149 [consoleTerminate] shutdown: going to close listening sockets...
+Mon Nov 05 16:56:26.149 [consoleTerminate] closing listening socket: 696
+Mon Nov 05 16:56:26.149 [consoleTerminate] closing listening socket: 712
+Mon Nov 05 16:56:26.149 [consoleTerminate] shutdown: going to flush diaglog...
+Mon Nov 05 16:56:26.149 [consoleTerminate] shutdown: going to close sockets...
+Mon Nov 05 16:56:26.149 [consoleTerminate] shutdown: waiting for fs preallocator...
+Mon Nov 05 16:56:26.149 [consoleTerminate] shutdown: lock for final commit...
+Mon Nov 05 16:56:26.149 [consoleTerminate] shutdown: final commit...
+Mon Nov 05 16:56:26.185 [consoleTerminate] shutdown: closing all files...
+Mon Nov 05 16:56:26.185 [consoleTerminate] closeAllFiles() finished
+Mon Nov 05 16:56:26.185 [consoleTerminate] journalCleanup...
+Mon Nov 05 16:56:26.186 [consoleTerminate] removeJournalFiles
+Mon Nov 05 16:56:26.188 [consoleTerminate] shutdown: removing fs lock...
+Mon Nov 05 16:56:26.190 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Nov 05 17:04:07.490 Trying to start Windows service 'MongoDB'
+Mon Nov 05 17:04:07.490 Service running
+Mon Nov 05 17:04:07.505 [initandlisten] MongoDB starting : pid=1440 port=27017 dbpath=E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data 32-bit host=DESKTOP-0O88Q0H
+Mon Nov 05 17:04:07.505 [initandlisten] 
+Mon Nov 05 17:04:07.505 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+Mon Nov 05 17:04:07.505 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+Mon Nov 05 17:04:07.505 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+Mon Nov 05 17:04:07.505 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+Mon Nov 05 17:04:07.505 [initandlisten] 
+Mon Nov 05 17:04:07.505 [initandlisten] db version v2.4.9
+Mon Nov 05 17:04:07.505 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Mon Nov 05 17:04:07.505 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=0, build=6002, platform=2, service_pack='Service Pack 2') BOOST_LIB_VERSION=1_49
+Mon Nov 05 17:04:07.505 [initandlisten] allocator: system
+Mon Nov 05 17:04:07.505 [initandlisten] options: { dbpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data", logappend: true, logpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\logs\mongodb.log", service: true }
+Mon Nov 05 17:04:07.599 [initandlisten] waiting for connections on port 27017
+Mon Nov 05 17:04:07.599 [websvr] admin web console waiting for connections on port 28017
+Mon Nov 05 17:05:07.618 [PeriodicTask::Runner] task: DBConnectionPool-cleaner took: 21ms
+Mon Nov 05 17:07:50.418 [initandlisten] connection accepted from 127.0.0.1:2412 #1 (1 connection now open)
+Mon Nov 05 17:07:50.419 [initandlisten] connection accepted from 127.0.0.1:2413 #2 (2 connections now open)
+Mon Nov 05 17:07:50.419 [conn1] end connection 127.0.0.1:2412 (1 connection now open)
+Mon Nov 05 17:07:50.658 [initandlisten] connection accepted from 127.0.0.1:2414 #3 (2 connections now open)
+Mon Nov 05 17:07:50.810 [conn2] end connection 127.0.0.1:2413 (1 connection now open)
+Mon Nov 05 17:10:44.687 [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+Mon Nov 05 17:10:44.687 [serviceShutdown] now exiting
+Mon Nov 05 17:10:44.687 dbexit: 
+Mon Nov 05 17:10:44.687 [serviceShutdown] shutdown: going to close listening sockets...
+Mon Nov 05 17:10:44.687 [serviceShutdown] closing listening socket: 684
+Mon Nov 05 17:10:44.687 [serviceShutdown] closing listening socket: 696
+Mon Nov 05 17:10:44.687 [serviceShutdown] shutdown: going to flush diaglog...
+Mon Nov 05 17:10:44.687 [serviceShutdown] shutdown: going to close sockets...
+Mon Nov 05 17:10:44.687 [serviceShutdown] shutdown: waiting for fs preallocator...
+Mon Nov 05 17:10:44.687 [serviceShutdown] shutdown: closing all files...
+Mon Nov 05 17:10:44.687 [serviceShutdown] closeAllFiles() finished
+Mon Nov 05 17:10:44.687 [serviceShutdown] shutdown: removing fs lock...
+Mon Nov 05 17:10:44.718 [conn3] end connection 127.0.0.1:2414 (0 connections now open)
+Mon Nov 05 17:10:44.718 [initandlisten] now exiting
+Mon Nov 05 17:10:44.718 dbexit: ; exiting immediately
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Nov 05 17:18:18.210 Trying to start Windows service 'MongoDB'
+Mon Nov 05 17:18:18.210 Service running
+Mon Nov 05 17:18:18.210 [initandlisten] MongoDB starting : pid=11756 port=3333 dbpath=E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data 32-bit host=DESKTOP-0O88Q0H
+Mon Nov 05 17:18:18.210 [initandlisten] 
+Mon Nov 05 17:18:18.210 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+Mon Nov 05 17:18:18.210 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+Mon Nov 05 17:18:18.210 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+Mon Nov 05 17:18:18.210 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+Mon Nov 05 17:18:18.210 [initandlisten] 
+Mon Nov 05 17:18:18.210 [initandlisten] db version v2.4.9
+Mon Nov 05 17:18:18.210 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Mon Nov 05 17:18:18.210 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=0, build=6002, platform=2, service_pack='Service Pack 2') BOOST_LIB_VERSION=1_49
+Mon Nov 05 17:18:18.210 [initandlisten] allocator: system
+Mon Nov 05 17:18:18.210 [initandlisten] options: { dbpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data", logappend: true, logpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\logs\mongodb.log", port: 3333, service: true }
+Mon Nov 05 17:18:18.273 [initandlisten] waiting for connections on port 3333
+Mon Nov 05 17:18:18.273 [websvr] admin web console waiting for connections on port 4333
+Mon Nov 05 17:18:27.004 [initandlisten] connection accepted from 127.0.0.1:2441 #1 (1 connection now open)
+Mon Nov 05 17:18:27.005 [initandlisten] connection accepted from 127.0.0.1:2442 #2 (2 connections now open)
+Mon Nov 05 17:18:27.022 [conn1] end connection 127.0.0.1:2441 (1 connection now open)
+Mon Nov 05 17:18:27.254 [initandlisten] connection accepted from 127.0.0.1:2444 #3 (2 connections now open)
+Mon Nov 05 17:18:27.267 [conn2] end connection 127.0.0.1:2442 (1 connection now open)
+Mon Nov 05 17:18:37.305 [conn3] end connection 127.0.0.1:2444 (0 connections now open)
+Mon Nov 05 17:18:56.802 [initandlisten] connection accepted from 127.0.0.1:2484 #4 (1 connection now open)
+Mon Nov 05 17:18:57.468 [conn4] end connection 127.0.0.1:2484 (0 connections now open)
+Mon Nov 05 17:21:54.950 [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+Mon Nov 05 17:21:54.950 [serviceShutdown] now exiting
+Mon Nov 05 17:21:54.950 dbexit: 
+Mon Nov 05 17:21:54.950 [serviceShutdown] shutdown: going to close listening sockets...
+Mon Nov 05 17:21:54.950 [serviceShutdown] closing listening socket: 692
+Mon Nov 05 17:21:54.950 [serviceShutdown] closing listening socket: 696
+Mon Nov 05 17:21:54.950 [serviceShutdown] shutdown: going to flush diaglog...
+Mon Nov 05 17:21:54.950 [serviceShutdown] shutdown: going to close sockets...
+Mon Nov 05 17:21:54.950 [serviceShutdown] shutdown: waiting for fs preallocator...
+Mon Nov 05 17:21:54.950 [serviceShutdown] shutdown: closing all files...
+Mon Nov 05 17:21:54.951 [serviceShutdown] closeAllFiles() finished
+Mon Nov 05 17:21:54.951 [serviceShutdown] shutdown: removing fs lock...
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Nov 05 17:22:34.170 Trying to start Windows service 'MongoDB'
+Mon Nov 05 17:22:34.173 Service running
+Mon Nov 05 17:22:34.179 [initandlisten] MongoDB starting : pid=18924 port=27017 dbpath=E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data 32-bit host=DESKTOP-0O88Q0H
+Mon Nov 05 17:22:34.179 [initandlisten] 
+Mon Nov 05 17:22:34.179 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+Mon Nov 05 17:22:34.179 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+Mon Nov 05 17:22:34.179 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+Mon Nov 05 17:22:34.179 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+Mon Nov 05 17:22:34.179 [initandlisten] 
+Mon Nov 05 17:22:34.179 [initandlisten] db version v2.4.9
+Mon Nov 05 17:22:34.179 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Mon Nov 05 17:22:34.179 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=0, build=6002, platform=2, service_pack='Service Pack 2') BOOST_LIB_VERSION=1_49
+Mon Nov 05 17:22:34.179 [initandlisten] allocator: system
+Mon Nov 05 17:22:34.179 [initandlisten] options: { dbpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data", logappend: true, logpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\logs\mongodb.log", service: true }
+Mon Nov 05 17:22:34.231 [websvr] admin web console waiting for connections on port 28017
+Mon Nov 05 17:22:34.231 [initandlisten] waiting for connections on port 27017
+Tue Nov 06 11:23:54.722 [initandlisten] connection accepted from 127.0.0.1:2999 #1 (1 connection now open)
+Tue Nov 06 11:24:44.823 [conn1] end connection 127.0.0.1:2999 (0 connections now open)
+Tue Nov 06 11:26:58.975 [initandlisten] connection accepted from 127.0.0.1:3024 #2 (1 connection now open)
+Tue Nov 06 11:27:35.474 [conn2] end connection 127.0.0.1:3024 (0 connections now open)
+Tue Nov 06 16:00:35.544 [initandlisten] connection accepted from 127.0.0.1:3931 #3 (1 connection now open)
+Tue Nov 06 16:00:35.552 [initandlisten] connection accepted from 127.0.0.1:3932 #4 (2 connections now open)
+Tue Nov 06 16:00:35.552 [initandlisten] connection accepted from 127.0.0.1:3933 #5 (3 connections now open)
+Tue Nov 06 16:00:35.561 [conn3] end connection 127.0.0.1:3931 (2 connections now open)
+Tue Nov 06 16:00:35.561 [conn4] end connection 127.0.0.1:3932 (1 connection now open)
+Tue Nov 06 16:00:35.561 [conn5] end connection 127.0.0.1:3933 (0 connections now open)
+Tue Nov 06 16:00:55.732 [initandlisten] connection accepted from 127.0.0.1:3936 #6 (1 connection now open)
+Tue Nov 06 16:00:55.732 [initandlisten] connection accepted from 127.0.0.1:3937 #7 (2 connections now open)
+Tue Nov 06 16:00:55.733 [initandlisten] connection accepted from 127.0.0.1:3938 #8 (3 connections now open)
+Tue Nov 06 16:00:55.737 [conn6] end connection 127.0.0.1:3936 (2 connections now open)
+Tue Nov 06 16:00:55.737 [conn7] end connection 127.0.0.1:3937 (1 connection now open)
+Tue Nov 06 16:00:55.737 [conn8] end connection 127.0.0.1:3938 (0 connections now open)
+Tue Nov 06 16:21:33.630 [initandlisten] connection accepted from 127.0.0.1:10661 #9 (1 connection now open)
+Tue Nov 06 16:21:33.830 [initandlisten] connection accepted from 127.0.0.1:10662 #10 (2 connections now open)
+Tue Nov 06 16:21:45.477 [initandlisten] connection accepted from 127.0.0.1:10663 #11 (3 connections now open)
+Tue Nov 06 16:21:45.543 [initandlisten] connection accepted from 127.0.0.1:10664 #12 (4 connections now open)
+Tue Nov 06 16:21:49.478 [initandlisten] connection accepted from 127.0.0.1:10667 #13 (5 connections now open)
+Tue Nov 06 16:21:49.548 [initandlisten] connection accepted from 127.0.0.1:10668 #14 (6 connections now open)
+Tue Nov 06 16:21:51.882 [conn11] end connection 127.0.0.1:10663 (5 connections now open)
+Tue Nov 06 16:21:51.882 [conn12] end connection 127.0.0.1:10664 (5 connections now open)
+Tue Nov 06 16:22:08.174 [initandlisten] connection accepted from 127.0.0.1:10670 #15 (5 connections now open)
+Tue Nov 06 16:22:08.247 [initandlisten] connection accepted from 127.0.0.1:10672 #16 (6 connections now open)
+Tue Nov 06 16:22:31.693 [initandlisten] connection accepted from 127.0.0.1:10676 #17 (7 connections now open)
+Tue Nov 06 16:22:31.757 [initandlisten] connection accepted from 127.0.0.1:10677 #18 (8 connections now open)
+Tue Nov 06 16:22:36.146 [conn17] end connection 127.0.0.1:10676 (7 connections now open)
+Tue Nov 06 16:22:36.147 [conn18] end connection 127.0.0.1:10677 (6 connections now open)
+Tue Nov 06 16:26:34.312 [initandlisten] connection accepted from 127.0.0.1:10683 #19 (7 connections now open)
+Tue Nov 06 16:26:41.642 [conn19] end connection 127.0.0.1:10683 (6 connections now open)
+Tue Nov 06 16:39:20.656 [conn13] end connection 127.0.0.1:10667 (5 connections now open)
+Tue Nov 06 16:39:20.657 [conn14] end connection 127.0.0.1:10668 (4 connections now open)
+Tue Nov 06 16:39:20.658 [conn15] end connection 127.0.0.1:10670 (3 connections now open)
+Tue Nov 06 16:39:20.660 [conn16] end connection 127.0.0.1:10672 (2 connections now open)
+Tue Nov 06 16:39:20.766 [conn9] end connection 127.0.0.1:10661 (1 connection now open)
+Tue Nov 06 16:39:20.766 [conn10] end connection 127.0.0.1:10662 (0 connections now open)
+Tue Nov 06 16:47:52.435 CTRL_SHUTDOWN_EVENT signal
+Tue Nov 06 16:47:52.435 [consoleTerminate] got CTRL_SHUTDOWN_EVENT, will terminate after current cmd ends
+Tue Nov 06 16:47:52.591 [consoleTerminate] now exiting
+Tue Nov 06 16:47:52.591 dbexit: 
+Tue Nov 06 16:47:52.591 [consoleTerminate] shutdown: going to close listening sockets...
+Tue Nov 06 16:47:52.591 [consoleTerminate] closing listening socket: 692
+Tue Nov 06 16:47:52.591 [consoleTerminate] closing listening socket: 700
+Tue Nov 06 16:47:52.591 [consoleTerminate] shutdown: going to flush diaglog...
+Tue Nov 06 16:47:52.591 [consoleTerminate] shutdown: going to close sockets...
+Tue Nov 06 16:47:52.607 [consoleTerminate] shutdown: waiting for fs preallocator...
+Tue Nov 06 16:47:52.607 [consoleTerminate] shutdown: closing all files...
+Tue Nov 06 16:47:52.623 [consoleTerminate] closeAllFiles() finished
+Tue Nov 06 16:47:52.623 [consoleTerminate] shutdown: removing fs lock...
+Tue Nov 06 16:47:52.623 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Nov 06 16:49:19.395 Trying to start Windows service 'MongoDB'
+Tue Nov 06 16:49:19.395 Service running
+Tue Nov 06 16:49:19.942 [initandlisten] MongoDB starting : pid=3864 port=27017 dbpath=E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data 32-bit host=DESKTOP-0O88Q0H
+Tue Nov 06 16:49:19.942 [initandlisten] 
+Tue Nov 06 16:49:19.942 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+Tue Nov 06 16:49:19.942 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+Tue Nov 06 16:49:19.942 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+Tue Nov 06 16:49:19.942 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+Tue Nov 06 16:49:19.942 [initandlisten] 
+Tue Nov 06 16:49:19.942 [initandlisten] db version v2.4.9
+Tue Nov 06 16:49:19.942 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Tue Nov 06 16:49:19.942 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=0, build=6002, platform=2, service_pack='Service Pack 2') BOOST_LIB_VERSION=1_49
+Tue Nov 06 16:49:19.942 [initandlisten] allocator: system
+Tue Nov 06 16:49:20.488 [initandlisten] options: { dbpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data", logappend: true, logpath: "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\logs\mongodb.log", service: true }
+Tue Nov 06 16:49:26.192 [initandlisten] command local.$cmd command: { create: "startup_log", size: 10485760, capped: true } ntoreturn:1 keyUpdates:0  reslen:75 536ms
+Tue Nov 06 16:49:26.395 [initandlisten] insert local.startup_log ninserted:1 keyUpdates:0  208ms
+Tue Nov 06 16:49:26.801 [initandlisten] waiting for connections on port 27017
+Tue Nov 06 16:49:26.801 [websvr] admin web console waiting for connections on port 28017
+Tue Nov 06 16:50:26.395 [TTLMonitor] query local.system.indexes query: { expireAfterSeconds: { $exists: true } } ntoreturn:0 ntoskip:0 nscanned:0 keyUpdates:0 locks(micros) r:1041483 nreturned:0 reslen:20 1041ms
+Tue Nov 06 16:57:14.630 [initandlisten] connection accepted from 127.0.0.1:2085 #1 (1 connection now open)
+Tue Nov 06 16:57:14.911 [conn1] command local.$cmd command: { dbstats: true } ntoreturn:1 keyUpdates:0 locks(micros) r:219999 reslen:248 220ms
+Tue Nov 06 16:57:43.194 [initandlisten] connection accepted from 127.0.0.1:2088 #2 (2 connections now open)
+Tue Nov 06 16:59:36.938 [initandlisten] connection accepted from 127.0.0.1:2108 #3 (3 connections now open)
+Tue Nov 06 16:59:36.939 [initandlisten] connection accepted from 127.0.0.1:2109 #4 (4 connections now open)
+Tue Nov 06 16:59:36.939 [initandlisten] connection accepted from 127.0.0.1:2110 #5 (5 connections now open)
+Tue Nov 06 16:59:37.649 [conn3] command test.$cmd command: { $eval: "NumberInt(1)", args: null } ntoreturn:1 keyUpdates:0 locks(micros) W:703450 reslen:50 703ms
+Tue Nov 06 16:59:37.651 [conn4] command admin.$cmd command: { listDatabases: 1 } ntoreturn:1 keyUpdates:0 locks(micros) R:2 r:9 reslen:228 704ms
+Tue Nov 06 16:59:46.831 [conn4] end connection 127.0.0.1:2109 (4 connections now open)
+Tue Nov 06 16:59:46.831 [conn3] end connection 127.0.0.1:2108 (3 connections now open)
+Tue Nov 06 16:59:46.831 [conn5] end connection 127.0.0.1:2110 (2 connections now open)
+Tue Nov 06 17:02:38.899 [conn1] end connection 127.0.0.1:2085 (1 connection now open)
+Tue Nov 06 17:02:38.900 [conn2] end connection 127.0.0.1:2088 (0 connections now open)
+Tue Nov 06 17:03:07.793 [initandlisten] connection accepted from 127.0.0.1:2138 #6 (1 connection now open)
+Tue Nov 06 17:03:07.793 [initandlisten] connection accepted from 127.0.0.1:2139 #7 (2 connections now open)
+Tue Nov 06 17:03:07.793 [initandlisten] connection accepted from 127.0.0.1:2140 #8 (3 connections now open)
+Tue Nov 06 17:03:42.729 [conn7] end connection 127.0.0.1:2139 (2 connections now open)
+Tue Nov 06 17:03:42.730 [conn6] end connection 127.0.0.1:2138 (1 connection now open)
+Tue Nov 06 17:03:42.730 [conn8] end connection 127.0.0.1:2140 (0 connections now open)
+Tue Nov 06 17:54:40.225 [initandlisten] connection accepted from 127.0.0.1:2555 #9 (1 connection now open)
+Tue Nov 06 19:29:54.895 [conn9] end connection 127.0.0.1:2555 (0 connections now open)
+Tue Nov 06 19:39:19.870 [initandlisten] connection accepted from 127.0.0.1:6770 #10 (1 connection now open)
+Tue Nov 06 19:51:00.508 [conn10] end connection 127.0.0.1:6770 (0 connections now open)
+Wed Nov 07 00:20:29.095 [PeriodicTask::Runner] task: DBConnectionPool-cleaner took: 8ms
+Wed Nov 07 09:30:50.005 [initandlisten] connection accepted from 127.0.0.1:11812 #11 (1 connection now open)
+Wed Nov 07 09:30:50.097 [initandlisten] connection accepted from 127.0.0.1:11813 #12 (2 connections now open)
+Wed Nov 07 09:31:06.167 [initandlisten] connection accepted from 127.0.0.1:11814 #13 (3 connections now open)
+Wed Nov 07 09:31:06.218 [initandlisten] connection accepted from 127.0.0.1:11815 #14 (4 connections now open)
+Wed Nov 07 09:34:28.084 [initandlisten] connection accepted from 127.0.0.1:11822 #15 (5 connections now open)
+Wed Nov 07 09:38:43.108 [initandlisten] connection accepted from 127.0.0.1:11974 #16 (6 connections now open)
+Wed Nov 07 09:38:43.108 [initandlisten] connection accepted from 127.0.0.1:11975 #17 (7 connections now open)
+Wed Nov 07 09:38:43.197 [initandlisten] connection accepted from 127.0.0.1:11976 #18 (8 connections now open)
+Wed Nov 07 09:44:00.599 [conn17] end connection 127.0.0.1:11975 (7 connections now open)
+Wed Nov 07 09:44:00.600 [conn16] end connection 127.0.0.1:11974 (6 connections now open)
+Wed Nov 07 09:44:00.600 [conn18] end connection 127.0.0.1:11976 (5 connections now open)
+Wed Nov 07 09:44:06.472 [conn15] end connection 127.0.0.1:11822 (4 connections now open)

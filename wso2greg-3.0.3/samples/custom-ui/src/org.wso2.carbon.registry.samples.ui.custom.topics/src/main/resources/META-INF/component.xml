@@ -1,0 +1,21 @@
+<component xmlns="http://products.wso2.org/carbon">
+
+    <customUI>
+        <uiType>view</uiType>
+        <mediaType>epr</mediaType>
+        <uiPath>../registry/custom/endpoint/epr_main_ajaxprocessor.jsp</uiPath>
+    </customUI>
+
+    <customUI>
+        <uiType>add</uiType>
+        <mediaType>epr</mediaType>
+        <uiPath>../registry/custom/endpoint/epr_add_ajaxprocessor.jsp</uiPath>
+    </customUI>
+
+    <customUI>
+        <uiType>view</uiType>
+        <mediaType>topic</mediaType>
+        <uiPath>../registry/custom/endpoint/topic_ajaxprocessor.jsp</uiPath>
+    </customUI>
+
+</component>

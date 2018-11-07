@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <category id="category_1092663415094" initial_state="0" filters="*" label="Struts-Tiles">
+        <description/>
+        <item id="item_1092663435433" label="&lt;tiles:insert ../&gt; tag" category="category_1092663415094">
+            <description/>
+            <content><![CDATA[<tiles:insert name="${name}" />]]></content>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[Name of an entity to insert. Search is done in this order : definition, attribute, [tile/component/template/page].]]></description>
+            </variable>
+        </item>
+        <item id="item_1092663471014" label="&lt;tiles:put ../&gt; tag" category="category_1092663415094">
+            <description/>
+            <content><![CDATA[<tiles:put name="${name}" value="${value}" />]]></content>
+            <variable id="name_2" name="value" default="">
+                <description><![CDATA[Attribute value. Could be a String or an Object. Value can come from a direct assignment (value="aValue") or from a bean. One of 'value' 'content' or 'beanName' must be present.]]></description>
+            </variable>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[Name of the attribute.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092663507907" label="&lt;tiles:get ../&gt; tag" category="category_1092663415094">
+            <description/>
+            <content><![CDATA[<tiles:get name="${name}" />]]></content>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The name of the content to get from tile/component scope]]></description>
+            </variable>
+        </item>
+        <item id="item_1092663556437" label="&lt;tiles:getAsString ../&gt; tag" category="category_1092663415094">
+            <description/>
+            <content><![CDATA[<tiles:getAsString name="${name}" />]]></content>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The name of the content to get from tile/component scope]]></description>
+            </variable>
+        </item>
+        <item id="item_1092663604376" label="&lt;tiles:useAttribute ../&gt; tag" category="category_1092663415094">
+            <description/>
+            <content><![CDATA[<tiles:useAttribute id="${id}" name="${id}" classname="${classname}" />]]></content>
+            <variable id="name_2" name="id" default="">
+                <description><![CDATA[Declared attribute and variable name.]]></description>
+            </variable>
+            <variable id="name_1" name="classname" default="">
+                <description><![CDATA[Class of the declared variable.]]></description>
+            </variable>
+            <variable id="name_3" name="name" default="">
+                <description><![CDATA[Tile's attribute name.]]></description>
+            </variable>
+        </item>
+    </category>
+</snippets>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <category id="category_1092630693375" initial_state="0" filters="*" icon="" label="Struts-HTML" largeicon="">
+        <description><![CDATA[Struts tag library snippets]]></description>
+        <item id="item_1092631711449" icon="" label="&lt;html:base /&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:base />]]></content>
+        </item>
+        <item id="item_1092631779307" icon="" label="&lt;html:cancel /&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:cancel />]]></content>
+        </item>
+        <item id="item_1092631810852" icon="" label="&lt;html:checkbox ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:checkbox name="${name}" property="${property}" />]]></content>
+            <variable id="name_2" name="property" default="">
+                <description/>
+            </variable>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The attribute name of the bean whose properties are consulted when rendering the current value of this input field. If not specified, the bean associated with the form tag we are nested within is utilized.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092631927490" icon="" label="&lt;html:errors ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:errors property="${property}" />]]></content>
+            <variable id="name_1" name="property" default="">
+                <description><![CDATA[Name of the property for which error messages should be displayed. If not specified, all error messages (regardless of property) are displayed.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092661474834" icon="" label="&lt;html:file ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:file name="${name}" property="${name}" />]]></content>
+            <variable id="name_2" name="property" default="">
+                <description><![CDATA[Name of the request parameter that will be included with this submission, set to the specified value.]]></description>
+            </variable>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The attribute name of the bean whose properties are consulted when rendering the current value of this input field. If not specified, the bean associated with the form tag we are nested within is utilized.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092661584622" icon="" label="&lt;html:form ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:form action="${action}" method="${method}">
+</html:form>]]></content>
+            <variable id="name_2" name="method" default="">
+                <description><![CDATA[The HTTP method that will be used to submit this request (GET, POST).]]></description>
+            </variable>
+            <variable id="name_1" name="action" default="">
+                <description><![CDATA[The URL to which this form will be submitted. This value is also used to select the ActionMapping we are assumed to be processing, from which we can identify the appropriate form bean and scope.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092661643777" icon="" label="&lt;html:hidden ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:hidden name="${name}" property="${property}" />]]></content>
+            <variable id="name_2" name="name" default="">
+                <description><![CDATA[The attribute name of the bean whose properties are consulted when rendering the current value of this input field. If not specified, the bean associated with the form tag we are nested within is utilized.]]></description>
+            </variable>
+            <variable id="name_1" name="property" default="">
+                <description><![CDATA[Name of this input field, and the name of the corresponding bean property if value is not specified. The corresponding bean property (if any) must be of type String.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092661715450" icon="" label="&lt;html:html&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:html>
+</html:html>]]></content>
+        </item>
+        <item id="item_1092661757460" icon="" label="&lt;html:image ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:image page="${page}" property="${property}" />]]></content>
+            <variable id="name_2" name="page" default="">
+                <description><![CDATA[The module-relative path of the image for this input tag.]]></description>
+            </variable>
+            <variable id="name_1" name="property" default="">
+                <description><![CDATA[The property name of this image tag. The parameter names for the request will appear as "property.x" and "property.y", the x and y representing the coordinates of the mouse click for the image. A way of retrieving these values through a form bean is to define getX(), getY(), setX(), and setY() methods, and specify your property as a blank string (property="").]]></description>
+            </variable>
+        </item>
+        <item id="item_1092661822754" icon="" label="&lt;html:img ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:img align="${align}" alt="${alt}" border="${border}" page="${page}" />]]></content>
+            <variable id="name_4" name="alt" default="">
+                <description><![CDATA[Alternative text to be displayed in browsers that don't support graphics. Also used often as type of context help over images.]]></description>
+            </variable>
+            <variable id="name_2" name="border" default="">
+                <description><![CDATA[The width of the border surrounding the image.]]></description>
+            </variable>
+            <variable id="name_1" name="page" default="">
+                <description><![CDATA[The module-relative path, starting with a slash, of the image to be displayed by this tag. The rendered URL for this image will automatically prepend the context path of this web application (in the same manner as the page attribute on the link tag works), in addition to any necessary URL rewriting. You must specify either the page  attribute or the src attribute.]]></description>
+            </variable>
+            <variable id="name_3" name="align" default="">
+                <description><![CDATA[Where the image is aligned to (left, right, top, middle, bottom, texttop, absmiddle, absbottom).]]></description>
+            </variable>
+        </item>
+        <item id="item_1092661966301" icon="" label="&lt;html:link ..&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:link action="${action}"></html:link>]]></content>
+            <variable id="name_1" name="action" default="">
+                <description><![CDATA[Logical name of a Action that contains the actual content-relative URI of the destination of this transfer. This hyperlink may be dynamically modified by the inclusion of query parameters, as described in the tag description. You must specify exactly one of the action attribute, the forward attribute, the href attribute, the linkName  attribute, or the page attribute.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662005898" icon="" label="&lt;html:messages ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:messages property="${property}" message="${message}" />]]></content>
+            <variable id="name_2" name="message" default="">
+                <description><![CDATA[By default the tag will retrieve the bean it will iterate over from the Globals.ERROR_KEY constant string, but if this attribute is set to 'true' the bean will be retrieved from the Globals.MESSAGE_KEY  constant string. Also if this is set to 'true', any value assigned to the name attribute will be ignored.]]></description>
+            </variable>
+            <variable id="name_1" name="property" default="">
+                <description><![CDATA[Name of the property for which messages should be displayed. If not specified, all messages (regardless of property) are displayed.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662095306" icon="" label="&lt;html:multibox ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:multibox name="${name}" property="${property}">
+</html:multibox>]]></content>
+            <variable id="name_2" name="name" default="">
+                <description><![CDATA[The attribute name of the bean whose properties are consulted when rendering the current value of this input field. If not specified, the bean associated with the form tag we are nested within is utilized.]]></description>
+            </variable>
+            <variable id="name_1" name="property" default="">
+                <description><![CDATA[Name of the request parameter that will be included with this submission, set to the specified value.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662180379" icon="" label="&lt;html:option ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:option value="${value}"></html:option>]]></content>
+            <variable id="name_1" name="value" default="">
+                <description><![CDATA[Value to be submitted for this field if this option is selected by the user.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662223180" icon="" label="&lt;html:optionsCollection ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:optionsCollection name="${name}" label="${label}" value="${value}" />]]></content>
+            <variable id="name_2" name="label" default="">
+                <description><![CDATA[The property of the bean within the collection which represents the label to be rendered for each option. Defaults to "label".]]></description>
+            </variable>
+            <variable id="name_1" name="value" default="">
+                <description><![CDATA[The property of the bean within the collection which represents the value to be rendered for each option. Defaults to "value".]]></description>
+            </variable>
+            <variable id="name_3" name="name" default="">
+                <description><![CDATA[The attribute name of the bean whose properties are consulted when rendering the current value of this input field. If not specified, the bean associated with the form tag we are nested within is utilized.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662317085" icon="" label="&lt;html:password ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:password property="${property}" />]]></content>
+            <variable id="name_1" name="property" default="">
+                <description><![CDATA[Name of the request parameter that will be included with this submission, set to the specified value.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662352726" icon="" label="&lt;html:radio ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:radio name="${name}" property="${property}" />]]></content>
+            <variable id="name_2" name="name" default="">
+                <description><![CDATA[The attribute name of the bean whose properties are consulted when rendering the current value of this input field. If not specified, the bean associated with the form tag we are nested within is utilized.]]></description>
+            </variable>
+            <variable id="name_1" name="property" default="">
+                <description><![CDATA[The corresponding bean property for this radio tag.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662426633" icon="" label="&lt;html:reset /&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:reset />]]></content>
+        </item>
+        <item id="item_1092662448174" icon="" label="&lt;html:select ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:select name="${name}" property="${property}" />]]></content>
+            <variable id="name_2" name="name" default="">
+                <description><![CDATA[The attribute name of the bean whose properties are consulted to determine which option should be pre-selected when rendering this input field. If not specified, the bean associated with the enclosing <html:form> tag is utilized.]]></description>
+            </variable>
+            <variable id="name_1" name="property" default="">
+                <description><![CDATA[Name of the request parameter that will be included with this submission, set to the specified value.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662507339" icon="" label="&lt;html:submit /&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:submit />]]></content>
+        </item>
+        <item id="item_1092662545093" icon="" label="&lt;html:text ../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:text name="${name}" property="${property}" size="${size}" />]]></content>
+            <variable id="name_2" name="property" default="">
+                <description><![CDATA[Name of this input field, and the name of the corresponding bean property if value is not specified. The corresponding bean property (if any) must be of type String.]]></description>
+            </variable>
+            <variable id="name_1" name="size" default="">
+                <description><![CDATA[Number of character positions to allocate.]]></description>
+            </variable>
+            <variable id="name_3" name="name" default="">
+                <description><![CDATA[The attribute name of the bean whose properties are consulted when rendering the current value of this input field. If not specified, the bean associated with the form tag we are nested within is utilized.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092662616315" icon="" label="&lt;html:textarea.../&gt; tag" largeicon="" category="category_1092630693375" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<html:textarea name="${name}" property="${property}" rows="${rows}" cols="${cols}" />]]></content>
+            <variable id="name_4" name="cols" default="">
+                <description><![CDATA[The number of columns to display.]]></description>
+            </variable>
+            <variable id="name_2" name="property" default="">
+                <description><![CDATA[Name of this input field, and the name of the corresponding bean property if value is not specified. The corresponding bean property (if any) must be of type String.]]></description>
+            </variable>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[The attribute name of the bean whose properties are consulted when rendering the current value of this input field. If not specified, the bean associated with the form tag we are nested within is utilized.]]></description>
+            </variable>
+            <variable id="name_3" name="rows" default="">
+                <description><![CDATA[The number of rows to display.]]></description>
+            </variable>
+        </item>
+    </category>
+</snippets>

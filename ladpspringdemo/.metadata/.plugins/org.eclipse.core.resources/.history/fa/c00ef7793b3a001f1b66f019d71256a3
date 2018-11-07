@@ -1,0 +1,7 @@
+package bupt.inc.wsmonitor.serviceserver.dao;
+
+import bupt.inc.wsmonitor.serviceserver.domain.Person;
+
+public interface PersonDao {
+	
+}

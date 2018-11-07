@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <category id="category_1091553386741" initial_state="0" filters="*" icon="" label="JavaScript" largeicon="">
+        <description/>
+        <item id="item_1091577471773" icon="" label="Add to favorite" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[Auto add designated page to favorite - To use Change site and title]]></description>
+            <content><![CDATA[
+
+<a href="javascript:window.external.AddFavorite('http://www.myeclipseide.com', 'J2EE IDE homepage')">Add to Favorites</a> ]]></content>
+        </item>
+        <item id="item_1091577695445" icon="" label="Back to previous page" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[Similar to cancel and backpage button]]></description>
+            <content><![CDATA[
+<form>
+<input type="button" value="Back to Previous Page" 
+onClick="javascript: history.go(-1)">
+</form>]]></content>
+        </item>
+        <item id="item_1091577996708" icon="" label="Go Forward" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[Send the user foward one page]]></description>
+            <content><![CDATA[
+
+<a href="javascript:history.go(+1)">Go Foward</a>]]></content>
+        </item>
+        <item id="item_1091553405458" icon="" label="Select All Checkboxes" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[Select a group of checkboxes with one click (you can have multiple groups on the same page)]]></description>
+            <content><![CDATA[
+<!--  Add to header -->
+
+<script language="JavaScript">
+
+<!--
+function SetChecked(boxname) {
+	f=document.form1;
+// change form1 if you change your form name.
+	for( i=0 ; i<f.elements.length ; i++) {
+		if (f.elements[i].name==boxname) {
+		f.elements[i].checked=true;
+		}
+	}
+}
+
+//-->
+
+</script>
+
+
+<!--  Add to Boddy -->
+
+<a href="javascript:;" onclick="SetChecked('checkbox_name');return false;">Select All</a>
+<!--replace checkbox_name with the name of checkbox you want to select -->]]></content>
+        </item>
+        <item id="item_1091577816699" icon="" label="Day of Week Redirect" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[Direct the user to a different page for each day of the week. For example if today is Tuesday, the user will be redirected to Tuesday.html]]></description>
+            <content><![CDATA[
+<script language="javascript">
+<!--
+function initArray() {
+this.length = initArray.arguments.length;
+for (var i = 0; i < this.length; i++)
+this[i+1] = initArray.arguments[i];
+}
+
+var DOWArray = new
+initArray("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+var today = new Date();
+var day = DOWArray[today.getDay()+1];
+window.location = day + ".html";
+// -->
+
+</script>]]></content>
+        </item>
+        <item id="item_1091577913679" icon="" label="Delay Go To URL" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[Dynamically change the URL and wait time for any links]]></description>
+            <content><![CDATA[
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+//  Place this in the 'head' section of your page.  
+
+function delayURL(url, time) {
+    setTimeout("top.location.href='" + url + "'", time);
+}
+
+//-->
+
+</script>
+
+<!-- Place this in the 'body' section -->
+<a href="javascript:" onClick="delayURL('myPage.htm','2000')">My Delayed Link</a>]]></content>
+        </item>
+        <item id="item_1091578100868" icon="" label="Simple Redirect" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[Redirect the browser to a given URL]]></description>
+            <content><![CDATA[
+
+function redirect(URLStr) { location = URLStr; }]]></content>
+        </item>
+        <item id="item_1091578193391" icon="" label="Read Cookie" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[Function that returns the value of a cookie given the cookie name.]]></description>
+            <content><![CDATA[
+// Example:
+// alert( readCookie("myCookie") );
+
+function readCookie(name)
+{
+  var cookieValue = "";
+  var search = name + "=";
+  if(document.cookie.length > 0)
+  { 
+    offset = document.cookie.indexOf(search);
+    if (offset != -1)
+    { 
+      offset += search.length;
+      end = document.cookie.indexOf(";", offset);
+      if (end == -1) end = document.cookie.length;
+      cookieValue = unescape(document.cookie.substring(offset, end))
+    }
+  }
+  return cookieValue;
+}]]></content>
+        </item>
+        <item id="item_1091578251755" icon="" label="Write Cookie" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[A simple function to write a value to a cookie.]]></description>
+            <content><![CDATA[// writeCookie("myCookie", "my name", 24);
+// Stores the string "my name" in the cookie "myCookie" which expires after 24 hours.
+// The hours parameter is optional; if hours is left out, the cookie value expires at the end of the visitor's browser session.
+function writeCookie(name, value, hours)
+{
+  var expire = "";
+  if(hours != null)
+  {
+    expire = new Date((new Date()).getTime() + hours * 3600000);
+    expire = "; expires=" + expire.toGMTString();
+  }
+  document.cookie = name + "=" + escape(value) + expire;
+}]]></content>
+        </item>
+        <item id="item_1091578357917" icon="" label="Current Date" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[display the current date in short format]]></description>
+            <content><![CDATA[<script>
+<!--
+var today_date= new Date()
+var month=today_date.getMonth()+1
+var today=today_date.getDate()
+var year=today_date.getYear()
+//document.write("Today's date is: ")
+document.write(month+"/"+today+"/"+year)
+//--> </script>]]></content>
+        </item>
+        <item id="item_1091578394570" icon="" label="GMT Live Date/Time" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[Display a live date/time with changing seconds]]></description>
+            <content><![CDATA[<script>
+// Insert before Body tag
+<!--
+
+function showGMTDateTime(){ // script by Peter Hawkes peterhawkes@btopenworld.com
+if(document.getElementById){
+if(document.getElementById) var obj = document.getElementById("showdate");
+if(document.all) var obj = document.all("showdate");
+	var thedate = new Date();
+obj.innerHTML = thedate.toGMTString().substring((thedate.toGMTString().length-4),0);
+setTimeout('showGMTDateTime()',1000);}}
+
+//-->
+</script>
+<style>
+#showdate {
+	font-family:Verdana, Helvetica, Arial, sans-serif;
+	color:#000000;
+	font-size:12px;
+	}
+</style>
+
+//Insert in body Tag
+<body onload="showGMTDateTime()">
+<p id="showdate"></p>]]></content>
+        </item>
+        <item id="item_1091578674413" icon="" label="Message Window" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[Displays a new browser window containing the given message and title]]></description>
+            <content><![CDATA[function messageWindow(title, msg)
+{
+  var width="300", height="125";
+  var left = (screen.width/2) - width/2;
+  var top = (screen.height/2) - height/2;
+  var styleStr = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbar=no,resizable=no,copyhistory=yes,width='+width+',height='+height+',left='+left+',top='+top+',screenX='+left+',screenY='+top;
+  var msgWindow = window.open("","msgWindow", styleStr);
+  var head = '<head><title>'+title+'</title></head>';
+  var body = '<center>'+msg+'<br><p><form><input type="button" value="   Done   " onClick="self.close()"></form>';
+  msgWindow.document.write(head + body);
+}]]></content>
+        </item>
+        <item id="item_1091578749701" icon="" label="Pop-Up Window" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[Opens a new browser window, given a URL and the left, top, width, and height of the window]]></description>
+            <content><![CDATA[var popUpWin=0;
+
+function popUpWindow(URLStr, left, top, width, height)
+
+{
+
+  if(popUpWin)
+
+  {
+
+    if(!popUpWin.closed) popUpWin.close();
+
+  }
+
+  popUpWin = open(URLStr, 'popUpWin', 'toolbar=no,location=no,directories=no,status=no,menub ar=no,scrollbar=no,resizable=no,copyhistory=yes,width='+width+',height='+height+',left='+left+', top='+top+',screenX='+left+',screenY='+top+'');
+
+}
+
+]]></content>
+        </item>
+        <item id="item_1091578882552" icon="" label="Close Window" largeicon="" category="category_1091553386741" class="" editorclass="">
+            <description><![CDATA[A form button that closes the current window]]></description>
+            <content><![CDATA[<input type=button value="Close Window" onClick="javascript:self.close();" onKeyPress="javascript:self.close();">]]></content>
+        </item>
+    </category>
+</snippets>

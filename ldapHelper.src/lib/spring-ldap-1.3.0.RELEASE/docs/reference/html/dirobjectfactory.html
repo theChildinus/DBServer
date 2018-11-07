@@ -1,0 +1,256 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;3.&nbsp;Simpler Attribute Access and Manipulation with DirContextAdapter</title><link rel="stylesheet" href="css/html.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.72.0"><link rel="start" href="index.html" title="Spring LDAP - Reference Documentation"><link rel="up" href="index.html" title="Spring LDAP - Reference Documentation"><link rel="prev" href="basic.html" title="Chapter&nbsp;2.&nbsp;Basic Operations"><link rel="next" href="executors.html" title="Chapter&nbsp;4.&nbsp;Adding Missing Overloaded API Methods"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div xmlns:fo="http://www.w3.org/1999/XSL/Format" style="background-color:white;border:none;height:73px;border:1px solid black;"><a style="border:none;" href="http://static.springframework.org/spring-ldap/site/" title="The Spring Framework - Spring LDAP"><img style="border:none;" src="images/xdev-spring_logo.jpg"></a><a style="border:none;" href="http://www.springsource.com/" title="SpringSource"><img style="border:none;position:absolute;padding-top:5px;right:42px;" src="images/s2_box_logo.png"></a></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="dirobjectfactory"></a>Chapter&nbsp;3.&nbsp;Simpler Attribute Access and Manipulation with DirContextAdapter</h2></div></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="dirobjectfactory-intro"></a>3.1.&nbsp;Introduction</h2></div></div></div><p>A little-known--and probably underestimated--feature of the Java
+    LDAP API is the ability to register a <code class="literal">DirObjectFactory</code>
+    to automatically create objects from found contexts. One of the reasons
+    why it is seldom used is that you will need an implementation of
+    <code class="literal">DirObjectFactory</code> that creates instances of a meaningful
+    implementation of <code class="literal">DirContext</code>. The Spring LDAP library
+    provides the missing pieces: a default implementation of
+    <code class="literal">DirContext</code> called <code class="literal">DirContextAdapter</code>,
+    and a corresponding implementation of <code class="literal">DirObjectFactory</code>
+    called <code class="literal">DefaultDirObjectFactory</code>. Used together with
+    <code class="literal">DefaultDirObjectFactory</code>, the
+    <code class="literal">DirContextAdapter</code> can be a very powerful tool.</p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e786"></a>3.2.&nbsp;Search and Lookup Using ContextMapper</h2></div></div></div><p>The <code class="literal">DefaultDirObjectFactory</code> is registered with
+    the <code class="literal">ContextSource</code> by default, which means that whenever
+    a context is found in the LDAP tree, its <code class="literal">Attributes</code> and
+    Distinguished Name (DN) will be used to construct a
+    <code class="literal">DirContextAdapter</code>. This enables us to use a
+    <code class="literal">ContextMapper</code> instead of an
+    <code class="literal">AttributesMapper</code> to transform found values:</p><div class="example"><a name="d0e809"></a><p class="title"><b>Example&nbsp;3.1.&nbsp;Searching using a ContextMapper</b></p><div class="example-contents"><pre class="programlisting">package com.example.dao;
+
+public class PersonDaoImpl implements PersonDao {
+   ...
+   <span class="bold"><strong>private static class PersonContextMapper implements ContextMapper {
+      public Object mapFromContext(Object ctx) {
+         DirContextAdapter context = (DirContextAdapter)ctx;
+         Person p = new Person();
+         p.setFullName(context.getStringAttribute("cn"));
+         p.setLastName(context.getStringAttribute("sn"));
+         p.setDescription(context.getStringAttribute("description"));
+         return p;
+      }
+   }</strong></span>
+
+   public Person findByPrimaryKey(
+      String name, String company, String country) {
+      Name dn = buildDn(name, company, country);
+      return ldapTemplate.lookup(dn, <span class="bold"><strong>new PersonContextMapper()</strong></span>);
+   }
+}</pre></div></div><br class="example-break"><p>The above code shows that it is possible to retrieve the attributes
+    directly by name, without having to go through the
+    <code class="literal">Attributes</code> and <code class="literal">BasicAttribute</code>
+    classes. This is particularly useful when working with multi-value attributes. Extracting values from
+    multi-value attributes normally requires looping through a <code class="literal">NamingEnumeration</code> of
+    attribute values returned from the <code class="literal">Attributes</code> implementation. The
+    <code class="literal">DirContextAdapter</code> can do this for you, using the <code class="literal">getStringAttributes()</code>
+    or <code class="literal">getObjectAttributes()</code> methods:</p><div class="example"><a name="d0e843"></a><p class="title"><b>Example&nbsp;3.2.&nbsp;Getting multi-value attribute values using <code class="literal">getStringAttributes()</code></b></p><div class="example-contents"><pre class="programlisting">private static class PersonContextMapper implements ContextMapper {
+   public Object mapFromContext(Object ctx) {
+      DirContextAdapter context = (DirContextAdapter)ctx;
+      Person p = new Person();
+      p.setFullName(context.getStringAttribute("cn"));
+      p.setLastName(context.getStringAttribute("sn"));
+      p.setDescription(context.getStringAttribute("description"));
+      // The roleNames property of Person is an String array
+      <span class="bold"><strong>p.setRoleNames(context.getStringAttributes("roleNames"));</strong></span>
+      return p;
+   }
+}
+</pre></div></div><br class="example-break"><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e853"></a>3.2.1.&nbsp;The AbstractContextMapper</h3></div></div></div><p>Spring LDAP provides an abstract base implementation of <code class="literal">ContextMapper</code>, 
+    <code class="literal">AbstractContextMapper</code>. This automatically takes care of the casting of the supplied
+    <code class="literal">Object</code> parameter to <code class="literal">DirContexOperations</code>. 
+    The <code class="literal">PersonContextMapper</code> above can thus be re-written as follows:
+    </p><div class="example"><a name="d0e873"></a><p class="title"><b>Example&nbsp;3.3.&nbsp;Using an AbstractContextMapper</b></p><div class="example-contents"><pre class="programlisting">
+  private static class PersonContextMapper <span class="bold"><strong>extends AbstractContextMapper</strong></span> {
+      public Object <span class="bold"><strong>doMapFromContext</strong></span>(DirContextOperations ctx) {
+         Person p = new Person();
+         p.setFullName(context.getStringAttribute("cn"));
+         p.setLastName(context.getStringAttribute("sn"));
+         p.setDescription(context.getStringAttribute("description"));
+         return p;
+      }
+  }
+</pre></div></div><br class="example-break"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e884"></a>3.3.&nbsp;Binding and Modifying Using DirContextAdapter</h2></div></div></div><p>While very useful when extracting attribute values, <code class="literal">DirContextAdapter</code> is even more
+    powerful for hiding attribute details when binding and modifying data.</p><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e892"></a>3.3.1.&nbsp;Binding</h3></div></div></div><p>This is an example of an improved implementation of the create DAO
+      method. Compare it with the previous implementation in <a href="basic.html#basic-binding-data" title="2.4.1.&nbsp;Binding Data">Section&nbsp;2.4.1, &#8220;Binding Data&#8221;</a>.</p><div class="example"><a name="example-binding-contextmapper"></a><p class="title"><b>Example&nbsp;3.4.&nbsp;Binding using <code class="literal">DirContextAdapter</code></b></p><div class="example-contents"><pre class="programlisting">package com.example.dao;
+
+public class PersonDaoImpl implements PersonDao {
+   ...
+   public void create(Person p) {
+      Name dn = buildDn(p);
+      DirContextAdapter context = new DirContextAdapter(dn);
+
+      <span class="bold"><strong>context.setAttributeValues("objectclass", new String[] {"top", "person"});
+      context.setAttributeValue("cn", p.getFullname());
+      context.setAttributeValue("sn", p.getLastname());
+      context.setAttributeValue("description", p.getDescription());</strong></span>
+
+      ldapTemplate.bind(context);
+   }
+}</pre></div></div><br class="example-break"><p>Note that we use the <code class="literal">DirContextAdapter</code> instance 
+      as the second parameter to bind, which should be a <code class="literal">Context</code>.
+      The third parameter is <code class="literal">null</code>, since we're not using any
+      <code class="literal">Attributes</code>.</p><p>Also note the use of the <code class="literal">setAttributeValues()</code> method when setting the
+      <code class="literal">objectclass</code> attribute values. The <code class="literal">objectclass</code> attribute is
+      multi-value, and similar to the troubles of extracting muti-value attribute data, building multi-value
+      attributes is tedious and verbose work. Using the <code class="literal">setAttributeValues()</code> mehtod you can
+      have <code class="literal">DirContextAdapter</code> handle that work for you.</p></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e940"></a>3.3.2.&nbsp;Modifying</h3></div></div></div><p>The code for a <code class="literal">rebind</code> would be pretty much
+      identical to <a href="dirobjectfactory.html#example-binding-contextmapper" title="Example&nbsp;3.4.&nbsp;Binding using DirContextAdapter">Example&nbsp;3.4, &#8220;Binding using <code class="literal">DirContextAdapter</code>&#8221;</a>, except
+      that the method called would be <code class="literal">rebind</code>. As we saw in
+      <a href="basic.html#modify-modifyAttributes" title="2.5.2.&nbsp;Modifying using modifyAttributes">Section&nbsp;2.5.2, &#8220;Modifying using <code class="literal">modifyAttributes</code>&#8221;</a> a more correct approach would be to
+      build a <code class="literal">ModificationItem</code> array containing the actual
+      modifications you want to do. This would require you to determine the actual
+      modifications compared to the data present in the LDAP tree. Again, this
+      is something that <code class="literal">DirContextAdapter</code> can help you with; the
+      <code class="literal">DirContextAdapter</code> has the ability to keep track of
+      its modified attributes. The following example takes advantage of this
+      feature:</p><div class="example"><a name="d0e964"></a><p class="title"><b>Example&nbsp;3.5.&nbsp;Modifying using <code class="literal">DirContextAdapter</code></b></p><div class="example-contents"><pre class="programlisting">package com.example.dao;
+
+public class PersonDaoImpl implements PersonDao {
+   ...
+   public void update(Person p) {
+      Name dn = buildDn(p);
+      <span class="bold"><strong>DirContextOperations context = ldapTemplate.lookupContext(dn);</strong></span>
+
+      context.setAttributeValues("objectclass", new String[] {"top", "person"});
+      context.setAttributeValue("cn", p.getFullname());
+      context.setAttributeValue("sn", p.getLastname());
+      context.setAttributeValue("description", p.getDescription());
+
+      <span class="bold"><strong>ldapTemplate.modifyAttributes(context);</strong></span>
+   }
+}</pre></div></div><br class="example-break"><p>When no mapper is passed to a <code class="literal">ldapTemplate.lookup()</code> operation,
+      the result will be a <code class="literal">DirContextAdapter</code> instance.
+      While the <code class="literal">lookup</code> method returns an <code class="literal">Object</code>, the convenience
+      method <code class="literal">lookupContext</code> method automatically casts the return value to
+      a <code class="literal">DirContextOperations</code> (the interface that <code class="literal">DirContextAdapter</code> implements.</p><p>The observant reader will see that we have duplicated code in the
+      <code class="literal">create</code> and <code class="literal">update</code> methods. This
+      code maps from a domain object to a context. It can be extracted to a
+      separate method:</p><div class="example"><a name="d0e1008"></a><p class="title"><b>Example&nbsp;3.6.&nbsp;Binding and modifying using DirContextAdapter</b></p><div class="example-contents"><pre class="programlisting">package com.example.dao;
+
+public class PersonDaoImpl implements PersonDao {
+   private LdapTemplate ldapTemplate;
+
+   ...
+   public void create(Person p) {
+      Name dn = buildDn(p);
+      DirContextAdapter context = new DirContextAdapter(dn);
+      mapToContext(p, context);
+      ldapTemplate.bind(context);
+   }
+
+   public void update(Person p) {
+      Name dn = buildDn(p);
+      DirContextOperations context = ldapTemplate.lookupContext(dn);
+      mapToContext(person, context);
+      ldapTemplate.modifyAttributes(context);
+   }
+
+   protected void mapToContext (Person p, DirContextOperations context) {
+      context.setAttributeValues("objectclass", new String[] {"top", "person"});
+      context.setAttributeValue("cn", p.getFullName());
+      context.setAttributeValue("sn", p.getLastName());
+      context.setAttributeValue("description", p.getDescription());
+   }
+}</pre></div></div><br class="example-break"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e1013"></a>3.4.&nbsp;A Complete PersonDao Class</h2></div></div></div><p>To illustrate the power of Spring LDAP, here is a complete Person
+    DAO implementation for LDAP in just 68 lines:</p><div class="example"><a name="d0e1018"></a><p class="title"><b>Example&nbsp;3.7.&nbsp;A complete PersonDao class</b></p><div class="example-contents"><pre class="programlisting">package com.example.dao;
+
+import java.util.List;
+
+import javax.naming.Name;
+import javax.naming.NamingException;
+import javax.naming.directory.Attributes;
+
+import org.springframework.ldap.core.AttributesMapper;
+import org.springframework.ldap.core.ContextMapper;
+import org.springframework.ldap.core.LdapTemplate;
+import org.springframework.ldap.core.DirContextAdapter;
+import org.springframework.ldap.core.support.DistinguishedName;
+import org.springframework.ldap.filter.AndFilter;
+import org.springframework.ldap.filter.EqualsFilter;
+import org.springframework.ldap.filter.WhitespaceWildcardsFilter;
+
+public class PersonDaoImpl implements PersonDao {
+   private LdapTemplate ldapTemplate;
+
+   public void setLdapTemplate(LdapTemplate ldapTemplate) {
+      this.ldapTemplate = ldapTemplate;
+   }
+
+   public void create(Person person) {
+      DirContextAdapter context = new DirContextAdapter(buildDn(person));
+      mapToContext(person, context);
+      ldapTemplate.bind(context);
+   }
+
+   public void update(Person person) {
+      Name dn = buildDn(person);
+      DirContextOperations context = ldapTemplate.lookupContext(dn);
+      mapToContext(person, context);
+      ldapTemplate.modifyAttributes(context);
+   }
+
+   public void delete(Person person) {
+      ldapTemplate.unbind(buildDn(person));
+   }
+
+   public Person findByPrimaryKey(String name, String company, String country) {
+      Name dn = buildDn(name, company, country);
+      return (Person) ldapTemplate.lookup(dn, getContextMapper());
+   }
+
+   public List findByName(String name) {
+      AndFilter filter = new AndFilter();
+      filter.and(new EqualsFilter("objectclass", "person")).and(new WhitespaceWildcardsFilter("cn",name));
+      return ldapTemplate.search(DistinguishedName.EMPTY_PATH, filter.encode(), getContextMapper());
+   }
+
+   public List findAll() {
+      EqualsFilter filter = new EqualsFilter("objectclass", "person");
+      return ldapTemplate.search(DistinguishedName.EMPTY_PATH, filter.encode(), getContextMapper());
+   }
+
+   protected ContextMapper getContextMapper() {
+      return new PersonContextMapper();
+   }
+
+   protected Name buildDn(Person person) {
+      return buildDn(person.getFullname(), person.getCompany(), person.getCountry());
+   }
+
+   protected Name buildDn(String fullname, String company, String country) {
+      DistinguishedName dn = new DistinguishedName();
+      dn.add("c", country);
+      dn.add("ou", company);
+      dn.add("cn", fullname);
+      return dn;
+   }
+
+   protected void mapToContext(Person person, DirContextOperations context) {
+      context.setAttributeValues("objectclass", new String[] {"top", "person"});
+      context.setAttributeValue("cn", person.getFullName());
+      context.setAttributeValue("sn", person.getLastName());
+      context.setAttributeValue("description", person.getDescription());
+   }
+
+   private static class PersonContextMapper extends AbstractContextMapper {
+      public Object doMapFromContext(DirContextOperations context) {
+         Person person = new Person();
+         person.setFullName(context.getStringAttribute("cn"));
+         person.setLastName(context.getStringAttribute("sn"));
+         person.setDescription(context.getStringAttribute("description"));
+         return person;
+      }
+   }
+}</pre></div></div><br class="example-break"><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>In several cases the Distinguished Name (DN) of an object is
+      constructed using properties of the object. E.g. in the above example,
+      the country, company and full name of the <code class="literal">Person</code> are
+      used in the DN, which means that updating any of these properties will
+      actually require moving the entry in the LDAP tree using the
+      <code class="literal">rename()</code> operation in addition to updating the
+      <code class="literal">Attribute</code> values. Since this is highly implementation
+      specific this is something you'll need to keep track of yourself -
+      either by disallowing the user to change these properties or performing
+      the <code class="literal">rename()</code> operation in your
+      <code class="literal">update()</code> method if needed.</p></div></div></div><div xmlns:fo="http://www.w3.org/1999/XSL/Format" class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="basic.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="executors.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;2.&nbsp;Basic Operations&nbsp;</td><td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.jayway.com/" title="Jayway">Sponsored by Jayway
+                                        </a></span></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;4.&nbsp;Adding Missing Overloaded API Methods</td></tr></table></div></body></html>

@@ -1,0 +1,162 @@
+Manifest-Version: 1.0
+Export-Package: org.jboss.ide.eclipse.xdoclet.core,org.jboss.ide.eclip
+ se.xdoclet.core.ui,org.jboss.ide.eclipse.xdoclet.core.util
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: org-jboss-ide-eclipse-xdoclet-core.jar
+Bundle-Name: %plugin.name
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,com.genuitec.jboss.ide.eclipse.core,org
+ .eclipse.core.runtime.compatibility
+Bundle-Vendor: %plugin.provider
+Plugin-Class: org.jboss.ide.eclipse.xdoclet.core.XDocletCorePlugin
+Bundle-Version: 8.5.0.me201003052220
+Bundle-ManifestVersion: 2
+Bundle-Activator: org.eclipse.core.internal.compatibility.PluginActiva
+ tor
+Bundle-SymbolicName: com.genuitec.jboss.ide.eclipse.xdoclet.core; sing
+ leton:=true
+
+Name: xdoclet-mvcsoft-module-1.2.3.jar
+SHA1-Digest: 3+og6/zf03iXd92v6ff59P1JlgU=
+
+Name: xdoclet-jboss-module-1.2.3.jar
+SHA1-Digest: KjKVPalKQh81arTRge14BPjPd7w=
+
+Name: xdoclet-libelis-module-1.2.3.jar
+SHA1-Digest: 9G4/NE1/1/Di/v+BK1khTCUZuhY=
+
+Name: xdoclet-ibm-module-1.2.3.jar
+SHA1-Digest: XF3svNy29UK2+wwlsgwUO492bPI=
+
+Name: xdoclet-objectweb-module-1.2.3.jar
+SHA1-Digest: OUiezt7q1Qo/e8nlRsiX2s5SHtc=
+
+Name: commons-logging.jar
+SHA1-Digest: N8ZZ5XKTZW6+8aJH/Gzrc469/HQ=
+
+Name: commons-collections-2.0.jar
+SHA1-Digest: lPU5G7BtS0yEeFzghiUBH9L/Hz0=
+
+Name: xdoclet-hp-module-1.2.3.jar
+SHA1-Digest: /gd99937/3nIUnT4o1vFI/uQ4Tw=
+
+Name: xdoclet-jmx-module-1.2.3.jar
+SHA1-Digest: U5w+HzfamF4WAjbLBAvSRp6wokk=
+
+Name: xdoclet-web-module-1.2.3.jar
+SHA1-Digest: 4fJAPvtyX3titZGHFt1v2YuU3xg=
+
+Name: xdoclet-pt_BR-locale-1.2.3.jar
+SHA1-Digest: BSh3UPiJU0XEoHtDukmGpguuqVQ=
+
+Name: xdoclet-pramati-module-1.2.3.jar
+SHA1-Digest: Q+in5vkanAq3BmKkYoytI2vK0vQ=
+
+Name: xdoclet-orion-module-1.2.3.jar
+SHA1-Digest: /jb3Ov57lEsVYs2ctah1Gf2DNu4=
+
+Name: maven-xdoclet-plugin-1.2.3.jar
+SHA1-Digest: RqR0N+Asl0fpem5jA+A7jjjVmf0=
+
+Name: xdoclet-fr_FR-locale-1.2.3.jar
+SHA1-Digest: l2ZcGVl0KXnFW5P9vxELA4sKoKI=
+
+Name: xjavadoc-1.1.jar
+SHA1-Digest: YlSr+E0QaIcHS25eJdMOcsXA9Kw=
+
+Name: xdoclet-wsee-module-1.2.3.jar
+SHA1-Digest: 1GmzX1jbF/7GvgiD17x8o3Mv0e0=
+
+Name: xdoclet-jdo-module-1.2.3.jar
+SHA1-Digest: e3ao8yF3FYGjW1YnE2lhj0sY7hs=
+
+Name: xdoclet-hibernate-module-1.2.3.jar
+SHA1-Digest: Ja1h0MwNiljndr1RQDSdF0GoZTA=
+
+Name: xdoclet-ejb-module-1.2.3.jar
+SHA1-Digest: BF0Y8GE1L3hd/wRRSxWoBDuH8tI=
+
+Name: xdoclet-portlet-module-1.2.3.jar
+SHA1-Digest: RQJVzUdabbkkfI/uL8hYI0VkitY=
+
+Name: xdoclet-tjdo-module-1.2.3.jar
+SHA1-Digest: ORW/YBTk6Tx+/Xjtb17Cuygo1Xs=
+
+Name: xdoclet-sun-module-1.2.3.jar
+SHA1-Digest: C1avh+vPL5ZwL0w3u1nTSBej18U=
+
+Name: log4j.jar
+SHA1-Digest: NkDdcQadeYbJoU0zNRkhb0ylwJQ=
+
+Name: xdoclet-solarmetric-module-1.2.3.jar
+SHA1-Digest: fZh+IDTi4nLq2MJpppA1kzOx4D0=
+
+Name: xdoclet-xdoclet-module-1.2.3.jar
+SHA1-Digest: zgHI4HCp7Liah4wjTwv/tEaPoL8=
+
+Name: xdoclet-mx4j-module-1.2.3.jar
+SHA1-Digest: Jd2TP/vLdyjc1V8ooGRQQR/iH5I=
+
+Name: xdoclet-macromedia-module-1.2.3.jar
+SHA1-Digest: eNQFcMtrPQYhMNYhCTTmxE2RCvo=
+
+Name: xdoclet-sybase-module-1.2.3.jar
+SHA1-Digest: dpV+9S66Osii1MnW198RtJXlGlU=
+
+Name: xdoclet-de-locale-1.2.3.jar
+SHA1-Digest: uoClNM2iXAUXdZzJXw1xNxL8uG0=
+
+Name: xdoclet-exolab-module-1.2.3.jar
+SHA1-Digest: ZFLIdVUz4wgemLPvbzu/JpDC/FQ=
+
+Name: xdoclet-apache-module-1.2.3.jar
+SHA1-Digest: w62zH8U1sAUoMbfyYeMa0/OH4PQ=
+
+Name: xdoclet-bea-module-1.2.3.jar
+SHA1-Digest: j5z85j64U02t4gMo800tyRVrpSo=
+
+Name: plugin.properties
+SHA1-Digest: ++KCgovErmrrzcOXWfBhNt0xHFs=
+
+Name: xdoclet-borland-module-1.2.3.jar
+SHA1-Digest: JaDbPpBOLtM0n2piTL/JlkVtds0=
+
+Name: xdoclet-java-module-1.2.3.jar
+SHA1-Digest: EdBpY5dOtMSU7N+Nozta/HdU6O4=
+
+Name: xdoclet-spring-module-1.2.3.jar
+SHA1-Digest: UriPNKKSOQAEImoRPrW/37SJ/xI=
+
+Name: org-jboss-ide-eclipse-xdoclet-core.jar
+SHA1-Digest: kMUHG2m9jF0HYqVrhzv9FSwd4Tc=
+
+Name: xdoclet-caucho-module-1.2.3.jar
+SHA1-Digest: 6bDxb8m7XaDKvmBdPH+LSjYpuw4=
+
+Name: xdoclet-openejb-module-1.2.3.jar
+SHA1-Digest: HFahBCd/lekTcvGMiNWzyHu2yyo=
+
+Name: plugin.xml
+SHA1-Digest: EkcLz+XCFi2ZSfcPz7UUhQFx5tQ=
+
+Name: xdoclet-oracle-module-1.2.3.jar
+SHA1-Digest: bHoFD3egIBDBxJzEv61JKJVDTO8=
+
+Name: xdoclet-mockobjects-module-1.2.3.jar
+SHA1-Digest: JfPDbvpHSI2c/tJhu+Is+5lA2oU=
+
+Name: xdoclet-1.2.3.jar
+SHA1-Digest: HeWR14KaUsCsllRskO2D08hVmRs=
+
+Name: license.html
+SHA1-Digest: hZIqa55Cird4m/njWe3rwHlSnWw=
+
+Name: xdoclet-webwork-module-1.2.3.jar
+SHA1-Digest: xXKa8E8aUMZJ5kJEkOnB+P27yDE=
+
+Name: xdoclet-jsf-module-1.2.3.jar
+SHA1-Digest: LskMT6hhQb80Y/FR/pvUoTD9sgE=
+
+Name: jdk5/xjavadoc-1.5-snapshot050611.jar
+SHA1-Digest: QshoiJcLKVeDEyk24K8c9fPvL0g=
+

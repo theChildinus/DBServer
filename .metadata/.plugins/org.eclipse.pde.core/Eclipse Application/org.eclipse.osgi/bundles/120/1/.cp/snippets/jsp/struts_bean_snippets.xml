@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <category id="category_1092630693375a" initial_state="0" filters="*" icon="" label="Struts-Bean" largeicon="">
+        <description><![CDATA[Struts tag library snippets]]></description>
+        <item id="item_1092631426830" icon="" label="&lt;bean:write ../&gt; tag" largeicon="" category="category_1092630693375a" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<bean:write name="${name}" />]]></content>
+            <variable id="name_1" name="name" default="">
+                <description><![CDATA[Specifies the attribute name of the bean whose property is accessed to retrieve the value specified by property (if specified). If property is not specified, the value of this bean itself will be rendered.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092631314919" icon="" label="&lt;bean:parameter ../&gt; tag" largeicon="" category="category_1092630693375a" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<bean:parameter id="${id}" />]]></content>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[Specifies the name of the scripting variable (and associated page scope attribute) that will be made available with the value of the specified request parameter.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092631178342" icon="" label="&lt;bean:message ../&gt; tag" largeicon="" category="category_1092630693375a" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<bean:message key="${key}" />]]></content>
+            <variable id="name_1" name="key" default="">
+                <description><![CDATA[The message key of the requested message, which must have a corresponding value in the message resources. If not specified, the key is obtained from the name and property attributes.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092630877440" icon="" label="&lt;bean:define ../&gt; tag" largeicon="" category="category_1092630693375a" class="" editorclass="">
+            <description/>
+            <content><![CDATA[<bean:define id="${id}" />]]></content>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[Specifies the name of the scripting variable (and associated page scope attribute) that will be made available with the value of the specified property.]]></description>
+            </variable>
+        </item>
+    </category>
+</snippets>

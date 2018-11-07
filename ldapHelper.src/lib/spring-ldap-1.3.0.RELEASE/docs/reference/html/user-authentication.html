@@ -1,0 +1,76 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;10.&nbsp;User Authentication using Spring LDAP</title><link rel="stylesheet" href="css/html.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.72.0"><link rel="start" href="index.html" title="Spring LDAP - Reference Documentation"><link rel="up" href="index.html" title="Spring LDAP - Reference Documentation"><link rel="prev" href="pooling.html" title="Chapter&nbsp;9.&nbsp;Pooling Support"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div xmlns:fo="http://www.w3.org/1999/XSL/Format" style="background-color:white;border:none;height:73px;border:1px solid black;"><a style="border:none;" href="http://static.springframework.org/spring-ldap/site/" title="The Spring Framework - Spring LDAP"><img style="border:none;" src="images/xdev-spring_logo.jpg"></a><a style="border:none;" href="http://www.springsource.com/" title="SpringSource"><img style="border:none;position:absolute;padding-top:5px;right:42px;" src="images/s2_box_logo.png"></a></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="user-authentication"></a>Chapter&nbsp;10.&nbsp;User Authentication using Spring LDAP</h2></div></div></div><p>While the core functionality of the <code class="literal">ContextSource</code> is to provide
+  <code class="literal">DirContext</code> instances for use by <code class="literal">LdapTemplate</code>,
+  it may also be used for authenticating users against an LDAP server. The
+  <code class="literal">getContext(principal, credentials)</code> method of <code class="literal">ContextSource</code>
+  will do exactly that; construct a <code class="literal">DirContext</code> instance according to the
+  <code class="literal">ContextSource</code> configuration, authenticating the context using the 
+  supplied principal and credentials. 
+  </p><div class="example"><a name="d0e2620"></a><p class="title"><b>Example&nbsp;10.1.&nbsp;Using <code class="literal">ContextSource</code> for user authentication</b></p><div class="example-contents"><pre class="programlisting">public boolean authenticate(String userDn, String credentials) {
+  DirContext ctx = null;
+  try {
+    ctx = contextSource.getContext(userDn, credentials);
+    
+    return true;
+  } catch (Exception e) {
+    // Context creation failed - authentication did not succeed
+	logger.error("Login failed", e);
+    return false;
+  } finally {
+    // It is imperative that the created DirContext instance is always closed
+    LdapUtils.closeContext(ctx);
+  }
+}
+</pre></div></div><br class="example-break"><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+	The userDn supplied to the <code class="literal">authenticate</code> method needs to be the full
+	DN of the user to authenticate (regardless of the <code class="literal">base</code> setting on the
+	<code class="literal">ContextSource</code>). You will typically need to perform an LDAP search
+	based on e.g. the user name to get this DN:
+    </p></div><div class="example"><a name="d0e2641"></a><p class="title"><b>Example&nbsp;10.2.&nbsp;Finding a user based on uid attribute.</b></p><div class="example-contents"><pre class="programlisting">private String getDnForUser(String uid) {
+  Filter f = new EqualsFilter("uid", uid);
+  List result = ldapTemplate.search(DistinguishedName.EMPTY_PATH, f.toString(), new AbstractContextMapper() {
+    protected Object doMapFromContext(DirContextOperations ctx) {
+      return ctx.getNameInNamespace();
+    }
+  });
+  	
+  if(result.size() != 1) {
+    throw new RuntimeException("User not found or not unique");
+  }
+  
+  return (String)result.get(0);
+}
+</pre></div></div><br class="example-break"><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+    Some authentication schemes and LDAP servers require some operation to be
+    performed on the created <code class="literal">DirContext</code> instance for the actual
+    authentication to occur. You should test and make sure how your server setup and
+    authentication schemes behave; failure to do so might result in that users
+    will be admitted into your system regardless of the DN/credentials supplied.
+    </p></div><div class="example"><a name="d0e2653"></a><p class="title"><b>Example&nbsp;10.3.&nbsp;Performing LDAP operation on returned <code class="literal">DirContext</code> objects.</b></p><div class="example-contents"><pre class="programlisting">public boolean authenticate(String userDn, String credentials) {
+  DirContext ctx = null;
+  try {
+    ctx = contextSource.getContext(userDn, credentials);
+    // Take care here - if a base was specified on the ContextSource
+    // that needs to be removed from the user DN for the lookup to succeed.
+    ctx.lookup(userDn);
+    
+    return true;
+  } catch (Exception e) {
+    // Context creation failed - authentication did not succeed
+	logger.error("Login failed", e);
+    return false;
+  } finally {
+    // It is imperative that the created DirContext instance is always closed
+    LdapUtils.closeContext(ctx);
+  }
+}
+</pre></div></div><br class="example-break"><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+	While the approach above may be sufficient for very simple authentication scenarios, requirements in this
+	area commonly expand rapidly. There is a multitude of aspects that apply to this area, including
+	authentication, authorization, web integration, user context management, etc. If you
+	suspect that the requirements might expand you should definitely consider using 
+	<a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://springsecurity.org" target="_top">Spring Security</a> for your security purposes instead.
+	It is a full-blown, mature security framework addressing the above aspects as well as several others. 
+    </p></div></div><div xmlns:fo="http://www.w3.org/1999/XSL/Format" class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="pooling.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right">&nbsp;</td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;9.&nbsp;Pooling Support&nbsp;</td><td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.jayway.com/" title="Jayway">Sponsored by Jayway
+                                        </a></span></td><td width="40%" align="right" valign="top">&nbsp;</td></tr></table></div></body></html>

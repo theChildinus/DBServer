@@ -1,0 +1,47 @@
+<UserManager>
+	<Database>
+		<URL>jdbc:h2:database/WSO2CARBON_DB</URL>
+		<UserName>wso2carbon</UserName>
+		<Password>wso2carbon</Password>
+		<Dialect>h2</Dialect>
+		<Driver>org.h2.Driver</Driver>
+                <maxActive>30</maxActive>
+                <maxWait>60000</maxWait>
+                <minIdle>5</minIdle>
+                <!--validationQuery>SELECT 1</validationQuery-->
+	</Database>
+	<AdminRole>admin</AdminRole>
+	<AdminUser>
+		<UserName>admin</UserName>
+		<Password>admin</Password>
+	</AdminUser>
+	<DigestFunction>MD5</DigestFunction>
+	<SaltedPassword>false</SaltedPassword>
+	<SystemPermission>
+		<Permission>login</Permission>
+		<Permission>manage-configuration</Permission>
+		<Permission>manage-security</Permission>
+		<Permission>upload-services</Permission>
+		<Permission>manage-services</Permission>
+        <Permission>manage-lc-configuration</Permission>
+		<Permission>manage-mediation</Permission>
+		<Permission>monitor-system</Permission>
+        <Permission>delegate-identity</Permission>
+        <Permission>bam-data-collection</Permission>
+        <Permission>bam-data-view</Permission>
+	</SystemPermission>
+	<UserProfiles>	
+		<Profiles>
+			<Profile profileName="A">
+				<Claim>
+					<ClaimURI>http://wso2.org/email</ClaimURI>
+					<ClaimBehavior>Hidden</ClaimBehavior>
+				</Claim>
+				<Claim>
+					<ClaimURI>http://ibx.org/age</ClaimURI>
+					<ClaimBehavior>Overridden</ClaimBehavior>
+				</Claim>
+			</Profile>
+		</Profiles>
+	</UserProfiles>
+</UserManager>

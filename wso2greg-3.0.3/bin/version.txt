@@ -1,0 +1,1 @@
+WSO2 Governance Registry v3.0.3

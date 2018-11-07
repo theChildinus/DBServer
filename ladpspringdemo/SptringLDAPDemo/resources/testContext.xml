@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<!-- 
+	<bean id="contextSource" class="org.springframework.ldap.core.support.LdapContextSource">
+      <property name="url" value="ldap://localhost:10389" />
+      <property name="base" value="o=sevenSeas" />
+      <property name="userDn" value="uid=admin,ou=system" />
+      <property name="password" value="secret" />
+   </bean>-->
+   <bean id="contextSource" class="org.springframework.ldap.core.support.LdapContextSource">
+      <property name="url" value="ldap://59.64.157.5:389" />
+      <property name="base" value="dc=coalmine,dc=com" />
+      <property name="userDn" value="cn=Manager,dc=coalmine,dc=com" />
+      <property name="password" value="secret" />
+   </bean>
+	<bean id="ldapTemplate" class="org.springframework.ldap.core.LdapTemplate">
+		<constructor-arg ref="contextSource" />
+	</bean>
+	
+	<!-- below are dao classes -->
+	<bean id="personDao" class="bupt.intt.wsmonitor.servicemonitor.dao.PersonDao">		
+		<property name="ldapTemplate" ref="ldapTemplate" />
+	</bean>
+	
+	<bean id="webServiceDao1" class="bupt.intt.wsmonitor.servicemonitor.dao.WebServiceDao">		
+		<property name="ldapTemplate" ref="ldapTemplate" />
+	</bean>
+	
+	<bean id="configTypeDao" class="bupt.intt.wsmonitor.servicemonitor.dao.ConfigTypeDao">		
+		<property name="ldapTemplate" ref="ldapTemplate" />
+	</bean>
+	
+	<bean id="messageServerConfigDao" class="bupt.intt.wsmonitor.servicemonitor.dao.MessageServerDao">		
+		<property name="ldapTemplate" ref="ldapTemplate" />
+	</bean>
+	
+	<bean id="dbServerConfigDao" class="bupt.intt.wsmonitor.servicemonitor.dao.DBServerDao">		
+		<property name="ldapTemplate" ref="ldapTemplate" />
+	</bean>
+	
+	<bean id="memDbDao" class="bupt.intt.wsmonitor.servicemonitor.dao.MemDBDao">		
+		<property name="ldapTemplate" ref="ldapTemplate" />
+	</bean>
+	
+	<bean id="dbServiceDao" class="bupt.intt.wsmonitor.servicemonitor.dao.DataServiceDao">		
+		<property name="ldapTemplate" ref="ldapTemplate" />
+	</bean>
+	
+	<bean id="bootStrapDao" class="bupt.intt.wsmonitor.servicemonitor.dao.BootStrapDao">		
+		<property name="ldapTemplate" ref="ldapTemplate" />
+	</bean>
+	
+	<bean id="bootAssignDao" class="bupt.intt.wsmonitor.servicemonitor.dao.BootAssignDao">		
+		<property name="ldapTemplate" ref="ldapTemplate" />
+	</bean>
+	
+	<bean id="clientHelper" class="bupt.intt.wsmonitor.servicemonitor.ldapClient.ldapHelper">		
+		<property name="ldapTemplate" ref="ldapTemplate" />
+		<property name="configTypeDao" ref="configTypeDao" />
+		<property name="dbServerDao" ref="dbServerConfigDao" />
+		<property name="messageServerDao" ref="messageServerConfigDao" />
+		<property name="memDBDao" ref="memDbDao" />
+		<property name="dataServiceDao" ref="dbServiceDao" />
+		<property name="bootStrapDao" ref="bootStrapDao" />
+		<property name="bootAssignDao" ref="bootAssignDao" />		
+	</bean>
+	
+</beans>

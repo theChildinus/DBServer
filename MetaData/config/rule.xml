@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="gbk"?>
+<!DOCTYPE amoeba:rule SYSTEM "rule.dtd">
+
+<amoeba:rule xmlns:amoeba="http://amoeba.meidusa.com/">
+	<tableRule name="student" schema="test" defaultPools="server0,server2,server4" readPools="server1,server3">
+		<!-- <rule name="rule1" ruleResult="POOLNAME">
+                   <parameters>SCHOOLNUM</parameters>
+                   <expression><![CDATA[
+                 var division = SCHOOLNUM; 
+                 case division when 0 then 'server0';
+                               when 1 then 'server2';
+                 end case;
+                    ]]></expression>
+            </rule>-->
+
+			
+		<rule name="rule1">
+			<parameters>SCHOOLNUM</parameters>
+			<expression><![CDATA[ SCHOOLNUM == 0]]></expression>
+			<defaultPools>server0,server4</defaultPools>
+			<readPools>server1</readPools>
+			<writePools>server0,server4</writePools>
+		</rule>
+	
+		<rule name="rule2">
+			<parameters>SCHOOLNUM</parameters>
+			<expression><![CDATA[ SCHOOLNUM ==1 ]]></expression>
+			<defaultPools>server2</defaultPools>
+			<writePools>server2</writePools>
+			<readPools>server3</readPools>
+		</rule>
+		<!--
+		<rule name="rule4">
+			<parameters>ID</parameters>
+			<expression><![CDATA[ ID > 20000000 ]]></expression>
+			<defaultPools>server3</defaultPools>
+		</rule>
+		-->
+		<!--
+		<rule name="rule3">
+			<parameters>ID,CREATE_TIME</parameters>
+			<expression><![CDATA[ID>4 or CREATE_TIME between to_date('2008-11-12 00:00:00.0000') and to_date('2008-12-10 00:00:00.0000') ]]></expression>
+			<defaultPools>server3</defaultPools>
+		</rule>
+		-->
+		<rule name="rule1" ruleResult="POOLNAME">
+			<parameters>s</parameters>
+			<expression><![CDATA[
+		         var hashid = abs(hash(s)) % 1; 
+		         'server'||hashid
+		        
+		       ]]></expression>
+		</rule>
+	</tableRule>
+	
+	<!-- list database command will be matcher this rule -->
+	<tableRule name="listDatabases,^*.system.namespaces" schema="admin" defaultPools="server0,server1"/>
+</amoeba:rule>

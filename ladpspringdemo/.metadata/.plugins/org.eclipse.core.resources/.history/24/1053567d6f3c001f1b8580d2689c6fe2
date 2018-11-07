@@ -1,0 +1,10 @@
+
+public abstract class C1 implements I1 {
+
+	@Override
+	public void method1() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

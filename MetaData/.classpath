@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="lib/jsch-0.1.46.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/mongo-2.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="bin/"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="lib/jira-javamelody.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen-1.1-beta-6.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.13.jar" sourcepath="C:/Users/Administrator/.m2/repository/log4j/log4j/1.2.13/log4j-1.2.13-sources.jar"/>
+	<classpathentry kind="lib" path="lib/jnotify-0.94.jar"/>
+	<classpathentry kind="lib" path="lib/jdom.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

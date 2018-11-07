@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <category id="category_1091575653469" initial_state="0" filters="*" icon="" label="Form Elements" largeicon="">
+        <description/>
+        <item id="item_1091576424507" icon="" label="1 Field Form" largeicon="" category="category_1091575653469" class="" editorclass="">
+            <description><![CDATA[A simple form with one field]]></description>
+            <content><![CDATA[<table width="100%" border="0" cellspacing="0" cellpadding="4">
+
+  <tr> 
+
+    <td bgcolor="#000099"> 
+
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+
+        <tr> 
+
+          <td bgcolor="#FFFFFF">&nbsp;<b>*</b>&nbsp;</td>
+
+          <td width="100%"><font color="#CCCCCC">&nbsp; <font color="#FFFFFF"><strong>Title</strong></font></font></td>
+
+        </tr>
+
+      </table></td>
+
+  </tr>
+
+  <tr> 
+
+     <td width="100%" bgcolor="#EAEAEA" colspan="2"> 
+
+      <form name="Name" action="post"><p>
+
+          <label for="textfield">Field 1: </label>
+
+          <input type="text" name="textfield" id="textfield">
+
+        </p>
+
+        <p> 
+
+          <input type="submit" name="Submit" value="Submit">
+
+        </p>
+
+    </form>
+
+  </td>
+
+  </tr>
+
+</table>]]></content>
+        </item>
+        <item id="item_1091576464615" icon="" label="2 Field Form" largeicon="" category="category_1091575653469" class="" editorclass="">
+            <description><![CDATA[Form containing two fields and a button]]></description>
+            <content><![CDATA[<table width="100%" border="0" cellspacing="0" cellpadding="4">
+
+	<tr> 
+
+		<td bgcolor="#000099"> 
+
+			<table width="100%" border="0" cellspacing="0" cellpadding="4">
+
+				<tr> 
+
+					<td bgcolor="#FFFFFF">&nbsp;<b>*</b>&nbsp;</td>
+
+						<td width="100%"><font color="#CCCCCC">&nbsp; <font color="#FFFFFF">Title</font></font></td>
+
+				</tr>
+
+			</table></td>
+
+	</tr>
+
+	<tr> 
+
+		<td width="100%" bgcolor="#EAEAEA" colspan="2"> 
+
+			<form name="Name" action="post"><p>
+
+				<label for="textfield">Field 1</label>
+
+				<br>
+
+				<input type="text" name="textfield" id="textfield">
+
+				</p>
+
+				<p>
+
+				<label for="textfield2">Field 2</label>
+
+				<br>
+
+				<input type="text" name="textfield2" id="textfield2">
+
+				</p>
+
+				<p> 
+
+				<input type="submit" name="Submit" value="GO">
+
+				</p>
+
+				<p>&nbsp; </p>
+
+				</form>
+
+		</td>
+
+  </tr>
+
+</table>]]></content>
+        </item>
+        <item id="item_1091575943726" icon="" label="Text Field, Autoclear" largeicon="" category="category_1091575653469" class="" editorclass="">
+            <description><![CDATA[A form text field displaying a default message; when the visitor clicks in the field, the default message disappears.]]></description>
+            <content><![CDATA[<input type="text" name="n" value="Your message" onFocus="if(this.value=='Your message')this.value='';">]]></content>
+        </item>
+        <item id="item_1091575784177" icon="" label="Cancel Button" largeicon="" category="category_1091575653469" class="" editorclass="">
+            <description><![CDATA[Sends you back one page]]></description>
+            <content><![CDATA[<input type="button" name="Cancel" value="Cancel" onclick="javascript:history.go(-1);">]]></content>
+        </item>
+        <item id="item_1091575885502" icon="" label="Browse-for-File Button" largeicon="" category="category_1091575653469" class="" editorclass="">
+            <description><![CDATA[A form button and text field allowing the visitor to specify a local file to upload.]]></description>
+            <content><![CDATA[<input type="file" name="user_file">]]></content>
+        </item>
+    </category>
+</snippets>

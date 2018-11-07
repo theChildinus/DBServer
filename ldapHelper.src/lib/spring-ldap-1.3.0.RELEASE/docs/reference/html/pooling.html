@@ -1,0 +1,349 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;9.&nbsp;Pooling Support</title><link rel="stylesheet" href="css/html.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.72.0"><link rel="start" href="index.html" title="Spring LDAP - Reference Documentation"><link rel="up" href="index.html" title="Spring LDAP - Reference Documentation"><link rel="prev" href="configuration.html" title="Chapter&nbsp;8.&nbsp;Configuration"><link rel="next" href="user-authentication.html" title="Chapter&nbsp;10.&nbsp;User Authentication using Spring LDAP"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div xmlns:fo="http://www.w3.org/1999/XSL/Format" style="background-color:white;border:none;height:73px;border:1px solid black;"><a style="border:none;" href="http://static.springframework.org/spring-ldap/site/" title="The Spring Framework - Spring LDAP"><img style="border:none;" src="images/xdev-spring_logo.jpg"></a><a style="border:none;" href="http://www.springsource.com/" title="SpringSource"><img style="border:none;position:absolute;padding-top:5px;right:42px;" src="images/s2_box_logo.png"></a></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="pooling"></a>Chapter&nbsp;9.&nbsp;Pooling Support</h2></div></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="pooling-intro"></a>9.1.&nbsp;Introduction</h2></div></div></div><p>
+			Pooling LDAP connections helps mitigate the overhead of
+			creating a new LDAP connection for each LDAP interaction.
+			While
+			<a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://java.sun.com/products/jndi/tutorial/ldap/connect/pool.html" target="_top">
+				Java LDAP pooling support
+			</a>
+			exists it is limited in its configuration options and
+			features, such as connection validation and pool
+			maintenance. Spring LDAP provides support for detailed pool
+			configuration on a per-
+			<code class="literal">ContextSource</code>
+			basis.
+		</p><p>
+			Pooling support is provided by
+			<code class="literal">PoolingContextSource</code>
+			which can wrap any
+			<code class="literal">ContextSource</code>
+			and pool both read-only and read-write
+			<code class="literal">DirContext</code>
+			objects.
+			<a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://commons.apache.org/pool/index.html" target="_top">
+				Jakarta Commons-Pool
+			</a>
+			is used to provide the underlying pool implementation.
+		</p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="pooling-validation"></a>9.2.&nbsp;DirContext Validation</h2></div></div></div><p>
+			Validation of pooled connections is the primary motivation
+			for using a custom pooling library versus the JDK provided
+			LDAP pooling functionality. Validation allows pooled
+			<code class="literal">DirContext</code>
+			connections to be checked to ensure they are still properly
+			connected and configured when checking them out of the pool,
+			in to the pool or while idle in the pool
+		</p><p>
+			The
+			<code class="literal">DirContextValidator</code>
+			interface is used by the
+			<code class="literal">PoolingContextSource</code>
+			for validation and
+			<code class="literal">DefaultDirContextValidator</code>
+			is provided as the default validation implementation.
+			<code class="literal">DefaultDirContextValidator</code>
+			does a
+			<code class="literal">
+				DirContext.search(String, String, SearchControls)
+			</code>
+			, with an empty name, a filter of
+			<code class="literal">"objectclass=*"</code>
+			and
+			<code class="literal">SearchControls</code>
+			set to limit a single result with the only the objectclass
+			attribute and a 500ms timeout. If the returned
+			<code class="literal">NamingEnumeration</code>
+			has results the
+			<code class="literal">DirContext</code>
+			passes validation, if no results are returned or an
+			exception is thrown the
+			<code class="literal">DirContext</code>
+			fails validation. The
+			<code class="literal">DefaultDirContextValidator</code>
+			should work with no configuration changes on most LDAP
+			servers and provide the fastest way to validate the
+			<code class="literal">DirContext</code>
+			.
+		</p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="pooling-properties"></a>9.3.&nbsp;Pool Properties</h2></div></div></div><p>
+			The following properties are available on the
+			<code class="literal">PoolingContextSource</code>
+			for configuration of the DirContext pool. The
+			<code class="literal">contextSource</code>
+			property must be set and the
+			<code class="literal">dirContextValidator</code>
+			property must be set if validation is enabled, all other
+			properties are optional.
+		</p><div class="table"><a name="d0e2234"></a><p class="title"><b>Table&nbsp;9.1.&nbsp;Pooling Configuration Properties</b></p><div class="table-contents"><table summary="Pooling Configuration Properties" border="1"><colgroup><col align="left"><col align="left"><col align="left"></colgroup><thead><tr><th align="left">Parameter</th><th align="left">Default</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left">
+							<code class="literal">contextSource</code>
+						</td><td align="left">
+							<code class="literal">null</code>
+						</td><td align="left">
+							The
+							<code class="literal">ContextSource</code>
+							implementation to get
+							<code class="literal">DirContext</code>
+							s from to populate the pool.
+						</td></tr><tr><td align="left">
+							<code class="literal">dirContextValidator</code>
+						</td><td align="left">
+							<code class="literal">null</code>
+						</td><td align="left">
+							The
+							<code class="literal">DirContextValidator</code>
+							implementation to use when validating
+							connections. This is required if
+							<code class="literal">testOnBorrow</code>
+							,
+							<code class="literal">testOnReturn</code>
+							, or
+							<code class="literal">testWhileIdle</code>
+							options are set to
+							<code class="literal">true</code>
+							.
+						</td></tr><tr><td align="left">
+							<code class="literal">maxActive</code>
+						</td><td align="left">
+							<code class="literal">8</code>
+						</td><td align="left">
+							The maximum number of active connections of
+							each type (read-only|read-write) that can be
+							allocated from this pool at the same time,
+							or non-positive for no limit.
+						</td></tr><tr><td align="left">
+							<code class="literal">maxTotal</code>
+						</td><td align="left">
+							<code class="literal">-1</code>
+						</td><td align="left">
+							The overall maximum number of active
+							connections (for all types) that can be
+							allocated from this pool at the same time,
+							or non-positive for no limit.
+						</td></tr><tr><td align="left">
+							<code class="literal">maxIdle</code>
+						</td><td align="left">
+							<code class="literal">8</code>
+						</td><td align="left">
+							The maximum number of active connections of
+							each type (read-only|read-write) that can
+							remain idle in the pool, without extra ones
+							being released, or non-positive for no
+							limit.
+						</td></tr><tr><td align="left">
+							<code class="literal">minIdle</code>
+						</td><td align="left">
+							<code class="literal">0</code>
+						</td><td align="left">
+							The minimum number of active connections of
+							each type (read-only|read-write) that can
+							remain idle in the pool, without extra ones
+							being created, or zero to create none.
+						</td></tr><tr><td align="left">
+							<code class="literal">maxWait</code>
+						</td><td align="left">
+							<code class="literal">-1</code>
+						</td><td align="left">
+							The maximum number of milliseconds that the
+							pool will wait (when there are no available
+							connections) for a connection to be returned
+							before throwing an exception, or
+							non-positive to wait indefinitely.
+						</td></tr><tr><td align="left">
+							<code class="literal">whenExhaustedAction</code>
+						</td><td align="left">
+							<code class="literal">1</code> (BLOCK)
+						</td><td align="left">
+							Specifies the behaviour when the pool is
+							exhausted.
+							<div class="itemizedlist"><ul type="disc"><li><p>
+										The
+										FAIL (<code class="literal">0</code>)
+										option will throw a
+										<code class="literal">
+											NoSuchElementException
+										</code>
+										when the pool is exhausted.
+									</p></li><li><p>
+                                        The
+                                        BLOCK (<code class="literal">1</code>)
+                                        option will wait until a new
+                                        object is available. If
+                                        <code class="literal">maxWait</code>
+                                        is positive a
+                                        <code class="literal">
+                                            NoSuchElementException
+                                        </code>
+                                        is thrown if no new object is
+                                        available after the
+                                        <code class="literal">maxWait</code>
+                                        time expires.
+                                    </p></li><li><p>
+										The
+										GROW (<code class="literal">2</code>)
+										option will create and return a
+										new object (essentially making
+										<code class="literal">maxActive</code>
+										meaningless).
+									</p></li></ul></div>
+						</td></tr><tr><td align="left">
+							<code class="literal">testOnBorrow</code>
+						</td><td align="left">
+							<code class="literal">false</code>
+						</td><td align="left">
+							The indication of whether objects will be
+							validated before being borrowed from the
+							pool. If the object fails to validate, it
+							will be dropped from the pool, and an
+							attempt to borrow another will be made.
+						</td></tr><tr><td align="left">
+							<code class="literal">testOnReturn</code>
+						</td><td align="left">
+							<code class="literal">false</code>
+						</td><td align="left">
+							The indication of whether objects will be
+							validated before being returned to the pool.
+						</td></tr><tr><td align="left">
+							<code class="literal">testWhileIdle</code>
+						</td><td align="left">
+							<code class="literal">false</code>
+						</td><td align="left">
+							The indication of whether objects will be
+							validated by the idle object evictor (if
+							any). If an object fails to validate, it
+							will be dropped from the pool.
+						</td></tr><tr><td align="left">
+							<code class="literal">
+								timeBetweenEvictionRunsMillis
+							</code>
+						</td><td align="left">
+							<code class="literal">-1</code>
+						</td><td align="left">
+							The number of milliseconds to sleep between
+							runs of the idle object evictor thread. When
+							non-positive, no idle object evictor thread
+							will be run.
+						</td></tr><tr><td align="left">
+							<code class="literal">numTestsPerEvictionRun</code>
+						</td><td align="left">
+							<code class="literal">3</code>
+						</td><td align="left">
+							The number of objects to examine during each
+							run of the idle object evictor thread (if
+							any).
+						</td></tr><tr><td align="left">
+							<code class="literal">
+								minEvictableIdleTimeMillis
+							</code>
+						</td><td align="left">
+							<code class="literal">1000 * 60 * 30</code>
+						</td><td align="left">
+							The minimum amount of time an object may sit
+							idle in the pool before it is eligible for
+							eviction by the idle object evictor (if
+							any).
+						</td></tr></tbody></table></div></div><br class="table-break"></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="pooling-configuration"></a>9.4.&nbsp;Configuration</h2></div></div></div><p>
+			Configuring pooling should look very familiar if you're used
+			to Jakarta Commons-Pool or Commons-DBCP. You will first
+			create a normal
+			<code class="literal">ContextSource</code>
+			then wrap it in a
+			<code class="literal">PoolingContextSource</code>
+			.
+			</p><div class="informalexample"><pre class="programlisting">
+&lt;beans&gt;
+   ...
+   &lt;bean id="contextSource" class="org.springframework.ldap.pool.factory.PoolingContextSource"&gt;
+      &lt;property name="contextSource" ref="contextSourceTarget" /&gt;
+   &lt;/bean&gt;
+    
+   &lt;bean id="contextSourceTarget" class="org.springframework.ldap.core.support.LdapContextSource"&gt;
+      &lt;property name="url" value="ldap://localhost:389" /&gt;
+      &lt;property name="base" value="dc=example,dc=com" /&gt;
+      &lt;property name="userDn" value="cn=Manager" /&gt;
+      &lt;property name="password" value="secret" /&gt;
+      &lt;property name="pooled" value="false"/&gt;
+   &lt;/bean&gt;
+   ...
+&lt;/beans&gt;
+</pre></div><p>
+			In a real world example you would probably configure the
+			pool options and enable connection validation; the above
+			serves as an example to demonstrate the general idea.
+			</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+					Ensure that the
+					<code class="literal">pooled</code>
+					property is set to
+					<code class="literal">false</code>
+					on any
+					<code class="literal">ContextSource</code>
+					that will be wrapped in a
+					<code class="literal">PoolingContextSource</code>
+					. The
+					<code class="literal">PoolingContextSource</code>
+					must be able to create new connections when needed
+					and if
+					<code class="literal">pooled</code>
+					is set to
+					<code class="literal">true</code>
+					that may not be possible.
+				</p></div><p>
+			</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+					You'll notice that the actual
+					<code class="literal">ContextSource</code>
+					gets an id with a "Target" suffix. The bean you will
+					actually refer to is the
+					<code class="literal">PoolingContextSource</code>
+					that wraps the target
+					<code class="literal">contextSource</code>
+				</p></div><p>
+		</p><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="pooling-advanced-configuration"></a>9.4.1.&nbsp;Validation Configuration</h3></div></div></div><p>
+				Adding validation and a few pool configuration tweaks to
+				the above example is straight forward. Inject a
+				<code class="literal">DirContextValidator</code>
+				and set when validation should occur and the pool is
+				ready to go.
+				</p><div class="informalexample"><pre class="programlisting">
+&lt;beans&gt;
+   ...
+   &lt;bean id="contextSource" class="org.springframework.ldap.pool.factory.PoolingContextSource"&gt;
+      &lt;property name="contextSource" ref="contextSourceTarget" /&gt;
+      &lt;property name="dirContextValidator" ref="dirContextValidator" /&gt;
+      &lt;property name="testOnBorrow" value="true" /&gt;
+      &lt;property name="testWhileIdle" value="true" /&gt;
+   &lt;/bean&gt;
+
+   &lt;bean id="dirContextValidator"
+         class="org.springframework.ldap.pool.validation.DefaultDirContextValidator" /&gt;
+    
+   &lt;bean id="contextSourceTarget" class="org.springframework.ldap.core.support.LdapContextSource"&gt;
+      &lt;property name="url" value="ldap://localhost:389" /&gt;
+      &lt;property name="base" value="dc=example,dc=com" /&gt;
+      &lt;property name="userDn" value="cn=Manager" /&gt;
+      &lt;property name="password" value="secret" /&gt;
+      &lt;property name="pooled" value="false"/&gt;
+   &lt;/bean&gt;
+   ...
+&lt;/beans&gt;
+</pre></div><p>
+				The above example will test each
+				<code class="literal">DirContext</code>
+				before it is passed to the client application and test
+				<code class="literal">DirContext</code>
+				s that have been sitting idle in the pool.
+			</p></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="pooling-issues"></a>9.5.&nbsp;Known Issues</h2></div></div></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="pooling-custom-auth-issue"></a>9.5.1.&nbsp;Custom Authentication</h3></div></div></div><p>
+                The <code class="literal">PoolingContextSource</code> assumes that all
+                <code class="literal">DirContext</code> objects retrieved from
+                <code class="literal">ContextSource.getReadOnlyContext()</code> will have
+                the same environment and likewise that all
+                <code class="literal">DirContext</code> objects retrieved from
+                <code class="literal">ContextSource.getReadWriteContext()</code> will
+                have the same environment. This means that wrapping a
+                <code class="literal">LdapContextSource</code> configured with an
+                <code class="literal">AuthenticationSource</code> in a
+                <code class="literal">PoolingContextSource</code> will not function
+                as expected. The pool would be populated using the credentials
+                of the first user and unless new connections were needed
+                subsequent context requests would not be filled for the user
+                specified by the <code class="literal">AuthenticationSource</code> for
+                the requesting thread.
+            </p></div></div></div><div xmlns:fo="http://www.w3.org/1999/XSL/Format" class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="configuration.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="user-authentication.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;8.&nbsp;Configuration&nbsp;</td><td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.jayway.com/" title="Jayway">Sponsored by Jayway
+                                        </a></span></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;10.&nbsp;User Authentication using Spring LDAP</td></tr></table></div></body></html>

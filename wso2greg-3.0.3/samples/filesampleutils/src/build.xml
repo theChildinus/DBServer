@@ -1,0 +1,59 @@
+<project name="file-sample" basedir="." default="upload">
+
+	<property name="dest.dir" value="build" />
+	<property name="dest.dir.classes" value="${dest.dir}/classes" />
+	<property name="dest.dir.lib" value="${dest.dir}/lib" />
+	<property name="registry.home" value="../../.." />
+
+	<path id="build.class.path">
+		<fileset dir="${registry.home}/lib">
+			<include name="*.jar" />
+		</fileset>
+            <fileset dir="${dest.dir.lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="client.class.path">
+		<fileset dir="${registry.home}/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete dir="${dest.dir}" />
+	</target>
+
+	<target name="prepare">
+		<mkdir dir="${dest.dir}" />
+		<mkdir dir="${dest.dir.classes}" />
+            <mkdir dir="${dest.dir.lib}" />
+	</target>
+
+	<target name="compile" depends="clean,prepare">
+		<javac srcdir="src" destdir="${dest.dir.classes}">
+			<classpath refid="build.class.path" />
+		</javac>
+	</target>
+
+	<target name="jar">
+		<jar basedir="${dest.dir.classes}" destfile="${dest.dir.lib}/filesample.jar" />
+	</target>
+
+	<target name="upload">
+		<antcall target="compile" />
+		<antcall target="jar" />
+		<java classname="org.wso2.carbon.registry.samples.filesampleutils.FileSampleUtil">
+			<classpath refid="build.class.path" />
+		</java>
+	</target>
+	<target name="download">
+		<antcall target="compile" />
+		<antcall target="jar" />
+		<java classname="org.wso2.carbon.registry.samples.filesampleutils.FileSampleUtil">
+			<arg value="-download"/>
+			<classpath refid="build.class.path" />
+             </java>
+	</target>
+</project>
+

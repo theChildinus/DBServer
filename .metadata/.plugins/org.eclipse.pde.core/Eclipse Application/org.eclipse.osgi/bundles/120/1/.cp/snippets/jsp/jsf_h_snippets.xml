@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <category id="category_1092663716107" initial_state="0" filters="*" label="JSF-H">
+        <description/>
+        <item id="item_1092663736316" label="&lt;h:commandButton ../&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:commandButton id="${id}" action="${action}" value="${value}" />]]></content>
+            <variable id="name_2" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+            <variable id="name_1" name="action" default="">
+                <description><![CDATA[MethodBinding representing the application action to invoke when this component is activated by the user. The expression must evaluate to a public method that takes no parameters, and returns a String (the logical outcome) which is passed to the NavigationHandler for this application.]]></description>
+            </variable>
+            <variable id="name_3" name="id" default="">
+                <description/>
+            </variable>
+        </item>
+        <item id="item_1092663800438" label="&lt;h:commandLink ..&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:commandLink id="${id}" action="${action}"></h:commandLink>]]></content>
+            <variable id="name_2" name="action" default="">
+                <description><![CDATA[MethodBinding representing the application action to invoke when this component is activated by the user. The expression must evaluate to a public method that takes no parameters, and returns a String (the logical outcome) which is passed to the NavigationHandler for this application.]]></description>
+            </variable>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092663856519" label="&lt;h:dataTable ..&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:dataTable id="${id}" value="${value}" var="${var}">
+</h:dataTable>]]></content>
+            <variable id="name_2" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+            <variable id="name_1" name="var" default="">
+                <description><![CDATA[Name of a request-scope attribute under which the model data for the row selected by the current value of the "rowIndex" property (i.e. also the current value of the "rowData" property) will be exposed.]]></description>
+            </variable>
+            <variable id="name_3" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092663926900" label="&lt;h:form&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:form></h:form>]]></content>
+        </item>
+        <item id="item_1092663945627" label="&lt;h:graphicImage ../&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:graphicImage id="${id}" alt="${alt}" url="${url}" />]]></content>
+            <variable id="name_4" name="url" default="">
+                <description><![CDATA[Context-relative URL to retrieve the resource associated with this component. This is an alias for the "value" property.]]></description>
+            </variable>
+            <variable id="name_2" name="alt" default="">
+                <description><![CDATA[Alternate textual description of the element rendered by this component.]]></description>
+            </variable>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664019403" label="&lt;h:inputHidden ../&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:inputHidden id="${id}" value="${value}" />]]></content>
+            <variable id="name_2" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_1" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664057658" label="&lt;h:inputSecret ../&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:inputSecret id="${id}" value="${value}" redisplay="${redisplay}" />]]></content>
+            <variable id="name_4" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_2" name="required" default="">
+                <description><![CDATA[Flag indicating that the user is required to provide a submitted value for this input component.]]></description>
+            </variable>
+            <variable id="name_1" name="redisplay" default="">
+                <description><![CDATA[Flag indicating that any existing value in this field should be rendered when the form is created. Because this is a potential security risk, password values are not displayed by default.]]></description>
+            </variable>
+            <variable id="name_3" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664128209" label="&lt;h:inputText ../&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:inputText id="${id}" size="${size}" value="${value}" required="${required}" />]]></content>
+            <variable id="name_4" name="required" default="">
+                <description><![CDATA[Flag indicating that the user is required to provide a submitted value for this input component.]]></description>
+            </variable>
+            <variable id="name_2" name="size" default="">
+                <description><![CDATA[The number of characters used to determine the width of this field.]]></description>
+            </variable>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_3" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+        </item>
+        
+        <item id="item_1092664128210" label="&lt;h:outputText ../&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:outputText value="${value}" />]]></content>
+            <variable id="name_1" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+        </item>
+        
+        <item id="item_1092664216647" label="&lt;h:inputTextarea ../&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:inputTextarea id="${id}" rows="${rows}" cols="${cols}" value="${value}" required="${required}" />]]></content>
+            <variable id="name_4" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+            <variable id="name_2" name="rows" default="">
+                <description><![CDATA[The number of rows to be displayed.]]></description>
+            </variable>
+            <variable id="name_5" name="required" default="">
+                <description><![CDATA[Flag indicating that the user is required to provide a submitted value for this input component.]]></description>
+            </variable>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_3" name="cols" default="">
+                <description><![CDATA[The number of columns to be displayed.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664338211" label="&lt;h:message ../&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:message id="${id}" for="${for}" />]]></content>
+            <variable id="name_2" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_1" name="for" default="">
+                <description><![CDATA[Client identifier of the component for which to display messages.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664381664" label="&lt;h:outputFormat ..&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:outputFormat value="${value}"></h:outputFormat>]]></content>
+            <variable id="name_1" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664413780" label="&lt;h:outputLabel ../&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:outputLabel for="${for}" rendered="${rendered}" binding="${binding}" value="${value}" />]]></content>
+            <variable id="name_4" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+            <variable id="name_2" name="rendered" default="">
+                <description><![CDATA[Flag indicating whether or not this component should be rendered (during Render Response Phase), or processed on any subsequent form submit.]]></description>
+            </variable>
+            <variable id="name_1" name="for" default="">
+                <description><![CDATA[Client identifier of the component for which this element is a label.]]></description>
+            </variable>
+            <variable id="name_3" name="binding" default="">
+                <description><![CDATA[The value binding expression linking this component to a property in a backing bean.]]></description>
+            </variable>
+        </item>
+       
+        <item id="item_1092664524179" label="&lt;h:outputLink ..&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:outputLink value="${value}"></h:outputLink>]]></content>
+            <variable id="name_1" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664554462" label="&lt;h:panelGrid ..&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:panelGrid columns="${columns}"></h:panelGrid>]]></content>
+            <variable id="name_1" name="columns" default="">
+                <description><![CDATA[The number of columns to render before starting a new row.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664619976" label="&lt;h:selectBooleanCheckbox ../&gt; tag" category="category_1092663716107">
+            <description><![CDATA[Unnamed Template]]></description>
+            <content><![CDATA[<h:selectBooleanCheckbox id="${id}" rendered="${rendered}" binding="${binding}" />]]></content>
+            <variable id="name_2" name="rendered" default="">
+                <description><![CDATA[Flag indicating whether or not this component should be rendered (during Render Response Phase), or processed on any subsequent form submit.]]></description>
+            </variable>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_3" name="binding" default="">
+                <description><![CDATA[The value binding expression linking this component to a property in a backing bean.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664667615" label="&lt;h:selectManyCheckbox ..&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:selectManyCheckbox id="${id}" layout="${layout}" value="${value}"></h:selectManyCheckbox>]]></content>
+            <variable id="name_2" name="layout" default="">
+                <description><![CDATA[Orientation of the options list to be created. Valid values are "pageDirection" (list is laid out vertically), or "lineDirection" (list is laid out horizontally). If not specified, the default value is "lineDirection".]]></description>
+            </variable>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_3" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664720691" label="&lt;h:selectManyListbox ..&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:selectManyListbox id="${id}" value="${value}"></h:selectManyListbox>]]></content>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_3" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664773477" label="&lt;h:selectManyMenu ..&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:selectManyMenu id="${id}" value="${value}">
+</h:selectManyMenu>]]></content>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_3" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664832853" label="&lt;h:selectOneListbox ..&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:selectOneListbox id="${id}" required="${required}" value="${value}"></h:selectOneListbox>]]></content>
+            <variable id="name_2" name="required" default="">
+                <description><![CDATA[Flag indicating that the user is required to provide a submitted value for this input component.]]></description>
+            </variable>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_3" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664895483" label="&lt;h:selectOneMenu ..&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:selectOneMenu id="${id}" required="${required}" value="${value}"></h:selectOneMenu>]]></content>
+            <variable id="name_2" name="required" default="">
+                <description><![CDATA[Flag indicating that the user is required to provide a submitted value for this input component.]]></description>
+            </variable>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_3" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664947978" label="&lt;h:selectOneRadio ..&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:selectOneRadio id="${id}" required="${required}" layout="${layout}" value="${value}"></h:selectOneRadio>]]></content>
+            <variable id="name_2" name="required" default="">
+                <description><![CDATA[Flag indicating that the user is required to provide a submitted value for this input component.]]></description>
+            </variable>
+            <variable id="name_1" name="id" default="">
+                <description><![CDATA[The component identifier for this component. This value must be unique within the closest parent component that is a naming container.]]></description>
+            </variable>
+            <variable id="name_2" name="value" default="">
+                <description><![CDATA[The current value of this component.]]></description>
+            </variable>
+            <variable id="name_3" name="layout" default="">
+                <description><![CDATA[Orientation of the options list to be created. Valid values are "pageDirection" (list is laid out vertically), or "lineDirection" (list is laid out horizontally). If not specified, the default value is "lineDirection".]]></description>
+            </variable>
+        </item>
+        <item id="item_1092664994315" label="&lt;h:column&gt; tag" category="category_1092663716107">
+            <description/>
+            <content><![CDATA[<h:column></h:column>]]></content>
+        </item>
+    </category>
+</snippets>

@@ -1,0 +1,132 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;5.&nbsp;Processing the DirContext</title><link rel="stylesheet" href="css/html.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.72.0"><link rel="start" href="index.html" title="Spring LDAP - Reference Documentation"><link rel="up" href="index.html" title="Spring LDAP - Reference Documentation"><link rel="prev" href="executors.html" title="Chapter&nbsp;4.&nbsp;Adding Missing Overloaded API Methods"><link rel="next" href="transactions.html" title="Chapter&nbsp;6.&nbsp;Transaction Support"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div xmlns:fo="http://www.w3.org/1999/XSL/Format" style="background-color:white;border:none;height:73px;border:1px solid black;"><a style="border:none;" href="http://static.springframework.org/spring-ldap/site/" title="The Spring Framework - Spring LDAP"><img style="border:none;" src="images/xdev-spring_logo.jpg"></a><a style="border:none;" href="http://www.springsource.com/" title="SpringSource"><img style="border:none;position:absolute;padding-top:5px;right:42px;" src="images/s2_box_logo.png"></a></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="processor"></a>Chapter&nbsp;5.&nbsp;Processing the DirContext</h2></div></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="processor-overview"></a>5.1.&nbsp;Custom DirContext Pre/Postprocessing</h2></div></div></div><p>In some situations, one would like to perform operations on the
+    <code class="literal">DirContext</code> before and after the search operation. The
+    interface that is used for this is called
+    <code class="literal">DirContextProcessor</code>:</p><div class="informalexample"><pre class="programlisting">public interface DirContextProcessor {
+   public void preProcess(DirContext ctx) throws NamingException;
+   public void postProcess(DirContext ctx) throws NamingException;
+}</pre></div><p>The <code class="literal">LdapTemplate</code> class has a search method that
+    takes a <code class="literal">DirContextProcessor</code>:</p><div class="informalexample"><pre class="programlisting">public void search(SearchExecutor se, NameClassPairCallbackHandler handler,
+   DirContextProcessor processor) throws DataAccessException;</pre></div><p>Before the search operation, the <code class="literal">preProcess</code>
+    method is called on the given <code class="literal">DirContextProcessor</code>
+    instance. After the search has been executed and the resulting
+    <code class="literal">NamingEnumeration</code> has been processed, the
+    <code class="literal">postProcess</code> method is called. This enables a user to
+    perform operations on the <code class="literal">DirContext</code> to be used in the
+    search, and to check the <code class="literal">DirContext</code> when the search has
+    been performed. This can be very useful for example when handling request
+    and response controls.</p><p>There are also a few convenience methods for those that don't need a
+    custom <code class="literal">SearchExecutor</code>:</p><div class="informalexample"><pre class="programlisting">public void search(Name base, String filter,
+   SearchControls controls, NameClassPairCallbackHandler handler, DirContextProcessor processor)
+
+public void search(String base, String filter,
+   SearchControls controls, NameClassPairCallbackHandler handler, DirContextProcessor processor)
+   
+public void search(Name base, String filter,
+   SearchControls controls, AttributesMapper mapper, DirContextProcessor processor)
+   
+public void search(String base, String filter,
+   SearchControls controls, AttributesMapper mapper, DirContextProcessor processor)
+   
+public void search(Name base, String filter,
+   SearchControls controls, ContextMapper mapper, DirContextProcessor processor)
+
+public void search(String base, String filter,
+   SearchControls controls, ContextMapper mapper, DirContextProcessor processor)</pre></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="processor-others"></a>5.2.&nbsp;Implementing a Request Control DirContextProcessor</h2></div></div></div><p>The LDAPv3 protocol uses Controls to send and receive additional
+    data to affect the behavior of predefined operations. In order to simplify
+    the implementation of a request control
+    <code class="literal">DirContextProcessor</code>, Spring LDAP provides the base
+    class <code class="literal">AbstractRequestControlDirContextProcessor</code>. This
+    class handles the retrieval of the current request controls from the
+    <code class="literal">LdapContext</code>, calls a template method for creating a
+    request control, and adds it to the <code class="literal">LdapContext</code>. All
+    you have to do in the subclass is to implement the template method
+    <code class="literal">createRequestControl</code>, and of course the
+    <code class="literal">postProcess</code> method for performing whatever you need to
+    do after the search.</p><div class="informalexample"><pre class="programlisting">public abstract class AbstractRequestControlDirContextProcessor implements
+      DirContextProcessor {
+
+   public void preProcess(DirContext ctx) throws NamingException {
+      ...
+   }
+
+   public abstract Control createRequestControl();
+}</pre><p>A typical <code class="literal">DirContextProcessor</code> will be similar to the following:</p></div><div class="example"><a name="d0e1258"></a><p class="title"><b>Example&nbsp;5.1.&nbsp;A request control DirContextProcessor implementation</b></p><div class="example-contents"><pre class="programlisting">package com.example.control;
+
+public class MyCoolRequestControl extends AbstractRequestControlDirContextProcessor {
+   private static final boolean CRITICAL_CONTROL = true;
+   private MyCoolCookie cookie;
+   ...
+   public MyCoolCookie getCookie() {
+      return cookie;
+   }
+
+   public Control createRequestControl() {
+      return new SomeCoolControl(cookie.getCookie(), CRITICAL_CONTROL);
+   }
+
+   public void postProcess(DirContext ctx) throws NamingException {
+      LdapContext ldapContext = (LdapContext) ctx;
+      Control[] responseControls = ldapContext.getResponseControls();
+
+      for (int i = 0; i &lt; responseControls.length; i++) {
+         if (responseControls[i] instanceof SomeCoolResponseControl) {
+            SomeCoolResponseControl control = (SomeCoolResponseControl) responseControls[i];
+            this.cookie = new MyCoolCookie(control.getCookie());
+         }
+      }
+   }
+}</pre></div></div><br class="example-break"><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>Make sure you use <code class="literal">LdapContextSource</code> when you
+      use Controls. The <code class="literal"><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://java.sun.com/j2se/1.5.0/docs/api/javax/naming/ldap/Control.html" target="_top">Control</a></code>
+      interface is specific for LDAPv3 and requires that
+      <code class="literal">LdapContext</code> is used instead of
+      <code class="literal">DirContext</code>. If an
+      <code class="literal">AbstractRequestControlDirContextProcessor</code> subclass is
+      called with an argument that is not an <code class="literal">LdapContext</code>,
+      it will throw an <code class="literal">IllegalArgumentException</code>.</p></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e1288"></a>5.3.&nbsp;Paged Search Results</h2></div></div></div><p>Some searches may return large numbers of results. When there is no
+    easy way to filter out a smaller amount, it would be convenient to have
+    the server return only a certain number of results each time it is called.
+    This is known as <span class="emphasis"><em>paged search results</em></span>. Each "page" of
+    the result could then be displayed at the time, with links to the next and
+    previous page. Without this functionality, the client must either manually
+    limit the search result into pages, or retrieve the whole result and then
+    chop it into pages of suitable size. The former would be rather
+    complicated, and the latter would be consuming unnecessary amounts of
+    memory.</p><p>Some LDAP servers have support for the
+    <code class="literal">PagedResultsControl</code>, which requests that the results of
+    a search operation are returned by the LDAP server in pages of a specified
+    size. The user controls the rate at which the pages are returned, simply
+    by the rate at which the searches are called. However, the user must keep
+    track of a <span class="emphasis"><em>cookie</em></span> between the calls. The server uses
+    this cookie to keep track of where it left off the previous time it was
+    called with a paged results request.</p><p>Spring LDAP provides support for paged results by leveraging the
+    concept for pre- and postprocessing of an <code class="literal">LdapContext</code> that was discussed
+    in the previous sections. It does so by providing two classes:
+    <code class="literal">PagedResultsRequestControl</code> and
+    <code class="literal">PagedResultsCookie</code>. The
+    <code class="literal">PagedResultsRequestControl</code> class creates a
+    <code class="literal">PagedResultsControl</code> with the requested page size and
+    adds it to the <code class="literal">LdapContext</code>. After the search, it gets
+    the <code class="literal">PagedResultsResponseControl</code> and retrieves two
+    pieces of information from it: the estimated total result size and a
+    cookie. This cookie is a byte array containing information that the server
+    needs the next time it is called with a
+    <code class="literal">PagedResultsControl</code>. In order to make it easy to store
+    this cookie between searches, Spring LDAP provides the wrapper class
+    <code class="literal">PagedResultsCookie</code>.</p><p>Below is an example of how the paged search results functionality may
+    be used:</p><div class="example"><a name="d0e1335"></a><p class="title"><b>Example&nbsp;5.2.&nbsp;Paged results using <code class="literal">PagedResultsRequestControl</code></b></p><div class="example-contents"><pre class="programlisting">public PagedResult getAllPersons(PagedResultsCookie cookie) {
+   PagedResultsRequestControl control = new PagedResultsRequestControl(PAGE_SIZE, cookie);
+   SearchControls searchControls = new SearchControls();
+   searchControls.setSearchScope(SearchControls.SUBTREE_SCOPE);
+   
+   List persons = ldapTemplate.search("", "objectclass=person", searchControls, control);
+   
+   return new PagedResult(persons, control.getCookie());
+ }</pre></div></div><br class="example-break"><p>In the first call to this method, <code class="literal">null</code> will be supplied as
+    the cookie parameter. On subsequent calls the client will need to supply the cookie from
+    the last search (returned wrapped in the <code class="literal">PagedResult</code>) each time the 
+    method is called. When the actual cookie is <code class="literal">null</code> (i.e. 
+    <code class="literal">pagedResult.getCookie().getCookie()</code> returns <code class="literal">null</code>),
+    the last batch has been returned from the search.</p></div></div><div xmlns:fo="http://www.w3.org/1999/XSL/Format" class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="executors.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="transactions.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;4.&nbsp;Adding Missing Overloaded API Methods&nbsp;</td><td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.jayway.com/" title="Jayway">Sponsored by Jayway
+                                        </a></span></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;6.&nbsp;Transaction Support</td></tr></table></div></body></html>

@@ -1,0 +1,149 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: rpEjr4vvcn909FjtYxkbYwcT3Ic=
+Created-By: 1.6.0_17 (Sun Microsystems Inc.)
+SHA1-Digest-Manifest: WCigJWzG0SNgIb93aWdqfraw8n0=
+
+Name: xdoclet-mvcsoft-module-1.2.3.jar
+SHA1-Digest: SZ3/l7JdDJtsUUmwN/sLDyWdaqU=
+
+Name: xdoclet-jboss-module-1.2.3.jar
+SHA1-Digest: EGjFkbVF5XOVEOngIHxATwY9nvA=
+
+Name: xdoclet-ibm-module-1.2.3.jar
+SHA1-Digest: oE7AbV5d3V4z540iNBMcdeMBPgU=
+
+Name: xdoclet-libelis-module-1.2.3.jar
+SHA1-Digest: tQ7pUyU06KrpYAEhpwNAdkZ26b8=
+
+Name: commons-collections-2.0.jar
+SHA1-Digest: LQ3w++BZJ4evNHFyb/2PXsmrM5M=
+
+Name: commons-logging.jar
+SHA1-Digest: /zth/kpYjTytGOwj/JQy+loOHV8=
+
+Name: xdoclet-objectweb-module-1.2.3.jar
+SHA1-Digest: MgiU7ueLPWOOgzbjDeI63/UTerw=
+
+Name: xdoclet-hp-module-1.2.3.jar
+SHA1-Digest: emtOu+HVGBREjlUB9NvAGMlK9U4=
+
+Name: xdoclet-jmx-module-1.2.3.jar
+SHA1-Digest: utAIOu0NfgghwgTNU+mQKI653YA=
+
+Name: xdoclet-pt_BR-locale-1.2.3.jar
+SHA1-Digest: uV32dWGOoVM7ufXPmzx3U8YqtPQ=
+
+Name: xdoclet-web-module-1.2.3.jar
+SHA1-Digest: OMSUwvpvSyfTnz+sCK6asiueYFk=
+
+Name: xdoclet-pramati-module-1.2.3.jar
+SHA1-Digest: 3fVHu1f2fxJ5UsUEV8AW63XtTLQ=
+
+Name: xdoclet-orion-module-1.2.3.jar
+SHA1-Digest: JAmE6VL6jnmyUGuwDcGzOz8Ftzc=
+
+Name: maven-xdoclet-plugin-1.2.3.jar
+SHA1-Digest: /hVaaOHBpPb3CDUCxfx979AghnY=
+
+Name: xdoclet-fr_FR-locale-1.2.3.jar
+SHA1-Digest: wzcD1lnwphvM4KWr/lkiKrNMth4=
+
+Name: xjavadoc-1.1.jar
+SHA1-Digest: LNldkcQ6g3YkRPlBedSLtjiVmag=
+
+Name: xdoclet-wsee-module-1.2.3.jar
+SHA1-Digest: Xpf7Vtvg/YkpTRjEcvW+a35+DtE=
+
+Name: xdoclet-jdo-module-1.2.3.jar
+SHA1-Digest: 55vblciceZ0hDLvWlS+yteAcKGw=
+
+Name: xdoclet-hibernate-module-1.2.3.jar
+SHA1-Digest: ZXpxeju6jhWlYeEW3BsLxtLcmu0=
+
+Name: xdoclet-ejb-module-1.2.3.jar
+SHA1-Digest: vTzU0NoqHZ2vCTUtzjPNK8Er8VM=
+
+Name: xdoclet-portlet-module-1.2.3.jar
+SHA1-Digest: 3EEjiusy4cBnX4sDHbCPlx/f6Gw=
+
+Name: xdoclet-tjdo-module-1.2.3.jar
+SHA1-Digest: Kc/wRUZaRgvm/1e+fYdZ2a8J7uc=
+
+Name: xdoclet-sun-module-1.2.3.jar
+SHA1-Digest: TUHkpcURqMq3SEDAjvX99ZcxMys=
+
+Name: log4j.jar
+SHA1-Digest: S7Z/Hh94maCRtZyDvflJPnUjt/8=
+
+Name: xdoclet-solarmetric-module-1.2.3.jar
+SHA1-Digest: L8r2ZYIc6JQKOPy18MzGc81c+M8=
+
+Name: xdoclet-macromedia-module-1.2.3.jar
+SHA1-Digest: UcktUo1TA6f3Of/3m81hFruGZP0=
+
+Name: xdoclet-mx4j-module-1.2.3.jar
+SHA1-Digest: gFFcQjRzjJL/UWSIwfHorIXnODo=
+
+Name: xdoclet-xdoclet-module-1.2.3.jar
+SHA1-Digest: ZJllE5mGoc0RpLBhXMflUk9+Qx4=
+
+Name: xdoclet-sybase-module-1.2.3.jar
+SHA1-Digest: CjXBMw66rbkVVv+6BLDzSkvsHmg=
+
+Name: xdoclet-exolab-module-1.2.3.jar
+SHA1-Digest: SiE7Yb5j0nkQ8mr1AxnY64vEvuY=
+
+Name: xdoclet-de-locale-1.2.3.jar
+SHA1-Digest: pPLves6Wund9h5H99zvt+CfCOc0=
+
+Name: xdoclet-apache-module-1.2.3.jar
+SHA1-Digest: nj1gDZPlRAzAnfwKWH74ZYqVaac=
+
+Name: plugin.properties
+SHA1-Digest: tdf/l1eZ4EaEMOEwbCynW1JbCxY=
+
+Name: xdoclet-bea-module-1.2.3.jar
+SHA1-Digest: G8jkTclMcHOAsJ3vYCpw9tDYb7U=
+
+Name: xdoclet-java-module-1.2.3.jar
+SHA1-Digest: /EJWfOK4e1g1E43eVbA5uuU1c3Y=
+
+Name: xdoclet-borland-module-1.2.3.jar
+SHA1-Digest: FiR3D5g70lqWxH/e2kJSdbjf1rA=
+
+Name: xdoclet-spring-module-1.2.3.jar
+SHA1-Digest: iFqZlWZ4iTlXqzrdwUNIoVtWFP8=
+
+Name: org-jboss-ide-eclipse-xdoclet-core.jar
+SHA1-Digest: L12l+OkdfPHDxuG3KeCi+LgUzLk=
+
+Name: xdoclet-caucho-module-1.2.3.jar
+SHA1-Digest: 3x1mcdF4vxI4ZdGkqUvWZrZurDI=
+
+Name: xdoclet-openejb-module-1.2.3.jar
+SHA1-Digest: nS5fcekWVFMUt2Hm4zCJ8eVSOlM=
+
+Name: plugin.xml
+SHA1-Digest: A78T2UsMaRptpexhEwCToAbzq9A=
+
+Name: license.html
+SHA1-Digest: QJEhj5PLtAqcLgfDbPjp8mv9mvc=
+
+Name: xdoclet-1.2.3.jar
+SHA1-Digest: BZYTaa2NmlnUxn6QpmgnABWfniA=
+
+Name: xdoclet-mockobjects-module-1.2.3.jar
+SHA1-Digest: SVxlEYkcS6bXFRnfHz3oCKJ/tZc=
+
+Name: xdoclet-oracle-module-1.2.3.jar
+SHA1-Digest: nHY+fuhQISXiqNrKFnbuV37dNsk=
+
+Name: xdoclet-webwork-module-1.2.3.jar
+SHA1-Digest: naTc/sT4mu/NMJ7tE35Rn7s85+Q=
+
+Name: xdoclet-jsf-module-1.2.3.jar
+SHA1-Digest: bo3srzICcYrAL0lpw1NlCofXqU8=
+
+Name: jdk5/xjavadoc-1.5-snapshot050611.jar
+SHA1-Digest: p4nQsJNxqQu85yC7HQDvwWyqPjo=
+

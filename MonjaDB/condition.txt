@@ -1,0 +1,2 @@
+student:schoolNum > 0
+student:schoolNum > 1

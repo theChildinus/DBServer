@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wso2regsitry>
+
+    <currentDBConfig>wso2registry</currentDBConfig>
+
+    <readOnly>false</readOnly>
+
+    <registryRoot>/</registryRoot>
+
+    <dbConfig name="wso2registry">
+        <url>jdbc:h2:database/WSO2CARBON_DB</url>
+        <userName>wso2carbon</userName>
+        <password>wso2carbon</password>
+        <driverName>org.h2.Driver</driverName>
+        <maxActive>80</maxActive>
+        <maxWait>60000</maxWait>
+        <minIdle>5</minIdle>
+    </dbConfig>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.SynapseRepositoryHandler">
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/vnd.apache.synapse</property>
+        </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.SynapseRepositoryHandler">
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/vnd.wso2.esb</property>
+        </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.Axis2RepositoryHandler">
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/vnd.apache.axis2</property>
+        </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.Axis2RepositoryHandler">
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/vnd.wso2.wsas</property>
+        </filter>
+    </handler>
+
+    <!--handler class="org.wso2.carbon.registry.extensions.handlers.IndexingHandler">
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">text/plain</property>
+        </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.XMLIndexingHandler">
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/xml</property>
+        </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.PDFIndexingHandler">
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/pdf</property>
+        </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.MSWordIndexingHandler">
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/msword</property>
+        </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.MSExcelIndexingHandler">
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/vnd.ms-excel</property>
+        </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.MSPowerpointIndexingHandler">
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/vnd.ms-powerpoint</property>
+        </filter>
+    </handler-->
+
+	<handler class="org.wso2.carbon.registry.extensions.handlers.WSDLMediaTypeHandler">
+		<property name="schemaLocationConfiguration" type="xml">
+			<locationType>absolute</locationType>  
+            <location>/governance/schemas/</location>            
+	    </property>
+		<property name="wsdlLocationConfiguration" type="xml">
+            <locationType>absolute</locationType>  <!-- absolute or relative -->
+            <location>/governance/wsdls/</location>            
+	    </property>
+		<filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/wsdl+xml</property>
+        </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.ZipWSDLMediaTypeHandler">
+        <property name="wsdlMediaType">application/wsdl+xml</property>
+        <!--property name="wsdlExtension">.wsdl</property>
+        <property name="archiveExtension">.gar</property>
+        <property name="tempFilePrefix">wsdl</property-->
+        <property name="schemaLocationConfiguration" type="xml">
+            <locationType>absolute</locationType>
+            <location>/governance/schemas/</location>
+        </property>
+        <property name="wsdlLocationConfiguration" type="xml">
+            <locationType>absolute</locationType> <!-- absolute or relative -->
+            <location>/governance/wsdls/</location>
+        </property>
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/vnd.wso2.wsdl-archive</property>
+        </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.ServiceMediaTypeHandler">
+      <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+	<property name="mediaType">application/vnd.wso2-service+xml</property>
+      </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.PolicyMediaTypeHandler">
+	<property name="policyLocationConfiguration" type="xml">
+            <location>/governance/policies/</location>            
+	</property>
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/policy+xml</property>
+        </filter>
+    </handler>
+
+	<handler class="org.wso2.carbon.registry.extensions.handlers.XSDMediaTypeHandler">
+        <property name="locationConfiguration" type="xml">
+            <locationType>absolute</locationType>  <!-- absolute or relative -->
+            <location>/governance/schemas/</location>            
+        </property>
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/x-xsd+xml</property>
+        </filter>
+    </handler>
+
+    <handler class="org.wso2.carbon.registry.extensions.handlers.ExternalLinkHandler">
+        <filter class="org.wso2.carbon.registry.core.jdbc.handlers.filters.MediaTypeMatcher">
+            <property name="mediaType">application/vnd.external</property>
+        </filter>
+    </handler>
+
+	<!--remoteInstance url="https://host:port/registry">
+	<id>instanceid</id>
+	<username>username</username>
+	<password>password</password>
+    </remoteInstance-->
+
+       <staticConfiguration>
+        <versioningProperties>true</versioningProperties>
+        <versioningComments>true</versioningComments>
+        <versioningTags>true</versioningTags>
+        <versioningRatings>true</versioningRatings>
+        <!-- Location you want to add service and default location will be /governance/services/ -->
+        <servicePath>/governance/services</servicePath>
+      </staticConfiguration>
+
+		
+	<versionResourcesOnChange>true</versionResourcesOnChange>
+</wso2regsitry>

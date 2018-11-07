@@ -1,0 +1,5 @@
+package bupt.inc.wsmonitor.serviceserver.dao;
+
+public interface PersonDao {
+
+}

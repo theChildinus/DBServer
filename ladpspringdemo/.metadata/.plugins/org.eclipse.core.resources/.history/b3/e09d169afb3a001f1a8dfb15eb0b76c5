@@ -1,0 +1,8 @@
+package bupt.intt.wsmonitor.servicemonitor.domain.test;
+
+import junit.framework.TestCase;
+import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
+
+public class PersonTest extends TestCase {
+    
+}

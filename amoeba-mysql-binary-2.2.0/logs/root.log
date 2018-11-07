@@ -1,0 +1,1289 @@
+2018-11-07 09:35:27,288 INFO  net.MultiConnectionManagerWrapper - defaultManager LoopingThread willStart....
+2018-11-07 09:35:27,314 INFO  net.MultiConnectionManagerWrapper - defaultManager-0 connectionManager willStart....
+2018-11-07 09:35:27,314 INFO  net.MultiConnectionManagerWrapper - defaultManager-1 connectionManager willStart....
+2018-11-07 09:35:27,315 INFO  util.LoopingThread - defaultManager-1 LoopingThread willStart....
+2018-11-07 09:35:27,315 INFO  util.LoopingThread - defaultManager-0 LoopingThread willStart....
+2018-11-07 09:35:27,318 INFO  net.MultiConnectionManagerWrapper - clientConnectioneManager LoopingThread willStart....
+2018-11-07 09:35:27,319 INFO  net.MultiConnectionManagerWrapper - clientConnectioneManager-0 connectionManager willStart....
+2018-11-07 09:35:27,319 INFO  util.LoopingThread - clientConnectioneManager-0 LoopingThread willStart....
+2018-11-07 09:35:27,319 INFO  net.MultiConnectionManagerWrapper - clientConnectioneManager-1 connectionManager willStart....
+2018-11-07 09:35:27,319 INFO  util.LoopingThread - clientConnectioneManager-1 LoopingThread willStart....
+2018-11-07 09:35:27,351 INFO  context.MysqlRuntimeContext - Amoeba for Mysql current versoin=5.1.45-mysql-amoeba-proxy-2.2.0
+2018-11-07 09:35:27,596 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:27,619 INFO  net.MysqlServerConnection - mysql server Handshake= com.meidusa.amoeba.mysql.net.packet.HandshakePacket@3602ca[protocolVersion=10,serverVersion=5.7.22-log,threadId=4076,seed= CEyhl,serverCapabilities=63487,serverCharsetIndex=8,serverStatus=2,restOfScrambleBuff=^@Br%m,packetLength=78,packetId=0]
+2018-11-07 09:35:27,625 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29490137
+2018-11-07 09:35:27,626 ERROR context.ProxyRuntimeContext - init pool error!
+java.util.NoSuchElementException: Could not create a validated object, cause: ValidateObject failed
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1191)
+	at com.meidusa.amoeba.net.poolable.GenericObjectPool.borrowObject(GenericObjectPool.java:381)
+	at com.meidusa.amoeba.context.ProxyRuntimeContext.initPools(ProxyRuntimeContext.java:308)
+	at com.meidusa.amoeba.context.ProxyRuntimeContext.init(ProxyRuntimeContext.java:296)
+	at com.meidusa.amoeba.server.AmoebaProxyServer.main(AmoebaProxyServer.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.classworlds.Launcher.launchStandard(Launcher.java:410)
+	at org.codehaus.classworlds.Launcher.launch(Launcher.java:344)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:461)
+2018-11-07 09:35:27,628 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:27,631 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25920277
+2018-11-07 09:35:27,633 ERROR context.ProxyRuntimeContext - init pool error!
+java.util.NoSuchElementException: Could not create a validated object, cause: ValidateObject failed
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1191)
+	at com.meidusa.amoeba.net.poolable.GenericObjectPool.borrowObject(GenericObjectPool.java:381)
+	at com.meidusa.amoeba.context.ProxyRuntimeContext.initPools(ProxyRuntimeContext.java:308)
+	at com.meidusa.amoeba.context.ProxyRuntimeContext.init(ProxyRuntimeContext.java:296)
+	at com.meidusa.amoeba.server.AmoebaProxyServer.main(AmoebaProxyServer.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.classworlds.Launcher.launchStandard(Launcher.java:410)
+	at org.codehaus.classworlds.Launcher.launch(Launcher.java:344)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:461)
+2018-11-07 09:35:27,678 INFO  util.LoopingThread - Amoeba for Mysql LoopingThread willStart....
+2018-11-07 09:35:27,681 INFO  util.LoopingThread - Amoeba Monitor Server LoopingThread willStart....
+2018-11-07 09:35:27,680 INFO  net.ServerableConnectionManager - Amoeba for Mysql listening on 0.0.0.0/0.0.0.0:8066.
+2018-11-07 09:35:27,682 INFO  net.ServerableConnectionManager - Amoeba Monitor Server listening on /127.0.0.1:38364.
+2018-11-07 09:35:30,370 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:30,373 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28213154
+2018-11-07 09:35:30,409 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:30,412 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9596455
+2018-11-07 09:35:33,379 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:33,385 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=514977
+2018-11-07 09:35:33,414 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:33,420 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=2239287
+2018-11-07 09:35:36,390 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:36,394 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24254798
+2018-11-07 09:35:36,423 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:36,426 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=13213299
+2018-11-07 09:35:39,394 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:39,401 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24755991
+2018-11-07 09:35:39,429 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:39,434 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14318746
+2018-11-07 09:35:42,403 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:42,406 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11818761
+2018-11-07 09:35:42,438 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:42,441 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=30277746
+2018-11-07 09:35:45,407 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:45,413 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24447422
+2018-11-07 09:35:45,441 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:45,447 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16488866
+2018-11-07 09:35:48,454 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:48,457 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16847377
+2018-11-07 09:35:48,459 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:48,463 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29862366
+2018-11-07 09:35:51,460 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:51,463 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10238165
+2018-11-07 09:35:51,465 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:51,469 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=13668266
+2018-11-07 09:35:54,467 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:54,470 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20448087
+2018-11-07 09:35:54,471 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:54,474 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20647003
+2018-11-07 09:35:57,473 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:57,476 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19148502
+2018-11-07 09:35:57,476 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:35:57,479 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21672283
+2018-11-07 09:36:00,478 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:00,481 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14971483
+2018-11-07 09:36:00,482 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:00,484 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6126218
+2018-11-07 09:36:03,483 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:03,486 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=22138756
+2018-11-07 09:36:03,488 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:03,491 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25945494
+2018-11-07 09:36:06,490 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:06,493 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=22642837
+2018-11-07 09:36:06,495 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:06,497 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=5531861
+2018-11-07 09:36:09,494 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:09,497 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17998702
+2018-11-07 09:36:09,498 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:09,500 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17026332
+2018-11-07 09:36:12,499 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:12,503 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25173761
+2018-11-07 09:36:12,503 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:12,507 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15420858
+2018-11-07 09:36:15,505 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:15,508 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14027521
+2018-11-07 09:36:15,514 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:15,516 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18121895
+2018-11-07 09:36:18,513 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:18,516 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16103746
+2018-11-07 09:36:18,517 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:18,520 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20588226
+2018-11-07 09:36:21,518 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:21,521 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4618811
+2018-11-07 09:36:21,522 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:21,525 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31313774
+2018-11-07 09:36:24,523 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:24,525 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26590004
+2018-11-07 09:36:24,526 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:24,529 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11341471
+2018-11-07 09:36:27,528 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:27,530 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31262300
+2018-11-07 09:36:27,531 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:27,534 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16417635
+2018-11-07 09:36:27,682 INFO  report -  State of server report:
+- Uptime: 1m 1s 725ms
+- Report period: 1m 1s 725ms
+- Memory: 33031k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=0, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=0, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-07 09:36:30,532 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:30,535 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24927694
+2018-11-07 09:36:30,535 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:30,538 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10257867
+2018-11-07 09:36:33,537 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:33,539 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29417190
+2018-11-07 09:36:33,540 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:33,542 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=12985825
+2018-11-07 09:36:36,541 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:36,543 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27147337
+2018-11-07 09:36:36,544 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:36,547 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26740769
+2018-11-07 09:36:39,546 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:39,549 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27736223
+2018-11-07 09:36:39,550 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:39,553 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15197167
+2018-11-07 09:36:42,555 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:42,557 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32834038
+2018-11-07 09:36:42,559 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:42,561 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7771649
+2018-11-07 09:36:45,558 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:45,561 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9517656
+2018-11-07 09:36:45,562 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:45,565 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=22846326
+2018-11-07 09:36:48,562 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:48,565 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20482680
+2018-11-07 09:36:48,566 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:48,569 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11978852
+2018-11-07 09:36:51,567 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:51,570 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25603172
+2018-11-07 09:36:51,570 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:51,573 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25582253
+2018-11-07 09:36:54,572 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:54,575 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8832106
+2018-11-07 09:36:54,575 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:54,578 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=2531395
+2018-11-07 09:36:57,577 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:57,580 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11739585
+2018-11-07 09:36:57,582 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:36:57,584 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21636670
+2018-11-07 09:37:00,582 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:00,584 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4241272
+2018-11-07 09:37:00,585 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:00,587 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=33461828
+2018-11-07 09:37:03,587 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:03,589 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3103395
+2018-11-07 09:37:03,593 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:03,595 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15399519
+2018-11-07 09:37:06,593 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:06,596 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24650241
+2018-11-07 09:37:06,597 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:06,599 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31477093
+2018-11-07 09:37:09,602 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:09,604 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20312978
+2018-11-07 09:37:09,609 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:09,612 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25970160
+2018-11-07 09:37:12,609 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:12,612 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21916784
+2018-11-07 09:37:12,614 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:12,617 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20017845
+2018-11-07 09:37:15,613 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:15,616 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24726624
+2018-11-07 09:37:15,618 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:15,621 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9525786
+2018-11-07 09:37:18,636 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:18,640 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10624392
+2018-11-07 09:37:18,641 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:18,647 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18031372
+2018-11-07 09:37:21,642 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:21,645 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4788792
+2018-11-07 09:37:21,648 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:21,651 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29651787
+2018-11-07 09:37:24,659 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:24,662 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9511116
+2018-11-07 09:37:24,662 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:24,665 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=33156005
+2018-11-07 09:37:27,669 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:27,673 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7186061
+2018-11-07 09:37:27,675 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:27,677 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6793065
+2018-11-07 09:37:27,737 INFO  report -  State of server report:
+- Uptime: 2m 1s 780ms
+- Report period: 2m 1s 780ms
+- Memory: 33031k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=0, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=0, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-07 09:37:30,676 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:30,680 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=30286056
+2018-11-07 09:37:30,680 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:30,683 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=2935352
+2018-11-07 09:37:33,684 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:33,687 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26934713
+2018-11-07 09:37:33,687 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:33,690 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21025981
+2018-11-07 09:37:36,690 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:36,692 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31181987
+2018-11-07 09:37:36,693 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:36,696 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=30785546
+2018-11-07 09:37:39,695 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:39,698 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4669552
+2018-11-07 09:37:39,698 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:39,701 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10050345
+2018-11-07 09:37:42,699 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:42,702 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6231079
+2018-11-07 09:37:42,704 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:42,706 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32609600
+2018-11-07 09:37:45,704 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:45,707 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19321535
+2018-11-07 09:37:45,707 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:45,710 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27469166
+2018-11-07 09:37:48,710 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:48,712 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27748407
+2018-11-07 09:37:48,713 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:48,716 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23465969
+2018-11-07 09:37:51,715 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:51,718 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4726262
+2018-11-07 09:37:51,720 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:51,723 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=2429258
+2018-11-07 09:37:54,720 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:54,723 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7979551
+2018-11-07 09:37:54,724 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:54,726 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=22088143
+2018-11-07 09:37:57,726 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:57,728 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28905648
+2018-11-07 09:37:57,730 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:37:57,732 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19178684
+2018-11-07 09:38:00,730 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:00,733 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18859229
+2018-11-07 09:38:00,733 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:00,737 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10211078
+2018-11-07 09:38:03,736 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:03,738 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31647624
+2018-11-07 09:38:03,740 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:03,743 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14989267
+2018-11-07 09:38:06,741 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:06,744 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27178486
+2018-11-07 09:38:06,745 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:06,748 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19637583
+2018-11-07 09:38:09,753 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:09,756 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32551238
+2018-11-07 09:38:09,757 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:09,760 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=30802933
+2018-11-07 09:38:12,760 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:12,763 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3347952
+2018-11-07 09:38:12,764 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:12,766 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32211177
+2018-11-07 09:38:15,765 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:15,768 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28903894
+2018-11-07 09:38:15,768 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:15,771 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32013217
+2018-11-07 09:38:18,769 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:18,772 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26813109
+2018-11-07 09:38:18,772 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:18,775 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9927852
+2018-11-07 09:38:21,774 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:21,776 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9299069
+2018-11-07 09:38:21,780 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:21,783 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31148936
+2018-11-07 09:38:24,783 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:24,785 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6413207
+2018-11-07 09:38:24,787 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:24,789 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17539203
+2018-11-07 09:38:27,737 INFO  report -  State of server report:
+- Uptime: 3m 1s 780ms
+- Report period: 3m 1s 780ms
+- Memory: 34352k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=0, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=0, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-07 09:38:27,788 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:27,790 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6298311
+2018-11-07 09:38:27,791 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:27,794 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18152237
+2018-11-07 09:38:30,793 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:30,795 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25497779
+2018-11-07 09:38:30,796 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:30,799 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=12155830
+2018-11-07 09:38:33,797 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:33,800 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28844078
+2018-11-07 09:38:33,801 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:33,803 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=1536822
+2018-11-07 09:38:36,801 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:36,804 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=1116175
+2018-11-07 09:38:36,804 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:36,807 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26807853
+2018-11-07 09:38:39,828 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:39,831 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=2067393
+2018-11-07 09:38:39,832 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:39,836 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19827612
+2018-11-07 09:38:42,835 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:42,837 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28379152
+2018-11-07 09:38:42,838 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:42,841 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4871438
+2018-11-07 09:38:45,840 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:45,843 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27111789
+2018-11-07 09:38:45,844 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:45,846 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20872473
+2018-11-07 09:38:48,846 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:48,849 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32098716
+2018-11-07 09:38:48,850 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:48,854 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27402122
+2018-11-07 09:38:51,853 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:51,856 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11029186
+2018-11-07 09:38:51,857 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:51,860 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23678694
+2018-11-07 09:38:54,859 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:54,862 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27150117
+2018-11-07 09:38:54,863 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:54,865 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=1761801
+2018-11-07 09:38:57,864 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:57,867 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17692471
+2018-11-07 09:38:57,868 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:38:57,870 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14194056
+2018-11-07 09:39:00,870 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:00,873 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=666845
+2018-11-07 09:39:00,875 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:00,878 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9032926
+2018-11-07 09:39:03,875 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:03,877 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=33550995
+2018-11-07 09:39:03,879 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:03,882 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=917898
+2018-11-07 09:39:06,879 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:06,882 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3571238
+2018-11-07 09:39:06,888 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:06,901 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6867282
+2018-11-07 09:39:09,888 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:09,891 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=5530596
+2018-11-07 09:39:09,903 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:09,906 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=13682107
+2018-11-07 09:39:12,894 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:12,898 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18081991
+2018-11-07 09:39:12,912 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:12,915 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9279934
+2018-11-07 09:39:15,902 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:15,905 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14682501
+2018-11-07 09:39:15,919 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:15,933 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21913516
+2018-11-07 09:39:18,911 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:18,914 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=30653307
+2018-11-07 09:39:18,950 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:18,952 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=22373430
+2018-11-07 09:39:21,915 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:21,918 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=22668173
+2018-11-07 09:39:21,958 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:21,962 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=1932087
+2018-11-07 09:39:24,926 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:24,929 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=13677457
+2018-11-07 09:39:24,985 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:24,987 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6996495
+2018-11-07 09:39:27,738 INFO  report -  State of server report:
+- Uptime: 4m 1s 781ms
+- Report period: 4m 1s 781ms
+- Memory: 35677k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=0, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=0, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-07 09:39:27,937 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:27,939 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19589228
+2018-11-07 09:39:27,988 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:27,991 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10132795
+2018-11-07 09:39:30,943 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:30,946 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21965963
+2018-11-07 09:39:31,012 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:31,015 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20047133
+2018-11-07 09:39:33,949 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:33,952 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18777818
+2018-11-07 09:39:34,015 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:34,018 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=13880367
+2018-11-07 09:39:36,971 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:36,973 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6910985
+2018-11-07 09:39:37,052 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:37,055 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27069728
+2018-11-07 09:39:39,976 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:39,978 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14871153
+2018-11-07 09:39:40,058 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:40,061 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15809068
+2018-11-07 09:39:42,982 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:42,984 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18800445
+2018-11-07 09:39:43,069 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:43,071 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7744730
+2018-11-07 09:39:45,995 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:45,998 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7432498
+2018-11-07 09:39:46,073 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:46,076 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=5812905
+2018-11-07 09:39:48,999 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:49,002 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27032572
+2018-11-07 09:39:49,079 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:49,082 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9883315
+2018-11-07 09:39:52,004 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:52,008 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=33258472
+2018-11-07 09:39:52,100 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:52,102 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4738861
+2018-11-07 09:39:55,013 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:55,015 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32295475
+2018-11-07 09:39:55,111 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:55,113 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4953843
+2018-11-07 09:39:58,027 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:58,030 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8228317
+2018-11-07 09:39:58,116 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:39:58,118 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=5917479
+2018-11-07 09:40:01,046 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:01,049 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=13974215
+2018-11-07 09:40:01,124 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:01,126 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25314319
+2018-11-07 09:40:04,051 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:04,054 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18547639
+2018-11-07 09:40:04,128 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:04,130 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7482521
+2018-11-07 09:40:07,064 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:07,066 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10030690
+2018-11-07 09:40:07,134 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:07,137 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14625679
+2018-11-07 09:40:10,067 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:10,071 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10260243
+2018-11-07 09:40:10,140 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:10,142 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24277937
+2018-11-07 09:40:13,075 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:13,078 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32687629
+2018-11-07 09:40:13,148 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:13,151 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14400610
+2018-11-07 09:40:16,082 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:16,084 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29950542
+2018-11-07 09:40:16,154 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:16,157 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20810568
+2018-11-07 09:40:19,105 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:19,108 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26506299
+2018-11-07 09:40:19,180 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:19,182 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27052413
+2018-11-07 09:40:22,112 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:22,115 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8885569
+2018-11-07 09:40:22,186 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:22,188 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27637255
+2018-11-07 09:40:25,128 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:25,130 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10417215
+2018-11-07 09:40:25,220 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:25,222 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26035924
+2018-11-07 09:40:27,739 INFO  report -  State of server report:
+- Uptime: 5m 1s 782ms
+- Report period: 5m 1s 782ms
+- Memory: 35677k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=0, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=0, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-07 09:40:28,134 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:28,137 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14004513
+2018-11-07 09:40:28,223 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:28,226 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4315676
+2018-11-07 09:40:31,141 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:31,143 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6267181
+2018-11-07 09:40:31,255 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:31,257 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3454095
+2018-11-07 09:40:34,160 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:34,163 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18278630
+2018-11-07 09:40:34,258 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:34,261 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29179759
+2018-11-07 09:40:37,169 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:37,172 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10905853
+2018-11-07 09:40:37,272 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:37,275 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8319864
+2018-11-07 09:40:40,175 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:40,177 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16678832
+2018-11-07 09:40:40,277 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:40,280 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15579557
+2018-11-07 09:40:43,198 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:43,200 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10739452
+2018-11-07 09:40:43,286 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:43,288 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19440661
+2018-11-07 09:40:46,202 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:46,204 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6789038
+2018-11-07 09:40:46,293 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:46,295 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10996112
+2018-11-07 09:40:49,222 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:49,225 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11084186
+2018-11-07 09:40:49,308 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:49,310 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17137416
+2018-11-07 09:40:52,228 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:52,231 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20022025
+2018-11-07 09:40:52,318 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:52,321 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=12807279
+2018-11-07 09:40:55,250 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:55,252 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20366946
+2018-11-07 09:40:55,336 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:55,339 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16997162
+2018-11-07 09:40:58,271 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:58,274 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=947203
+2018-11-07 09:40:58,341 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:40:58,344 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=33284362
+2018-11-07 09:41:01,279 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:01,282 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24495780
+2018-11-07 09:41:01,377 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:01,380 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=13303553
+2018-11-07 09:41:04,283 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:04,286 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21593784
+2018-11-07 09:41:04,383 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:04,385 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=5886894
+2018-11-07 09:41:07,292 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:07,295 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28598399
+2018-11-07 09:41:07,398 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:07,401 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28291117
+2018-11-07 09:41:10,297 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:10,300 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=12105449
+2018-11-07 09:41:10,402 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:10,409 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24525256
+2018-11-07 09:41:13,307 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:13,310 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4930093
+2018-11-07 09:41:13,424 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:13,426 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7464525
+2018-11-07 09:41:16,312 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:16,323 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29729975
+2018-11-07 09:41:16,429 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:16,432 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=12488746
+2018-11-07 09:41:19,337 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:19,340 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3546064
+2018-11-07 09:41:19,440 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:19,443 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8203116
+2018-11-07 09:41:22,341 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:22,344 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=13556315
+2018-11-07 09:41:22,444 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:22,447 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15209730
+2018-11-07 09:41:25,362 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:25,364 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=12033748
+2018-11-07 09:41:25,452 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:25,455 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=12293829
+2018-11-07 09:41:27,745 INFO  report -  State of server report:
+- Uptime: 6m 1s 788ms
+- Report period: 6m 1s 788ms
+- Memory: 36998k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=0, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=0, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-07 09:41:28,369 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:28,372 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26504817
+2018-11-07 09:41:28,457 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:28,460 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7284597
+2018-11-07 09:41:31,381 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:31,383 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32975603
+2018-11-07 09:41:31,464 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:31,467 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11737061
+2018-11-07 09:41:34,386 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:34,389 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=13309114
+2018-11-07 09:41:34,479 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:34,481 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15720125
+2018-11-07 09:41:37,394 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:37,397 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19864062
+2018-11-07 09:41:37,495 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:37,498 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10151881
+2018-11-07 09:41:40,400 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:40,403 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17157499
+2018-11-07 09:41:40,501 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:40,503 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10106844
+2018-11-07 09:41:43,414 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:43,418 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3200893
+2018-11-07 09:41:43,515 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:43,518 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16755519
+2018-11-07 09:41:46,419 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:46,422 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21477150
+2018-11-07 09:41:46,520 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:46,523 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23531307
+2018-11-07 09:41:49,447 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:49,449 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26571602
+2018-11-07 09:41:49,533 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:49,535 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8761092
+2018-11-07 09:41:52,453 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:52,455 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23275530
+2018-11-07 09:41:52,540 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:52,543 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=30166599
+2018-11-07 09:41:55,457 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:55,460 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18954926
+2018-11-07 09:41:55,549 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:55,552 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=30302571
+2018-11-07 09:41:58,463 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:58,465 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29768027
+2018-11-07 09:41:58,553 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:41:58,556 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21396569
+2018-11-07 09:42:01,470 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:01,473 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27162393
+2018-11-07 09:42:01,568 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:01,571 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=2799803
+2018-11-07 09:42:04,474 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:04,477 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8694785
+2018-11-07 09:42:04,573 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:04,575 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21777493
+2018-11-07 09:42:07,479 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:07,481 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10208803
+2018-11-07 09:42:07,597 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:07,600 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19037785
+2018-11-07 09:42:10,491 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:10,494 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=5368925
+2018-11-07 09:42:10,602 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:10,605 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28855968
+2018-11-07 09:42:13,497 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:13,500 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=12864009
+2018-11-07 09:42:13,611 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:13,614 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32611262
+2018-11-07 09:42:16,503 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:16,510 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25203855
+2018-11-07 09:42:16,617 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:16,619 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24119769
+2018-11-07 09:42:19,514 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:19,520 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11924982
+2018-11-07 09:42:19,623 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:19,625 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21503158
+2018-11-07 09:42:22,521 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:22,524 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=22314697
+2018-11-07 09:42:22,626 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:22,629 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17548409
+2018-11-07 09:42:25,527 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:25,529 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=548140
+2018-11-07 09:42:25,632 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:25,635 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26962306
+2018-11-07 09:42:27,758 INFO  report -  State of server report:
+- Uptime: 7m 1s 801ms
+- Report period: 7m 1s 801ms
+- Memory: 38319k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-1, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-07 09:42:28,578 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:28,580 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19168210
+2018-11-07 09:42:28,643 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:28,645 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17675839
+2018-11-07 09:42:31,583 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:31,587 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=5233305
+2018-11-07 09:42:31,648 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:31,650 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11596337
+2018-11-07 09:42:34,610 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:34,612 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=12827001
+2018-11-07 09:42:34,662 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:34,664 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4392000
+2018-11-07 09:42:37,616 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:37,619 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3656231
+2018-11-07 09:42:37,683 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:37,686 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29145374
+2018-11-07 09:42:40,627 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:40,630 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32084148
+2018-11-07 09:42:40,693 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:40,696 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10862549
+2018-11-07 09:42:43,649 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:43,652 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=2722751
+2018-11-07 09:42:43,697 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:43,700 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=12952042
+2018-11-07 09:42:46,684 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:46,687 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25154556
+2018-11-07 09:42:46,709 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:46,713 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8093198
+2018-11-07 09:42:49,689 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:49,692 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28276349
+2018-11-07 09:42:49,715 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:49,718 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17718072
+2018-11-07 09:42:52,713 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:52,716 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=1332588
+2018-11-07 09:42:52,719 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:52,723 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24643014
+2018-11-07 09:42:55,717 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:55,720 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16892277
+2018-11-07 09:42:55,724 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:55,727 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27308277
+2018-11-07 09:42:58,730 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:58,733 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27620374
+2018-11-07 09:42:58,735 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:42:58,738 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6747436
+2018-11-07 09:43:01,735 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:01,737 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23612352
+2018-11-07 09:43:01,739 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:01,741 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14656174
+2018-11-07 09:43:04,740 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:04,743 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8026821
+2018-11-07 09:43:04,744 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:04,747 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31216075
+2018-11-07 09:43:07,780 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:07,785 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=22711600
+2018-11-07 09:43:07,793 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:07,796 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21995338
+2018-11-07 09:43:10,804 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:10,807 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32145341
+2018-11-07 09:43:10,810 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:10,812 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29021590
+2018-11-07 09:43:13,829 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:13,831 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26461302
+2018-11-07 09:43:13,832 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:13,834 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=13142021
+2018-11-07 09:43:16,832 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:16,836 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3217518
+2018-11-07 09:43:16,836 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:16,841 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=715232
+2018-11-07 09:43:19,860 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:19,862 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32445016
+2018-11-07 09:43:19,863 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:19,865 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15607259
+2018-11-07 09:43:22,864 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:22,867 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21451030
+2018-11-07 09:43:22,868 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:22,870 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28498144
+2018-11-07 09:43:25,870 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:25,872 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=30457656
+2018-11-07 09:43:25,874 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:25,876 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32559779
+2018-11-07 09:43:27,760 INFO  report -  State of server report:
+- Uptime: 8m 1s 803ms
+- Report period: 8m 1s 803ms
+- Memory: 38319k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-1, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-07 09:43:28,876 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:28,878 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29112207
+2018-11-07 09:43:28,879 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:28,881 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23363899
+2018-11-07 09:43:31,879 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:31,882 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=22526638
+2018-11-07 09:43:31,882 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:31,885 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18262259
+2018-11-07 09:43:34,883 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:34,886 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19195822
+2018-11-07 09:43:34,886 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:34,889 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19266967
+2018-11-07 09:43:37,888 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:37,891 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15214078
+2018-11-07 09:43:37,892 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:37,894 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21489996
+2018-11-07 09:43:40,894 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:40,896 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9549601
+2018-11-07 09:43:40,898 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:40,900 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10772720
+2018-11-07 09:43:43,900 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:43,902 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18436367
+2018-11-07 09:43:43,905 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:43,907 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20030895
+2018-11-07 09:43:46,906 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:46,908 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25275204
+2018-11-07 09:43:46,909 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:46,912 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3820930
+2018-11-07 09:43:49,911 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:49,914 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8638576
+2018-11-07 09:43:49,915 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:49,918 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31900220
+2018-11-07 09:43:52,916 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:52,919 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15271259
+2018-11-07 09:43:52,920 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:52,922 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=541121
+2018-11-07 09:43:55,926 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:55,930 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9803968
+2018-11-07 09:43:55,931 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:55,934 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28497693
+2018-11-07 09:43:58,932 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:58,934 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9455352
+2018-11-07 09:43:58,937 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:43:58,939 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28645192
+2018-11-07 09:44:01,937 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:01,939 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=32765695
+2018-11-07 09:44:01,941 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:01,944 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16450115
+2018-11-07 09:44:04,942 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:04,945 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=898132
+2018-11-07 09:44:04,946 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:04,948 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31458351
+2018-11-07 09:44:07,949 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:07,952 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27438228
+2018-11-07 09:44:07,952 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:07,955 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23240796
+2018-11-07 09:44:10,953 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:10,958 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14191029
+2018-11-07 09:44:10,959 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:10,964 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14827134
+2018-11-07 09:44:13,959 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:13,964 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11659892
+2018-11-07 09:44:13,966 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:13,975 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14716548
+2018-11-07 09:44:16,978 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:16,980 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10388370
+2018-11-07 09:44:16,982 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:16,985 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14198549
+2018-11-07 09:44:19,983 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:19,986 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25607280
+2018-11-07 09:44:19,987 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:19,992 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26301232
+2018-11-07 09:44:22,988 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:22,994 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15622933
+2018-11-07 09:44:22,994 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:23,003 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=255306
+2018-11-07 09:44:25,995 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:26,001 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17656414
+2018-11-07 09:44:26,005 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:26,010 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18044905
+2018-11-07 09:44:27,761 INFO  report -  State of server report:
+- Uptime: 9m 1s 804ms
+- Report period: 9m 1s 804ms
+- Memory: 38319k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=0, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-1, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-07 09:44:29,002 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:29,007 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21870231
+2018-11-07 09:44:29,012 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:29,023 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19230288
+2018-11-07 09:44:32,008 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:32,014 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9509711
+2018-11-07 09:44:32,025 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:32,032 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=21352943
+2018-11-07 09:44:35,016 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:35,019 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7680586
+2018-11-07 09:44:35,035 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:35,038 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9001018
+2018-11-07 09:44:38,022 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:38,027 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3446473
+2018-11-07 09:44:38,038 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:38,043 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17376433
+2018-11-07 09:44:41,028 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:41,033 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8219810
+2018-11-07 09:44:41,045 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:41,050 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7275500
+2018-11-07 09:44:44,035 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:44,038 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3490974
+2018-11-07 09:44:44,053 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:44,056 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24802908
+2018-11-07 09:44:47,040 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:47,045 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24523326
+2018-11-07 09:44:47,057 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:47,060 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9528079
+2018-11-07 09:44:50,049 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:50,052 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=5760078
+2018-11-07 09:44:50,063 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:50,065 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28780817
+2018-11-07 09:44:53,053 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:53,059 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7171216
+2018-11-07 09:44:53,070 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:53,077 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16517013
+2018-11-07 09:44:56,064 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:56,069 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3993101
+2018-11-07 09:44:56,079 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:56,089 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9671481
+2018-11-07 09:44:59,069 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:59,075 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=12410785
+2018-11-07 09:44:59,091 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:44:59,097 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=781681
+2018-11-07 09:45:02,078 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:02,083 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10870290
+2018-11-07 09:45:02,099 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:02,104 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16952136
+2018-11-07 09:45:05,084 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:05,090 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23961569
+2018-11-07 09:45:05,107 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:05,113 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26647005
+2018-11-07 09:45:08,094 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:08,100 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19535315
+2018-11-07 09:45:08,114 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:08,117 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14012374
+2018-11-07 09:45:11,100 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:11,106 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19405708
+2018-11-07 09:45:11,119 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:11,126 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9170204
+2018-11-07 09:45:14,107 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:14,110 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25155893
+2018-11-07 09:45:14,128 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:14,131 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15244269
+2018-11-07 09:45:17,114 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:17,117 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26769561
+2018-11-07 09:45:17,134 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:17,137 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=2077006
+2018-11-07 09:45:20,118 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:20,124 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=196453
+2018-11-07 09:45:20,140 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:20,145 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=22234050
+2018-11-07 09:45:23,126 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:23,132 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26101139
+2018-11-07 09:45:23,147 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:23,152 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20178849
+2018-11-07 09:45:26,134 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:26,140 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17317546
+2018-11-07 09:45:26,155 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:26,161 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8663995
+2018-11-07 09:45:27,380 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,385 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6755895
+2018-11-07 09:45:27,386 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,391 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14167978
+2018-11-07 09:45:27,392 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,398 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=25783378
+2018-11-07 09:45:27,400 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,409 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11972833
+2018-11-07 09:45:27,411 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,417 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=33120196
+2018-11-07 09:45:27,417 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,423 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27068031
+2018-11-07 09:45:27,423 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,429 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16498877
+2018-11-07 09:45:27,430 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,450 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24696771
+2018-11-07 09:45:27,450 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,453 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11553972
+2018-11-07 09:45:27,454 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,457 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31993371
+2018-11-07 09:45:27,457 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,460 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=1696166
+2018-11-07 09:45:27,461 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,463 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23842520
+2018-11-07 09:45:27,464 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,472 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18488727
+2018-11-07 09:45:27,472 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,475 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3058523
+2018-11-07 09:45:27,475 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,478 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=997998
+2018-11-07 09:45:27,479 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,482 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20433725
+2018-11-07 09:45:27,482 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,485 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31544505
+2018-11-07 09:45:27,485 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,489 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6301540
+2018-11-07 09:45:27,490 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,495 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27019221
+2018-11-07 09:45:27,496 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:27,499 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3172316
+2018-11-07 09:45:27,762 INFO  report -  State of server report:
+- Uptime: 10m 1s 805ms
+- Report period: 10m 1s 805ms
+- Memory: 40962k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-1, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-2, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-07 09:45:29,143 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:29,148 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10175649
+2018-11-07 09:45:29,162 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:29,168 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=15399387
+2018-11-07 09:45:32,149 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:32,152 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=31834828
+2018-11-07 09:45:32,169 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:32,172 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=24683729
+2018-11-07 09:45:35,153 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:35,156 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=19030998
+2018-11-07 09:45:35,175 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:35,179 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=33192517
+2018-11-07 09:45:38,158 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:38,164 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=5621644
+2018-11-07 09:45:38,180 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:38,185 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=619726
+2018-11-07 09:45:41,166 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:41,172 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16671828
+2018-11-07 09:45:41,188 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:41,193 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10350226
+2018-11-07 09:45:44,172 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:44,175 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23208815
+2018-11-07 09:45:44,195 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:44,198 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7345105
+2018-11-07 09:45:47,186 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:47,188 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16351627
+2018-11-07 09:45:47,200 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:47,208 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=30553615
+2018-11-07 09:45:50,218 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:50,221 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18073655
+2018-11-07 09:45:50,222 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:50,226 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4480904
+2018-11-07 09:45:53,225 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:53,228 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23763532
+2018-11-07 09:45:53,229 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:53,232 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=30475000
+2018-11-07 09:45:56,277 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:56,280 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=2419370
+2018-11-07 09:45:56,281 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:56,284 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=17503655
+2018-11-07 09:45:59,282 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:59,284 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=26912070
+2018-11-07 09:45:59,285 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:45:59,288 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27674873
+2018-11-07 09:46:02,285 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:02,288 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7330635
+2018-11-07 09:46:02,288 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:02,291 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6148719
+2018-11-07 09:46:05,289 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:05,292 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=14914818
+2018-11-07 09:46:05,294 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:05,297 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16831140
+2018-11-07 09:46:08,296 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:08,298 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=20967014
+2018-11-07 09:46:08,301 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:08,304 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4305405
+2018-11-07 09:46:11,302 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:11,306 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=16034506
+2018-11-07 09:46:11,306 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:11,311 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=5391387
+2018-11-07 09:46:14,309 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:14,312 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4659297
+2018-11-07 09:46:14,312 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:14,315 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11380792
+2018-11-07 09:46:17,313 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:17,316 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4753575
+2018-11-07 09:46:17,316 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:17,319 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=7740216
+2018-11-07 09:46:20,319 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:20,322 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=228621
+2018-11-07 09:46:20,322 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:20,326 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=27492033
+2018-11-07 09:46:23,332 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:23,334 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=8334140
+2018-11-07 09:46:23,336 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:23,349 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23782047
+2018-11-07 09:46:26,338 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:26,343 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23188983
+2018-11-07 09:46:26,380 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:26,384 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=30422784
+2018-11-07 09:46:27,762 INFO  report -  State of server report:
+- Uptime: 11m 1s 805ms
+- Report period: 11m 1s 805ms
+- Memory: 42283k used, 251648k total, 251648k max
+* Server pool=server1
+ - pool active Size=-1, pool Idle size=0
+* Server pool=server2
+ - pool active Size=-1, pool Idle size=0
+* Server pool=multiPool
+ - pool active Size=-2, pool Idle size=0
+* defaultManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* clientConnectioneManager
+- Registed Connection size: 0
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba for Mysql
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+* Amoeba Monitor Server
+- Registed Connection size: 1
+- created Connection size: 0
+- disconnect Connection size: 0
+
+2018-11-07 09:46:29,349 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:29,355 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11956305
+2018-11-07 09:46:29,386 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:29,393 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=3712471
+2018-11-07 09:46:32,369 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:32,372 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=9221266
+2018-11-07 09:46:32,395 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:32,398 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28516927
+2018-11-07 09:46:35,375 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:35,378 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=28591061
+2018-11-07 09:46:35,401 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:35,404 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=4058058
+2018-11-07 09:46:38,407 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:38,409 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=10949235
+2018-11-07 09:46:38,410 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:38,415 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=18423081
+2018-11-07 09:46:41,588 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:41,592 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=11161915
+2018-11-07 09:46:41,594 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:41,597 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=23618347
+2018-11-07 09:46:44,606 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:44,608 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=33114218
+2018-11-07 09:46:44,610 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:44,613 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=6770799
+2018-11-07 09:46:47,626 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:47,630 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=29240431
+2018-11-07 09:46:47,631 INFO  net.BackendConnectionFactory - open socket channel to server[127.0.0.1:3306] success!
+2018-11-07 09:46:47,635 ERROR net.MysqlServerConnection - handShake with /127.0.0.1:3306 error:Access denied for user 'root'@'localhost' (using password: NO),hashCode=2821755

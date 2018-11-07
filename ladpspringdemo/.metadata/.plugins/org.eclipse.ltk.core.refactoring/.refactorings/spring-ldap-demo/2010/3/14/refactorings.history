@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;SptringLDAPDemo/resources&apos;&#x0D;&#x0A;- Original project: &apos;spring-ldap-demo&apos;&#x0D;&#x0A;- Destination element: &apos;SptringLDAPDemo/resources&apos;&#x0D;&#x0A;- Original element: &apos;testContext.xml&apos;" description="Copy file" destination="=SptringLDAPDemo/resources" element1="src/test/resources/config/testContext.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1269843554812" units="0" version="1.0"/>
+</session>

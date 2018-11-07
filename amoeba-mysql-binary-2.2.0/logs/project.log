@@ -1,0 +1,3 @@
+2018-11-07 09:35:27,351 INFO  context.MysqlRuntimeContext - Amoeba for Mysql current versoin=5.1.45-mysql-amoeba-proxy-2.2.0
+2018-11-07 09:35:27,680 INFO  net.ServerableConnectionManager - Amoeba for Mysql listening on 0.0.0.0/0.0.0.0:8066.
+2018-11-07 09:35:27,682 INFO  net.ServerableConnectionManager - Amoeba Monitor Server listening on /127.0.0.1:38364.

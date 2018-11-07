@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="GB2312"?>
+<config>
+<localMongoList>
+	<localMongo>
+		<name>马甸</name>
+		<key>schoolNum:0</key>
+		<ip>10.108.164.8</ip>
+		<port>27017</port>
+	</localMongo>
+	<localMongo>
+		<name>风单元</name>
+		<key>schoolNum:1</key>
+		<ip>10.108.164.7</ip>
+		<port>27017</port>
+	</localMongo>
+	<localMongo>
+		<name>北邮</name>
+		<key>schoolNum:2</key>
+		<ip>10.108.164.6</ip>
+		<port>27017</port>
+	</localMongo>
+</localMongoList>
+<amoebaList>
+	<amoeba>
+		<ip>10.109.253.52</ip>
+		<port>8066</port>
+	</amoeba>
+	<amoeba>
+		<ip>10.109.253.53</ip>
+		<port>8066</port>
+	</amoeba>
+</amoebaList>
+</config>

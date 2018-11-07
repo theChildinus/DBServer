@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Tue Mar 25 17:13:25 CST 2014
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=MessageReceiver_Mongo_fat.jar
+manifest.mergeall=true
+manifest.mainclass=edu.bupt.wsmonitor.launch.ReceiverLaunch
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

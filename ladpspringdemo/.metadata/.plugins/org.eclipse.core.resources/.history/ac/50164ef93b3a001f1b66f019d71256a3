@@ -1,0 +1,39 @@
+package bupt.inc.wsmonitor.serviceserver.dao;
+
+import java.util.List;
+
+import bupt.inc.wsmonitor.serviceserver.domain.Person;
+
+public class PersonDaoImpl implements PersonDao {
+
+	@Override
+	public void creaet(Person p) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(Person p) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Person> getAllPerson() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Person> getPersonById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(Person p) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

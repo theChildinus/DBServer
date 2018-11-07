@@ -1,0 +1,17 @@
+org.springframework.ldap
+org.springframework.ldap.authentication
+org.springframework.ldap.control
+org.springframework.ldap.core
+org.springframework.ldap.core.simple
+org.springframework.ldap.core.support
+org.springframework.ldap.filter
+org.springframework.ldap.pool
+org.springframework.ldap.pool.factory
+org.springframework.ldap.pool.validation
+org.springframework.ldap.support
+org.springframework.ldap.test
+org.springframework.ldap.transaction.compensating
+org.springframework.ldap.transaction.compensating.manager
+org.springframework.ldap.transaction.compensating.support
+org.springframework.transaction.compensating
+org.springframework.transaction.compensating.support
