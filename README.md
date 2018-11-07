@@ -19,7 +19,7 @@
 
 - myEclipse 8.5(必须，MonjaDB工程依赖org.eclipse包)
 - jdk 1.6/1.7 32位
-- mongodb-win32-i386-2.4.9 (需下载并配置)
+- mongodb-win32-i386-2.4.9 (需自行下载并配置)
 - wso2greg-3.0.3 (项目RemoteRegistry依赖)
 - 安装Amoeba服务 (必须)
 
@@ -27,7 +27,7 @@
 
 将上述各文件夹导入myEclipse中
 
-### ladpspringdemo
+### **ladpspringdemo**
 
 #### .JETEmitters
 
@@ -41,15 +41,15 @@
 
 #### RemoteRegistry
 
-### MonjaDB
-
-- 修改 `info.properties` 中 `mongobin`，`serverip` (根据单机部署还是多机部署决定)
-
 报错：找不到包
 
 解决办法：
 
 - 右键该工程选择 `properties - Java Build Path` ， 将 `Libraries` 中红色的jar包删除， 选择 `Add External JARs` ，选择 `文件夹路径\wso2greg-3.0.3\webapps\ROOT\WEB-INF\plugins\common`，将其中所有jar包导入
+
+### **MonjaDB**
+
+- 修改 `info.properties` 中 `mongobin`，`serverip` (根据单机部署还是多机部署决定)
 
 ## 运行项目
 
@@ -71,4 +71,20 @@
 
 ### AmoebaClient
 
+正常启动后：
+
+- 运行 `AmoebaClient` 之后，在MetaData后台可以看到一分钟一个心跳包
+- 运行 `AmobaHandler` 之后，后台返回结果 `true`，表明Amoeba服务已启动
+
 ### MonjaDB
+
+正常启动后：
+
+- 在连接数据库界面可以选择数据节点
+- 如果报错，提示XML解析失败，请检查 `MetaData` 中文配置
+
+## 关于中文编码
+
+所有应用窗口使用中文编码为GBK
+
+工程 `MetaData` 中配置数据节点的文件 `mongoList.xml` 中的中文不能直接修改，需要运行工程`MetaData` 在窗口中修改
