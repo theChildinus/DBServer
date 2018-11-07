@@ -1,3 +1,0 @@
-mongod --logpath "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\logs\mongodb.log" --logappend --dbpath "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data" --directoryperdb --serviceName "MongoDB" --serviceDisplayName "MongoDB" --remove
-mongod --logpath "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\logs\mongodb.log" --logappend --dbpath "E:\TortoiseSVN\mongodb-win32-i386-2.4.9\data" --serviceName "MongoDB" --serviceDisplayName "MongoDB" --install
-net start MongoDB
