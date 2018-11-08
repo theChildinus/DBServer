@@ -4,7 +4,7 @@
 
 ## 项目目录
 
-参考论文：物理网服务平台中的分布式数据服务的研究与实现_陈小杰
+[参考论文：物理网服务平台中的分布式数据服务的研究与实现_陈小杰](http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201502&filename=1015586102.nh&v=MDI2MTMzcVRyV00xRnJDVVJMS2VadVpvRnkzblU3M0tWRjI2Rzdhd0dORE1yWkViUElSOGVYMUx1eFlTN0RoMVQ=)
 
 | 文件夹名              | 描述                                                                                                 |
 | ----------------------- | ----------------------- |
@@ -49,7 +49,11 @@
 
 ### **MonjaDB**
 
-- 修改 `info.properties` 中 `mongobin`，`serverip` (根据单机部署还是多机部署决定)
+- 修改 `src` 文件夹下 `info.properties` 中 `mongobin` 路径，`serverip` (根据单机部署还是多机部署决定)
+
+### **MetaData**
+
+- 修改 `src` 文件夹下 `info.properties` 中 `mongodbbin` 路径
 
 ## 运行项目
 
@@ -88,3 +92,13 @@
 所有应用窗口使用中文编码为GBK
 
 工程 `MetaData` 中配置数据节点的文件 `mongoList.xml` 中的中文不能直接修改，需要运行工程`MetaData` 在窗口中修改
+
+## 测试数据
+
+在未修改配置文件的情况下，可添加以下测试数据确定 `MonjaDB` 项目是否运行正常：
+
+- 下载MongoDB可视化管理工具 `Robo 3T`，连接MongoDB
+- 在MongoDB默认数据库 `test` 中添加集合 `data`
+- 在集合 `data` 中添加数据
+  - 命令为 `for(var i = 0; i <= 20; i++) db.data.insert({schoolNum:0, student:"student" + i})`
+- **注意**：数据库游标 `DBCursor` (Debug发现) 指向 `test.data`，query 为 `schoolNum:0`，所以测试数据中必须包含key-value：`schoolNum:0`
